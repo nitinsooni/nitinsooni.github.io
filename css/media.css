@@ -1,0 +1,40 @@
+@media only screen and (max-width: 800px) {
+    nav {
+        position: absolute;
+        justify-content: center;
+        backdrop-filter: none;
+    }
+
+    nav .nav-l ul .logo a {
+        margin-right: 0;
+    }
+
+    nav .nav-l ul .nav-links {
+        display: none;
+    }
+
+    nav .nav-r {
+        display: none;
+    }
+
+    #home .title h1 {
+        font-size: 2.8rem;
+    }
+
+    #home .title .title-top {
+        font-size: 5rem;
+    }
+
+    #home .title .title-bottom {
+        margin-top: 10px;
+    }
+
+    #home .title .underline {
+        width: 330px;
+        top: 13.3rem;
+    }
+
+    #home .title p {
+        font-size: 0.9rem;
+    }
+}

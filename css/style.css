@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/*----------------------------------------------------*/
+
+nav {
+    z-index: 1;
+    width: 100%;
+    min-height: 4.5rem;
+    padding: 0 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    backdrop-filter: blur(24px);
+}
+
+nav .nav-l ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav .nav-l ul li {
+    list-style: none;
+}
+
+nav .nav-l ul .logo a {
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+nav .nav-l ul .nav-links a {
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav .nav-l ul .nav-links a:hover {
+    color: #fae575;
+}
+
+nav .nav-r a {
+    font-weight: 500;
+    color: #fae575;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0.75rem 1.5rem;
+    margin-right: 3px;
+    border: 1px solid rgba(255, 255, 255, .24);
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+nav .nav-r a:hover {
+    font-size: 16.9px;
+    padding: 0.80rem 1.6rem;
+    margin-right: 0;
+}
+
+/*----------------------------------------------------*/
+
+#home {
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 74%, #000), radial-gradient(circle, #282828, #000);
+}
+
+.light-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.lights-holder {    
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    display: flex;         
+    justify-content: center;
+    align-items: flex-start;
+    grid-column-gap: 70px;
+    position: relative;
+    top: -222px;
+    transform: rotate(-30deg);
+}
+
+.lights-holder .light {
+    width: 180px;
+    height: 1000px;
+    background-image: linear-gradient(to bottom, #fae575 5%, rgba(255, 255, 255, 0) 68%);
+    opacity: 0.4;
+    filter: blur(18px);
+}
+
+.lights-holder .light.left {
+    width: 110px;
+    opacity: 0.1;
+    filter: blur(9px);
+}
+
+.lights-holder .light.middle {
+    opacity: 0.56;
+}
+
+.lights-holder .light.right {
+    width: 110px;
+    opacity: 0.3;
+    filter: blur(16px);
+}
+
+#home .title {
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+}
+
+#home .title h1 {
+    font-size: 4.8rem;
+    font-weight: 600;
+    line-height: 1.15;
+    word-spacing: -4px;
+}
+
+#home .title .title-top {
+    font-family: 'Arizonia', cursive;
+    font-weight: 400;
+    font-size: 8rem;
+}
+
+#home .title svg .stroke {
+    stroke: #fae575;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+#home .title .underline {
+    width: 530px;
+    position: absolute;
+    top: 15.4rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#home .title .underline .ul-a {
+    stroke-dasharray: 638;
+    stroke-dashoffset: 638;
+    animation: 1.50s ease 0.25s forwards draw;
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0
+    }
+}
+
+#home .title p {
+    font-size: 1.25rem;
+    font-weight: 200;
+    line-height: 1.375;
+    margin-top: 32px;
+}
+
+/*----------------------------------------------------*/
+
+#portfolio {
+    width: 100%;
+}
+
+/*----------------------------------------------------*/
+
+#contact {
+    width: 100%;
+}
