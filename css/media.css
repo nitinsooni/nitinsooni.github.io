@@ -84,7 +84,7 @@
     }
 
     #portfolio .title {
-        margin: 2rem 0;
+        margin-top: 0;
     }
 
     #portfolio .title h2 {
@@ -136,8 +136,13 @@
     }
 
     #portfolio .table .table-l .carousel .card {
-        width: 80vw;
+        /*width: 80vw;*/
+        width: 19rem;
         height: 30rem
+    }
+
+    #portfolio .table .table-l .carousel .card svg {
+        left: 15.5px;
     }
 }
 

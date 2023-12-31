@@ -277,15 +277,19 @@ nav .nav-r a {
 #portfolio .table .table-l .carousel .card {
     height: 33rem;
     width: 30rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     scroll-snap-align: center;
-    display: flex;
-    justify-content:center;
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 20px;
+    border-radius: 25px;
+    position: relative;
+}
+
+#portfolio .table .table-l .carousel .card svg {
+    position: absolute;
+    top: -1.5px;
+    right: 0;
+    left: 191px;
+    bottom: 0;
 }
 
 #portfolio .table .table-l .carousel .card.a {
