@@ -56,7 +56,16 @@
             <div class="t-container">
                 <div class="table">
                     <div class="table-l">
-                        <p>Work in progress...</p>
+                        <div class="nav-buttons">
+                            <button class="button" id="button1" onclick="scrollToCard(0)">Academics</button>
+                            <button class="button" id="button2" onclick="scrollToCard(1)">Skills</button>
+                            <button class="button" id="button3" onclick="scrollToCard(2)">Work Ex.</button>
+                        </div>
+                        <div class="carousel">
+                            <div class="card a"></div>
+                            <div class="card b"></div>
+                            <div class="card c"></div>
+                        </div>
                     </div>
                     <div class="table-r">
                         <h3>Embark on My <br><span class="gradient-text">Professional Odyssey</span></h3>
@@ -72,5 +81,36 @@
         <section id="contact">
         </section>
     </main>
+    <script>
+        window.onload = function(){
+            document.getElementById('button1').classList.add('button-focus');
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            const carousel = document.querySelector('.carousel');
+            const buttons = document.querySelectorAll('.button');
+
+            carousel.addEventListener('scroll', function () {
+                const scrollLeft = carousel.scrollLeft;
+                const cardWidth = document.querySelector('.card').offsetWidth;
+                const marginBetweenItems = 35;
+                const currentIndex = Math.floor((scrollLeft + marginBetweenItems) / (cardWidth + marginBetweenItems));
+
+                document.getElementById('button1').classList.remove('button-focus');
+                document.getElementById('button2').classList.remove('button-focus');
+                document.getElementById('button3').classList.remove('button-focus');
+
+                if (buttons[currentIndex]) {
+                    buttons[currentIndex].classList.add('button-focus');
+                }
+            });
+        });
+        function scrollToCard(index) {
+            const carousel = document.querySelector('.carousel');
+            const cardWidth = document.querySelector('.card').offsetWidth;
+            const marginBetweenItems = 35;
+
+            carousel.scrollTo({ left: index * (cardWidth + marginBetweenItems), behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>

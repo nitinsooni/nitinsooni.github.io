@@ -1,10 +1,9 @@
 @media only screen and (max-width: 1100px) {
-    #portfolio .t-container {
-        height: 50rem;
-    }
-
     #portfolio .table {
+        width: 100%;
+        align-items: center;
         flex-direction: column-reverse;
+        row-gap: 2rem;
     }
 
     #portfolio .table .table-l {
@@ -12,7 +11,7 @@
     }
 
     #portfolio .table .table-r {
-        width: 80%;
+        width: 90%;
         padding: 2rem 0;
     }
     #portfolio .table .table-r h3 {
@@ -21,6 +20,14 @@
 
     #portfolio .table .table-r .button-container a {
         display: block;
+    }
+
+    #portfolio .table .table-l .carousel .card.a {
+        margin-left: 24vw;
+    }
+
+    #portfolio .table .table-l .carousel .card.c {
+        margin-right: 24vw;
     }
 }
 
@@ -42,6 +49,8 @@
     nav .nav-r {
         display: none;
     }
+
+    /*----------------------------------------------------*/
 
     #home .title {
         padding-bottom: 20rem;
@@ -82,10 +91,6 @@
         font-size: 3rem;
     }
 
-    #portfolio .table .table-r {
-        width: 100%;
-    }
-
     #portfolio .table .table-r h3 {
         font-size: 2rem;
     }
@@ -101,6 +106,39 @@
     #portfolio .table .table-r .button-container a {
         font-size: 14px;
     }
+
+    #portfolio .table .table-l .nav-buttons {
+        column-gap: 3rem;
+    }
+
+    #portfolio .table .table-l .nav-buttons .button {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    #portfolio .table .table-l .nav-buttons {
+        column-gap: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #portfolio .table .table-l .nav-buttons .button {
+        font-weight: 400;
+        border-bottom: 1.5px solid black;
+    }
+
+    #portfolio .table .table-l .nav-buttons .button-focus {
+        border-bottom: 1.5px solid #fae575;
+    }
+
+    #portfolio .table .table-l .carousel {
+        gap: 2rem;
+    }
+
+    #portfolio .table .table-l .carousel .card {
+        width: 80vw;
+        height: 30rem
+    }
 }
 
 @media only screen and (min-width: 1100px) {
@@ -112,6 +150,8 @@
         font-size: 16.9px;
         padding: 0.82rem 1.55rem;
     }
+
+    /*----------------------------------------------------*/
 
     #portfolio .table .table-r .button-container a:hover {
         font-size: 16.9px;
