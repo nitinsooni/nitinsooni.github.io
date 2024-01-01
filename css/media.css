@@ -10,6 +10,10 @@
         width: 100%;
     }
 
+    #portfolio .table .table-l .scroll-container .fade-overlay {
+        display: none;
+    }
+
     #portfolio .table .table-r {
         width: 90%;
         padding: 2rem 0;
@@ -22,11 +26,11 @@
         display: block;
     }
 
-    #portfolio .table .table-l .carousel .card.a {
+    #portfolio .table .table-l .scroll-container .card-container .card.a {
         margin-left: 24vw;
     }
 
-    #portfolio .table .table-l .carousel .card.c {
+    #portfolio .table .table-l .scroll-container .card-container .card.c {
         margin-right: 24vw;
     }
 }
@@ -84,7 +88,7 @@
     }
 
     #portfolio .title {
-        margin-top: 0;
+        margin-top: 0; /*remove after contact bar in home*/
     }
 
     #portfolio .title h2 {
@@ -108,41 +112,72 @@
     }
 
     #portfolio .table .table-l .nav-buttons {
-        column-gap: 3rem;
+        column-gap: 3.5rem;
     }
 
     #portfolio .table .table-l .nav-buttons .button {
         font-size: 1rem;
     }
+
+    /*----------------------------------------------------*/
+
+    #contact .blur-circle {
+        display: none;
+    }
+
+    #contact .title h2 {
+        font-size: 3rem;
+    }
+
 }
 
 @media only screen and (max-width: 540px) {
     #portfolio .table .table-l .nav-buttons {
-        column-gap: 2rem;
+        column-gap: 2.5rem;
         margin-bottom: 1.5rem;
     }
 
     #portfolio .table .table-l .nav-buttons .button {
         font-weight: 400;
-        border-bottom: 1.5px solid black;
+        padding: 0.25rem 0;
+        border-bottom: 1.2px solid black;
     }
 
     #portfolio .table .table-l .nav-buttons .button-focus {
-        border-bottom: 1.5px solid #fae575;
+        border-bottom: 1.2px solid #fae575;
     }
 
-    #portfolio .table .table-l .carousel {
+    #portfolio .table .table-l .scroll-container .card-container {
         gap: 2rem;
     }
 
-    #portfolio .table .table-l .carousel .card {
+    #portfolio .table .table-l .scroll-container .card-container .card {
         /*width: 80vw;*/
         width: 19rem;
-        height: 30rem
+        height: 30rem;
+        padding-left: 1.5rem;
     }
 
-    #portfolio .table .table-l .carousel .card svg {
-        left: 15.5px;
+    #portfolio .table .table-l .scroll-container .card-container .card svg {
+        left: 15.6px;
+    }
+
+    #portfolio .table .table-l .scroll-container .card-container .card .content .heading{
+        font-size: 1rem;
+        margin-top: 1.75rem;
+        margin-bottom: 0.25rem;
+    }
+
+    #portfolio .table .table-l .scroll-container .card-container .card .content .sub-heading{
+        font-size: 0.9rem;
+        margin-bottom: 0.35rem;
+        margin-left: 1.5rem;
+    }
+
+    #portfolio .table .table-l .scroll-container .card-container .card .content .text{
+        font-size: 0.75rem;
+        margin-top: 0.25rem;
+        margin-left: 2.75rem;
     }
 }
 

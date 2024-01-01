@@ -17,9 +17,9 @@ body {
 /*----------------------------------------------------*/
 
 nav {
-    z-index: 1;
+    z-index: 999;
     width: 100%;
-    min-height: 4.5rem;
+    height: 4.5rem;
     padding: 0 5%;
     position: fixed;
     top: 0;
@@ -80,8 +80,7 @@ nav .nav-r a {
     width: 100%;
     text-align: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0) 74%, #000), radial-gradient(circle, #282828, #000);
-    height: 100vh;
-    min-height: 48rem;
+    min-height: 100vh;
 }
 
 .light-wrapper {
@@ -132,8 +131,8 @@ nav .nav-r a {
 }
 
 #home .title {
-    padding-top: 13rem;
 /*    padding-top: 10rem*/;
+    padding-top: 13rem;
 }
 
 #home .title h1 {
@@ -188,10 +187,10 @@ nav .nav-r a {
 
 #portfolio {
     width: 100%;
-    height: 100vh;
-    min-height: 48rem;
+    min-height: 100vh;
     padding-top: 1rem;
     text-align: center;
+    position: relative;
 }
 
 #portfolio .blur-circle {
@@ -201,9 +200,10 @@ nav .nav-r a {
     background-image: linear-gradient(111deg, #b18a52, #f1e8a4);
     border-radius: 1000px;
     position: absolute;
-    top: 65rem;
+    top: 16%;
     left: auto;
     right: 0%;
+    z-index: 1;
 }
 
 #portfolio .title {
@@ -227,7 +227,6 @@ nav .nav-r a {
     width: 90%;
     display: flex;
     column-gap: 4rem;
-    padding-bottom: 2rem;
 }
 
 #portfolio .table .table-l {
@@ -251,15 +250,36 @@ nav .nav-r a {
     padding: 0.25rem;
     cursor: pointer;   
     letter-spacing: .025rem;
-    border-bottom: 2px solid black;
+    border-bottom: 1.5px solid black;
 }
 
 #portfolio .table .table-l .nav-buttons .button-focus {
-    border-bottom: 2px solid #fae575;
+    border-bottom: 1.5px solid #fae575;
     transition: border 0.2s ease;
 }
 
-#portfolio .table .table-l .carousel {
+#portfolio .table .table-l .scroll-container {
+    position: relative;
+}
+
+#portfolio .table .table-l .scroll-container .fade-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 10%;
+}
+
+#portfolio .table .table-l .scroll-container .left-fade {
+    left: 0;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+#portfolio .table .table-l .scroll-container .right-fade {
+    right: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+#portfolio .table .table-l .scroll-container .card-container {
     display: grid;
     grid-auto-flow: column;
     scroll-behavior: auto;
@@ -270,34 +290,62 @@ nav .nav-r a {
     scrollbar-width: none;
 }
 
-#portfolio .table .table-l .carousel::-webkit-scrollbar {
+#portfolio .table .table-l .scroll-container .card-container::-webkit-scrollbar {
     display: none;
 }
 
-#portfolio .table .table-l .carousel .card {
-    height: 33rem;
+#portfolio .table .table-l .scroll-container .card-container .card {
+    height: 32rem;
     width: 30rem;
-    scroll-snap-align: center;
+    padding-left: 2rem;
+    padding-right: 0.5rem;
+    text-align: left;
+    position: relative;
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 25px;
-    position: relative;
+    z-index: -1;
+    scroll-snap-align: center;
 }
 
-#portfolio .table .table-l .carousel .card svg {
+#portfolio .table .table-l .scroll-container .card-container .card.a {
+    margin-left: 12vw;
+}
+
+#portfolio .table .table-l .scroll-container .card-container .card.c {
+    margin-right: 12vw;
+}
+
+#portfolio .table .table-l .scroll-container .card-container .card svg {
     position: absolute;
     top: -1.5px;
     right: 0;
     left: 191px;
     bottom: 0;
+    pointer-events: none;
 }
 
-#portfolio .table .table-l .carousel .card.a {
-    margin-left: 12vw;
+#portfolio .table .table-l .scroll-container .card-container .card .content .heading{
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: .025rem;
+    margin-top: 2rem;
+    color: rgba(255, 255, 255, .9);
 }
 
-#portfolio .table .table-l .carousel .card.c {
-    margin-right: 12vw;
+#portfolio .table .table-l .scroll-container .card-container .card .content .sub-heading{
+    font-size: 1.1rem;
+    margin-top: 0.9rem;
+    margin-bottom: 0.5rem;
+    margin-left: 2rem;
+    color: rgba(255, 255, 255, .8);
+}
+
+#portfolio .table .table-l .scroll-container .card-container .card .content .text{
+    font-size: 0.9rem;
+    margin-top: 0.35rem;
+    margin-left: 3.5rem;
+    color: rgba(255, 255, 255, .8);
 }
 
 #portfolio .table .table-r {
@@ -352,4 +400,32 @@ nav .nav-r a {
 
 #contact {
     width: 100%;
+    min-height: 100vh;
+    padding-top: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+#contact .blur-circle {
+    width: 240px;
+    height: 240px;
+    filter: blur(160px);
+    background-image: linear-gradient(111deg, #b18a52, #f1e8a4);
+    border-radius: 1000px;
+    position: absolute;
+    top: 27%;
+    left: -5%;
+    z-index: 1;
+}
+
+#contact .title {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+#contact .title h2 {
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: .025rem;
 }
