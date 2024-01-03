@@ -83,12 +83,16 @@
 
     /*----------------------------------------------------*/
 
+    #portfolio {
+        margin-bottom: 3rem;
+    }
+
     #portfolio .blur-circle {
         display: none;
     }
 
     #portfolio .title {
-        margin-top: 0; /*remove after contact bar in home*/
+        margin-top: 0;
     }
 
     #portfolio .title h2 {
@@ -125,6 +129,10 @@
         display: none;
     }
 
+    #contact .title {
+        margin-top: 0;
+    }
+
     #contact .title h2 {
         font-size: 3rem;
     }
@@ -152,7 +160,6 @@
     }
 
     #portfolio .table .table-l .scroll-container .card-container .card {
-        /*width: 80vw;*/
         width: 19rem;
         height: 30rem;
         padding-left: 1.5rem;
