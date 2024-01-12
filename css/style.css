@@ -45,7 +45,7 @@ nav .nav-l ul .logo a {
     color: white;
     font-size: 1.5rem;
     letter-spacing: 2px;
-    margin-right: 16px;
+    margin-right: 2rem;
     text-decoration: none;
 }
 
@@ -429,23 +429,62 @@ nav .nav-r a {
     letter-spacing: .025rem;
 }
 
-#contact .content {
+#contact .t-container {
+    display: flex;
+    justify-content: center;
+}
+
+#contact .table {
+    width: 90%;
+    display: flex;
+    column-gap: 6rem;
+}
+
+#contact .table .table-l {
+    width: 45%;
+    text-align: left;
+    padding-top: 3.5rem;
+}
+
+#contact .table .table-l h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: .025rem;
+}
+
+#contact .table .table-l h3 .gradient-text {
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #b18a52, #f1e8a4);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+#contact .table .table-l p {
+    color: rgba(255, 255, 255, .8);
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.375;
+    margin: 1.2rem 0;
+}
+
+#contact .table .table-r {
+    width: 55%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
 }
 
-#contact .content p {
+#contact .table .table-r p {
     width: 100%;
     color: black;
     background: #fae575;
     padding: 1px;
     font-weight: 500;
-    opacity: 0.75;
 }
 
-#contact .content a {
+#contact .table .table-r a {
     padding: 8px 16px;
     text-decoration: none;
     -webkit-text-fill-color: transparent;

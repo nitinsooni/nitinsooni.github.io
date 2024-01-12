@@ -1,4 +1,10 @@
 @media only screen and (max-width: 1100px) {
+    nav .nav-l ul .logo a {
+        margin-right: 1rem;
+    }
+
+    /*----------------------------------------------------*/
+
     #portfolio .table {
         width: 100%;
         align-items: center;
@@ -14,24 +20,43 @@
         display: none;
     }
 
-    #portfolio .table .table-r {
-        width: 90%;
-        padding: 2rem 0;
-    }
-    #portfolio .table .table-r h3 {
-        font-size: 2.25rem;
-    }
-
-    #portfolio .table .table-r .button-container a {
-        display: block;
-    }
-
     #portfolio .table .table-l .scroll-container .card-container .card.a {
         margin-left: 32vw;
     }
 
     #portfolio .table .table-l .scroll-container .card-container .card.c {
         margin-right: 32vw;
+    }
+
+    #portfolio .table .table-r {
+        width: 90%;
+        padding: 2rem 0;
+    }
+
+    #portfolio .table .table-r h3 {
+        font-size: 2.25rem;
+    }
+
+    /*----------------------------------------------------*/
+
+    #contact .table {
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    #contact .table .table-l {
+        width: 90%;
+        padding: 2rem 0;
+    }
+
+    #contact .table .table-l h3 {
+        font-size: 2.25rem;
+    }
+
+    #contact .table .table-r {
+        width: 100%;
     }
 }
 
@@ -99,6 +124,14 @@
         font-size: 3rem;
     }
 
+    #portfolio .table .table-l .nav-buttons {
+        column-gap: 3.5rem;
+    }
+
+    #portfolio .table .table-l .nav-buttons .button {
+        font-size: 1rem;
+    }
+
     #portfolio .table .table-r h3 {
         font-size: 2rem;
     }
@@ -115,14 +148,6 @@
         font-size: 14px;
     }
 
-    #portfolio .table .table-l .nav-buttons {
-        column-gap: 3.5rem;
-    }
-
-    #portfolio .table .table-l .nav-buttons .button {
-        font-size: 1rem;
-    }
-
     /*----------------------------------------------------*/
 
     #contact .blur-circle {
@@ -137,6 +162,17 @@
         font-size: 3rem;
     }
 
+    #contact .table .table-l h3 {
+        font-size: 2rem;
+    }
+
+    #contact .table .table-l br {
+        display: none;
+    }
+
+    #contact .table .table-l p {
+        font-size: 0.9rem;
+    }
 }
 
 @media only screen and (max-width: 540px) {
@@ -165,8 +201,16 @@
         padding-left: 1.5rem;
     }
 
+    #portfolio .table .table-l .scroll-container .card-container .card.a {
+        margin-left: 24vw;
+    }
+
+    #portfolio .table .table-l .scroll-container .card-container .card.c {
+        margin-right: 24vw;
+    }
+
     #portfolio .table .table-l .scroll-container .card-container .card svg {
-        left: 15.6px;
+        left: 15.8px;
     }
 
     #portfolio .table .table-l .scroll-container .card-container .card .content .heading{
@@ -185,6 +229,16 @@
         font-size: 0.75rem;
         margin-top: 0.25rem;
         margin-left: 2.75rem;
+    }
+
+    #portfolio .table .table-r br {
+        display: inline;
+    }
+
+    /*----------------------------------------------------*/
+
+    #contact .table .table-l br {
+        display: inline;
     }
 }
 
