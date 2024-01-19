@@ -10,7 +10,7 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: black;
+    background: black;
     color: white;
 }
 
@@ -66,7 +66,7 @@ nav .nav-r a {
     font-size: 1rem;
     font-weight: 500;
     color: #fae575;
-    background-color: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
     padding: 0.75rem 1.50rem;
     border: 1px solid rgba(255, 255, 255, .24);
     border-radius: 12px;
@@ -148,14 +148,7 @@ nav .nav-r a {
     font-size: 8rem;
 }
 
-#home .title svg .stroke {
-    stroke: #fae575;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-}
-
-#home .title .underline {
+#home .title svg {
     width: 530px;
     position: absolute;
     top: 18.4rem;
@@ -164,7 +157,11 @@ nav .nav-r a {
     margin: auto;
 }
 
-#home .title .underline .ul-a {
+#home .title svg path {
+    stroke: #fae575;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
     stroke-dasharray: 638;
     stroke-dashoffset: 638;
     animation: 1.50s ease 0.25s forwards draw;
@@ -297,10 +294,10 @@ nav .nav-r a {
     height: 32rem;
     width: 26rem;
     padding-left: 2rem;
-    padding-right: 0.5rem;
+    padding-right: 1rem;
     text-align: left;
     position: relative;
-    background: rgba(255, 255, 255, 0.1);
+    background: #1f1f1f;
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 25px;
     z-index: -1;
@@ -315,7 +312,7 @@ nav .nav-r a {
     margin-right: 15vw;
 }
 
-#portfolio .table .table-l .scroll-container .card-container .card svg {
+#portfolio .table .table-l .scroll-container .card-container .card img {
     position: absolute;
     top: -1.5px;
     right: 0;
@@ -388,7 +385,7 @@ nav .nav-r a {
     font-size: 1rem;
     font-weight: 500;
     color: #fae575;
-    background-color: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
     padding: 0.75rem 1.50rem;
     border: 1px solid rgba(255, 255, 255, .24);
     border-radius: 12px;

@@ -97,7 +97,7 @@
         margin-top: 10px;
     }
 
-    #home .title .underline {
+    #home .title svg {
         width: 330px;
         top: 16.3rem;
     }
@@ -209,7 +209,7 @@
         margin-right: 24vw;
     }
 
-    #portfolio .table .table-l .scroll-container .card-container .card svg {
+    #portfolio .table .table-l .scroll-container .card-container .card img {
         left: 15.8px;
     }
 
