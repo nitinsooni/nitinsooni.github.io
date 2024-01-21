@@ -83,7 +83,7 @@ nav .nav-r a {
     min-height: 100vh;
 }
 
-.light-wrapper {
+#home .light-wrapper {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -93,11 +93,11 @@ nav .nav-r a {
     pointer-events: none;
 }
 
-.lights-holder {    
+#home .light-wrapper .lights-holder {
     width: 100%;
     height: 100%;
     opacity: 0.4;
-    display: flex;         
+    display: flex;
     justify-content: center;
     align-items: flex-start;
     grid-column-gap: 70px;
@@ -106,7 +106,7 @@ nav .nav-r a {
     transform: rotate(-30deg);
 }
 
-.lights-holder .light {
+#home .light-wrapper .lights-holder .light {
     width: 180px;
     height: 1000px;
     background-image: linear-gradient(to bottom, #fae575 5%, rgba(255, 255, 255, 0) 68%);
@@ -114,17 +114,17 @@ nav .nav-r a {
     filter: blur(18px);
 }
 
-.lights-holder .light.left {
+#home .light-wrapper .lights-holder .light.left {
     width: 110px;
     opacity: 0.1;
     filter: blur(9px);
 }
 
-.lights-holder .light.middle {
+#home .light-wrapper .lights-holder .light.middle {
     opacity: 0.56;
 }
 
-.lights-holder .light.right {
+#home .light-wrapper .lights-holder .light.right {
     width: 110px;
     opacity: 0.3;
     filter: blur(16px);
@@ -132,26 +132,15 @@ nav .nav-r a {
 
 #home .title {
 /*    padding-top: 10rem*/;
-    padding-top: 13rem;
+    padding-top: 15rem;
 }
 
-#home .title h1 {
-    font-size: 4.8rem;
-    font-weight: 600;
-    line-height: 1.15;
-    word-spacing: -4px;
-}
-
-#home .title .title-top {
-    font-family: 'Arizonia', cursive;
-    font-weight: 400;
-    font-size: 8rem;
-}
-
-#home .title svg {
+#home .title img, #home .title svg {
     width: 530px;
+}
+#home .title svg {
     position: absolute;
-    top: 18.4rem;
+    top: 15rem;
     left: 0;
     right: 0;
     margin: auto;
@@ -162,15 +151,22 @@ nav .nav-r a {
     stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke-dasharray: 638;
-    stroke-dashoffset: 638;
-    animation: 1.50s ease 0.25s forwards draw;
+    stroke-dasharray: 632;
+    stroke-dashoffset: 632;
+    animation: 1.5s ease 0.2s forwards draw;
 }
 
 @keyframes draw {
     to {
         stroke-dashoffset: 0
     }
+}
+
+#home .title h1 {
+    font-size: 4.8rem;
+    font-weight: 600;
+    line-height: 1.15;
+    word-spacing: -4px;
 }
 
 #home .title p {
@@ -244,7 +240,7 @@ nav .nav-r a {
     background: black;
     border: none;
     padding: 0.25rem;
-    cursor: pointer;   
+    cursor: pointer;
     letter-spacing: .025rem;
     border-bottom: 1.5px solid black;
 }
