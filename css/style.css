@@ -53,7 +53,7 @@ nav .nav-l ul .nav-links a {
     color: white;
     padding: 8px 16px;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color .3s;
 }
 
 nav .nav-r {
@@ -67,11 +67,11 @@ nav .nav-r a {
     font-weight: 500;
     color: #fae575;
     background: rgba(0, 0, 0, 0);
-    padding: 0.75rem 1.50rem;
+    padding: .75rem 1.50rem;
     border: 1px solid rgba(255, 255, 255, .24);
     border-radius: 12px;
     text-decoration: none;
-    transition: all 0.4s ease;
+    transition: all .4s ease;
 }
 
 /*----------------------------------------------------*/
@@ -96,7 +96,7 @@ nav .nav-r a {
 #home .light-wrapper .lights-holder {
     width: 100%;
     height: 100%;
-    opacity: 0.4;
+    opacity: .4;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -110,23 +110,23 @@ nav .nav-r a {
     width: 180px;
     height: 1000px;
     background-image: linear-gradient(to bottom, #fae575 5%, rgba(255, 255, 255, 0) 68%);
-    opacity: 0.4;
+    opacity: .4;
     filter: blur(18px);
 }
 
 #home .light-wrapper .lights-holder .light.left {
     width: 110px;
-    opacity: 0.1;
+    opacity: .1;
     filter: blur(9px);
 }
 
 #home .light-wrapper .lights-holder .light.middle {
-    opacity: 0.56;
+    opacity: .56;
 }
 
 #home .light-wrapper .lights-holder .light.right {
     width: 110px;
-    opacity: 0.3;
+    opacity: .3;
     filter: blur(16px);
 }
 
@@ -153,7 +153,7 @@ nav .nav-r a {
     stroke-linejoin: round;
     stroke-dasharray: 632;
     stroke-dashoffset: 632;
-    animation: 1.5s ease 0.2s forwards draw;
+    animation: 1.5s ease .2s forwards draw;
 }
 
 @keyframes draw {
@@ -239,7 +239,7 @@ nav .nav-r a {
     color: #fff;
     background: black;
     border: none;
-    padding: 0.25rem;
+    padding: .25rem;
     cursor: pointer;
     letter-spacing: .025rem;
     border-bottom: 1.5px solid black;
@@ -247,7 +247,7 @@ nav .nav-r a {
 
 #portfolio .table .table-l .nav-buttons .button-focus {
     border-bottom: 1.5px solid #fae575;
-    transition: border 0.2s ease;
+    transition: border .2s ease;
 }
 
 #portfolio .table .table-l .scroll-container {
@@ -294,7 +294,7 @@ nav .nav-r a {
     text-align: left;
     position: relative;
     background: #1f1f1f;
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, .12);
     border-radius: 25px;
     z-index: -1;
     scroll-snap-align: center;
@@ -327,16 +327,16 @@ nav .nav-r a {
 
 #portfolio .table .table-l .scroll-container .card-container .card .content .sub-heading{
     font-size: 1.1rem;
-    margin-top: 0.9rem;
-    margin-bottom: 0.5rem;
+    margin-top: .9rem;
+    margin-bottom: .5rem;
     margin-left: 2rem;
     color: rgba(255, 255, 255, .8);
 }
 
 #portfolio .table .table-l .scroll-container .card-container .card .content .text{
-    font-size: 0.9rem;
+    font-size: .9rem;
     font-weight: 300;
-    margin-top: 0.35rem;
+    margin-top: .35rem;
     margin-left: 3.5rem;
     color: rgba(255, 255, 255, .8);
 }
@@ -382,11 +382,11 @@ nav .nav-r a {
     font-weight: 500;
     color: #fae575;
     background: rgba(0, 0, 0, 0);
-    padding: 0.75rem 1.50rem;
+    padding: .75rem 1.50rem;
     border: 1px solid rgba(255, 255, 255, .24);
     border-radius: 12px;
     text-decoration: none;
-    transition: all 0.4s ease;
+    transition: all .4s ease;
 }
 
 /*----------------------------------------------------*/
@@ -484,13 +484,14 @@ nav .nav-r a {
     gap: 1rem;
 }
 
-#contact .table .table-r .container .item {
+#contact .table .table-r .container a {
     display: flex;
     align-items: center;
+    gap: .5rem;
 }
 
-#contact .table .table-r .container .item a {
-    padding: 10px;
+#contact .table .table-r .container a {
+    padding: .5rem;
     text-decoration: none;
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(to right, #b18a52, #f1e8a4);
@@ -498,7 +499,7 @@ nav .nav-r a {
     background-clip: text;
 }
 
-#contact .table .table-r .container .item img {
+#contact .table .table-r .container a img {
     width: 24px;
     height: 24px;
 }

@@ -91,7 +91,7 @@
     }
 
     #home .title p {
-        font-size: 0.9rem;
+        font-size: .9rem;
     }
 
     /*----------------------------------------------------*/
@@ -129,7 +129,7 @@
     }
 
     #portfolio .table .table-r p {
-        font-size: 0.9rem;
+        font-size: .9rem;
     }
 
     #portfolio .table .table-r .button-container a {
@@ -159,7 +159,7 @@
     }
 
     #contact .table .table-l p {
-        font-size: 0.9rem;
+        font-size: .9rem;
     }
 }
 
@@ -171,7 +171,7 @@
 
     #portfolio .table .table-l .nav-buttons .button {
         font-weight: 400;
-        padding: 0.25rem 0;
+        padding: .25rem 0;
         border-bottom: 1.2px solid black;
     }
 
@@ -204,18 +204,18 @@
     #portfolio .table .table-l .scroll-container .card-container .card .content .heading{
         font-size: 1rem;
         margin-top: 1.75rem;
-        margin-bottom: 0.25rem;
+        margin-bottom: .25rem;
     }
 
     #portfolio .table .table-l .scroll-container .card-container .card .content .sub-heading{
-        font-size: 0.9rem;
-        margin-bottom: 0.35rem;
+        font-size: .9rem;
+        margin-bottom: .35rem;
         margin-left: 1.5rem;
     }
 
     #portfolio .table .table-l .scroll-container .card-container .card .content .text{
-        font-size: 0.75rem;
-        margin-top: 0.25rem;
+        font-size: .75rem;
+        margin-top: .25rem;
         margin-left: 2.75rem;
     }
 
@@ -237,13 +237,13 @@
 
     nav .nav-r a:hover {
         font-size: 16.9px;
-        padding: 0.82rem 1.55rem;
+        padding: .82rem 1.55rem;
     }
 
     /*----------------------------------------------------*/
 
     #portfolio .table .table-r .button-container a:hover {
         font-size: 16.9px;
-        padding: 0.82rem 1.55rem;
+        padding: .82rem 1.55rem;
     }
 }
