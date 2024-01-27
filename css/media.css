@@ -161,6 +161,10 @@
     #contact .table .table-l p {
         font-size: .9rem;
     }
+
+    #contact .table .table-l .button-container a {
+        font-size: 14px;
+    }
 }
 
 @media only screen and (max-width: 540px) {
@@ -243,6 +247,13 @@
     /*----------------------------------------------------*/
 
     #portfolio .table .table-r .button-container a:hover {
+        font-size: 16.9px;
+        padding: .82rem 1.55rem;
+    }
+
+    /*----------------------------------------------------*/
+
+    #contact .table .table-l .button-container a:hover {
         font-size: 16.9px;
         padding: .82rem 1.55rem;
     }

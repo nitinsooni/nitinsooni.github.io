@@ -461,6 +461,26 @@ nav .nav-r a {
     margin: 1.2rem 0;
 }
 
+#contact .table .table-l .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    height: 4rem;
+}
+
+#contact .table .table-l .button-container a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fae575;
+    background: rgba(0, 0, 0, 0);
+    padding: .75rem 1.50rem;
+    border: 1px solid rgba(255, 255, 255, .24);
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
 #contact .table .table-r {
     width: 55%;
     display: flex;
