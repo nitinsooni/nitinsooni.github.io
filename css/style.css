@@ -180,7 +180,6 @@ nav .nav-r a {
 
 #portfolio {
     width: 100%;
-    min-height: 100vh;
     padding-top: 1rem;
     text-align: center;
     position: relative;
@@ -196,6 +195,7 @@ nav .nav-r a {
     top: 30%;
     left: auto;
     right: 0%;
+    z-index: -1;
 }
 
 #portfolio .title {
@@ -237,7 +237,7 @@ nav .nav-r a {
     font-size: 1.1rem;
     font-weight: 500;
     color: #fff;
-    background: black;
+    background: transparent;
     border: none;
     padding: .25rem;
     cursor: pointer;
@@ -287,8 +287,8 @@ nav .nav-r a {
 }
 
 #portfolio .table .table-l .scroll-container .card-container .card {
-    height: 32rem;
     width: 26rem;
+    height: 32rem;
     padding-left: 2rem;
     padding-right: 1rem;
     text-align: left;
@@ -296,7 +296,6 @@ nav .nav-r a {
     background: #1f1f1f;
     border: 1px solid rgba(255, 255, 255, .12);
     border-radius: 25px;
-    z-index: -1;
     scroll-snap-align: center;
 }
 
@@ -393,7 +392,6 @@ nav .nav-r a {
 
 #contact {
     width: 100%;
-    min-height: 100vh;
     padding-top: 1rem;
     text-align: center;
     position: relative;
@@ -406,8 +404,9 @@ nav .nav-r a {
     background-image: linear-gradient(111deg, #b18a52, #f1e8a4);
     border-radius: 1000px;
     position: absolute;
-    top: 27%;
+    top: 45%;
     left: -5%;
+    z-index: -1;
 }
 
 #contact .title {
@@ -420,6 +419,127 @@ nav .nav-r a {
     font-weight: 400;
     line-height: 1;
     letter-spacing: .025rem;
+}
+
+#contact .scroll-container {
+    position: relative;
+}
+
+#contact .scroll-container .fade-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5%;
+}
+
+#contact .scroll-container .left-fade {
+    left: 0;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+#contact .scroll-container .right-fade {
+    right: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+#contact .scroll-container .pill-container {
+    display: grid;
+    padding: 0 1rem;
+    grid-auto-flow: column;
+    justify-content: center;
+    grid-auto-columns: max-content;
+    scroll-behavior: auto;
+    gap: 1rem;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    justify-content: 5px;
+}
+
+#contact .scroll-container .pill-container::-webkit-scrollbar {
+    display: none;
+}
+
+#contact .scroll-container .pill-container .pill {
+    background-color: black;
+    border: 1px solid rgba(255, 255, 255, .24);
+    border-radius: 12px;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(-20px);
+    }
+    60% {
+        transform: translateX(-10px);
+    }
+}
+
+#contact .scroll-container .pill-container .pill a {
+    font-size: 1.25rem;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+#contact .scroll-container .pill-container .pill a img {
+    width: 28px;
+    height: 28px;
+}
+
+#contact .scroll-container .pill-container .pill.anilist {
+    background-image: linear-gradient(to right, rgba(130, 168, 217, .24), rgba(0, 120, 203, .24));
+}
+
+#contact .scroll-container .pill-container .pill.anilist a {
+    color: #6fc4ff;
+}
+
+#contact .scroll-container .pill-container .pill.email {
+    background-image: linear-gradient(to right, rgba(177, 138, 82, .24), rgba(241, 232, 164, .24));
+}
+
+#contact .scroll-container .pill-container .pill.email a {
+    color: #fae575;
+}
+
+#contact .scroll-container .pill-container .pill.github {
+    background-image: linear-gradient(to right, rgba(128, 235, 235, .24), rgba(82, 131, 177, .24));
+}
+
+#contact .scroll-container .pill-container .pill.github a {
+    color: #75dafa;
+}
+
+#contact .scroll-container .pill-container .pill.instagram {
+    background-image: linear-gradient(to right, rgba(177, 82, 150, .24), rgba(207, 164, 241, .24));
+}
+
+#contact .scroll-container .pill-container .pill.instagram a {
+    color: #e775fa;
+}
+
+#contact .scroll-container .pill-container .pill.linkedin {
+    background-image: linear-gradient(to right, rgba(134, 169, 214, .24), rgba(52, 98, 158, .24));
+}
+
+#contact .scroll-container .pill-container .pill.linkedin a {
+    color: #3fcbf8;
+}
+
+#contact .scroll-container .pill-container .pill.spotify {
+    background-image: linear-gradient(to right, rgba(84, 177, 82, .24), rgba(164, 241, 199, .24));
+}
+
+#contact .scroll-container .pill-container .pill.spotify a {
+    color: #87fa75;
 }
 
 #contact .t-container {
@@ -483,43 +603,35 @@ nav .nav-r a {
 
 #contact .table .table-r {
     width: 55%;
+}
+
+#contact .table .table-r .card-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    justify-content: center;
+    padding: 1.5rem 0;
 }
 
-#contact .table .table-r p {
-    width: 100%;
-    color: black;
-    background: #fae575;
-    padding: 1px;
-    font-weight: 500;
-}
-
-#contact .table .table-r .container {
+#contact .table .table-r .card-container .card {
+    width: 28rem;
+    height: 30rem;
+    background: #1f1f1f;
+    border: 1px solid rgba(255, 255, 255, .12);
+    border-radius: 25px;
+    position: relative;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
+    align-items:center;
+    justify-content: center;
 }
 
-#contact .table .table-r .container a {
-    display: flex;
-    align-items: center;
-    gap: .5rem;
+#contact .table .table-r .card-container .card img {
+    position: absolute;
+    top: -1.5px;
+    right: 0;
+    left: 160px;
+    bottom: 0;
+    pointer-events: none;
 }
 
-#contact .table .table-r .container a {
-    padding: .5rem;
-    text-decoration: none;
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to right, #b18a52, #f1e8a4);
-    -webkit-background-clip: text;
-    background-clip: text;
-}
-
-#contact .table .table-r .container a img {
-    width: 24px;
-    height: 24px;
+#contact .table .table-r .card-container .card p {
+    color: #fae575;
 }

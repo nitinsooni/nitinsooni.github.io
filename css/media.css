@@ -46,6 +46,15 @@
         row-gap: 2rem;
     }
 
+    #contact .scroll-container .fade-overlay {
+        display: block;
+    }
+
+    #contact .scroll-container .pill-container {
+        justify-content: flex-start;
+        animation: bounce 2s infinite;
+    }
+
     #contact .table .table-l {
         width: 90%;
         padding: 2rem 0;
@@ -150,6 +159,20 @@
         font-size: 3rem;
     }
 
+    #contact .scroll-container .pill-container .pill {
+        border-radius: 10px;
+    }
+
+    #contact .scroll-container .pill-container .pill a {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+
+    #contact .scroll-container .pill-container .pill a img {
+        width: 24px;
+        height: 24px;
+    }
+
     #contact .table .table-l h3 {
         font-size: 2rem;
     }
@@ -164,6 +187,10 @@
 
     #contact .table .table-l .button-container a {
         font-size: 14px;
+    }
+
+    #contact .table .table-r .card-container {
+        padding: 2rem 0;
     }
 }
 
@@ -231,6 +258,15 @@
 
     #contact .table .table-l br {
         display: inline;
+    }
+
+    #contact .table .table-r .card-container .card {
+        width: 20rem;
+        height: 30rem;
+    }
+
+    #contact .table .table-r .card-container .card img {
+        left: 31.8px;
     }
 }
 

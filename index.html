@@ -58,7 +58,7 @@
                     <div class="table-l">
                         <div class="nav-buttons">
                             <button class="button" id="button1" onclick="scrollToCard(0)">Skills</button>
-                            <button class="button" id="button2" onclick="scrollToCard(1)">Academics</button>
+                            <button class="button" id="button2" onclick="scrollToCard(1)">Education</button>
                             <button class="button" id="button3" onclick="scrollToCard(2)">Work Ex.</button>
                         </div>
                         <div class="scroll-container">
@@ -87,7 +87,7 @@
                                 <div class="card b">
                                     <img src="/assets/images/card-border.svg">
                                     <div class="content">
-                                        <p class="heading">Education:</p>
+                                        <p class="heading">Academics:</p>
                                         <p class="sub-heading">Bachelor of Commerce with Honours</p>
                                         <p class="text">Gurugram University</p>
                                         <p class="text">2020 - 2023</p>
@@ -130,6 +130,30 @@
             <div class="title">
                 <h2>Contact</h2>
             </div>
+            <div class="scroll-container" id="contact-scroll-container">
+                <div class="fade-overlay left-fade"></div>
+                <div class="pill-container" id='contact-pill-container'>
+                    <div class="pill anilist">
+                        <a href="https://anilist.co/user/nitinsoni" target="_blank"><img src="/assets/images/anilist-icon.svg">AniList</a>
+                    </div>
+                    <div class="pill email">
+                        <a href="mailto:nitinsoooni@gmail.com"><img src="/assets/images/email-icon.svg">E-mail</a>
+                    </div>
+                    <div class="pill github">
+                        <a href="https://github.com/nitinsooni" target="_blank"><img src="/assets/images/github-icon.svg">GitHub</a>
+                    </div>
+                    <div class="pill instagram">
+                        <a href="https://www.instagram.com/nitinsooni" target="_blank"><img src="/assets/images/instagram-icon.svg">Instagram</a>
+                    </div>
+                    <div class="pill linkedin">
+                        <a href="https://www.linkedin.com/in/nitinsooni" target="_blank"><img src="/assets/images/linkedin-icon.svg">LinkedIn</a>
+                    </div>
+                    <div class="pill spotify">
+                        <a href="https://open.spotify.com/user/nenowwq76dkddt356pb6k8of9?si=eda4e4ea588745a7" target="_blank"><img src="/assets/images/spotify-icon.svg">Spotify</a>
+                    </div>
+                </div>
+                <div class="fade-overlay right-fade"></div>
+            </div>
             <div class="t-container">
                 <div class="table">
                     <div class="table-l">
@@ -140,15 +164,12 @@
                             <a href="mailto:nitinsoooni@gmail.com">E-mail me</a>
                         </div>
                     </div>
-                    <div class="table-r">
-                        <p>This Section is Under Construction!</p>
-                        <div class="container">
-                            <a href="https://anilist.co/user/nitinsoni" target="_blank"><img src="/assets/images/anilist-icon.svg">AniList</a>
-                            <a href="mailto:nitinsoooni@gmail.com"><img src="/assets/images/email-icon.svg">E-mail</a>
-                            <a href="https://github.com/nitinsooni" target="_blank"><img src="/assets/images/github-icon.svg">GitHub</a>
-                            <a href="https://www.instagram.com/nitinsooni" target="_blank"><img src="/assets/images/instagram-icon.svg">Instagram</a>
-                            <a href="https://www.linkedin.com/in/nitinsooni" target="_blank"><img src="/assets/images/linkedin-icon.svg">LinkedIn</a>
-                            <a href="https://open.spotify.com/user/nenowwq76dkddt356pb6k8of9?si=eda4e4ea588745a7" target="_blank"><img src="/assets/images/spotify-icon.svg">Spotify</a>
+                    <div class="table-r" id="contact-table-r">
+                        <div class="card-container">
+                            <div class="card">
+                                <img src="/assets/images/card-border.svg">
+                                <p>Work in Progress...</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -156,9 +177,12 @@
         </section>
     </main>
     <script>
+        // 1st nav button gets in focus on site load
         window.onload = function(){
             document.getElementById('button1').classList.add('button-focus');
         }
+
+        // Button get in focus with scroll
         document.addEventListener('DOMContentLoaded', function () {
             const cardContainer = document.querySelector('.card-container');
             const buttons = document.querySelectorAll('.button');
@@ -178,6 +202,8 @@
                 }
             });
         });
+
+        // Click nav button to scroll card
         function scrollToCard(index) {
             const cardContainer = document.querySelector('.card-container');
             const cardWidth = document.querySelector('.card').offsetWidth;
@@ -185,6 +211,29 @@
 
             cardContainer.scrollTo({ left: index * (cardWidth + marginBetweenItems), behavior: 'smooth' });
         }
+
+        // Transfer scroll-container under table-r if screen width < 800
+        const scrollContainer = document.getElementById('contact-scroll-container');
+        const tableR = document.getElementById('contact-table-r');
+
+        function moveScrollContainer() {
+            tableR.insertBefore(scrollContainer, tableR.firstChild);
+        }
+
+        if (window.innerWidth < 800) {
+            moveScrollContainer();
+        }
+
+        // Only activate bounce animation when scroll is on 0 position
+        document.getElementById('contact-pill-container').addEventListener('scroll', function() {
+            if (this.scrollLeft === 0) {
+                this.style.animation = 'bounce 2s infinite';
+            } else {
+                this.style.animation = 'none';
+            }
+        });
+
+
     </script>
 </body>
 </html>
