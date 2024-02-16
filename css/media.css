@@ -90,8 +90,16 @@
 
     /*----------------------------------------------------*/
 
+    #home .title {
+        padding-top: 12rem;
+    }
+
     #home .title img, #home .title svg {
         width: 340px;
+    }
+
+    #home .title svg {
+        top: 12rem;
     }
 
     #home .title h1 {
@@ -101,6 +109,36 @@
 
     #home .title p {
         font-size: .9rem;
+    }
+
+    #home .contact-box {
+        padding-top: 9rem;
+        padding-bottom: 15rem;
+    }
+
+    #home .contact-box .contact-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #home .contact-box .contact-bar form {
+        flex-direction: row;
+        width: 90%;
+    }
+
+    #home .contact-box .contact-bar form .text-field {
+        font-size: .9rem;
+        margin-right: 0;
+        padding-right: .9rem;
+    }
+
+    #home .contact-box .contact-bar form .submit {
+        font-size: .9rem;
+        margin-top: 1rem;
+        margin-right: 0;
+        position: static;
+        width: 100%;
     }
 
     /*----------------------------------------------------*/
@@ -278,6 +316,18 @@
     nav .nav-r a:hover {
         font-size: 16.9px;
         padding: .82rem 1.55rem;
+    }
+
+    /*----------------------------------------------------*/
+
+    #home .contact-box .contact-bar form .text-field:hover {
+        border-color: rgba(255, 255, 255, .24);
+    }
+
+    #home .contact-box .contact-bar form .submit:hover {
+        font-size: 16.9px;
+        padding: .97rem 1.55rem;
+        margin-right: 0;
     }
 
     /*----------------------------------------------------*/
