@@ -233,11 +233,16 @@
         }
 
         // Only activate bounce animation when scroll is on 0 position
+        const pills = document.querySelectorAll('.pill');
         document.getElementById('contact-pill-container').addEventListener('scroll', function() {
             if (this.scrollLeft === 0) {
-                this.style.animation = 'bounce 2s infinite';
+                pills.forEach(function(pill) {
+                    pill.style.animation = 'bounce 2s infinite';
+                });
             } else {
-                this.style.animation = 'none';
+                pills.forEach(function(pill) {
+                    pill.style.animation = 'none';
+                });
             }
         });
     </script>

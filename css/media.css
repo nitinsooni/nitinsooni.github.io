@@ -52,6 +52,9 @@
 
     #contact .scroll-container .pill-container {
         justify-content: flex-start;
+    }
+
+    #contact .scroll-container .pill-container .pill {
         animation: bounce 2s infinite;
     }
 
@@ -113,7 +116,7 @@
 
     #home .contact-box {
         padding-top: 9rem;
-        padding-bottom: 15rem;
+        padding-bottom: 14rem;
     }
 
     #home .contact-box .contact-bar {
