@@ -80,6 +80,7 @@
     }
 
     nav .nav-l ul .logo a {
+        font-weight: 400;
         margin-right: 0;
     }
 
@@ -146,16 +147,12 @@
 
     /*----------------------------------------------------*/
 
-    #portfolio {
-        margin-bottom: 3rem;
-    }
-
     #portfolio .blur-circle {
         display: none;
     }
 
     #portfolio .title {
-        margin-top: 0;
+        padding-top: 2rem;
     }
 
     #portfolio .title h2 {
@@ -193,7 +190,7 @@
     }
 
     #contact .title {
-        margin-top: 0;
+        padding-top: 3rem;
     }
 
     #contact .title h2 {
