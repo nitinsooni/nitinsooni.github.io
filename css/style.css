@@ -541,52 +541,52 @@ nav .nav-r a {
     height: 28px;
 }
 
-#contact .scroll-container .pill-container .pill.anilist {
-    background-image: linear-gradient(to right, rgba(130, 168, 217, .24), rgba(0, 120, 203, .24));
-}
-
-#contact .scroll-container .pill-container .pill.anilist a {
-    color: #6fc4ff;
-}
-
 #contact .scroll-container .pill-container .pill.email {
-    background-image: linear-gradient(to right, rgba(177, 138, 82, .24), rgba(241, 232, 164, .24));
+    background-image: linear-gradient(to right, rgba(241, 232, 164, .24), rgba(177, 138, 82, .24));
 }
 
 #contact .scroll-container .pill-container .pill.email a {
     color: #fae575;
 }
 
-#contact .scroll-container .pill-container .pill.github {
-    background-image: linear-gradient(to right, rgba(128, 235, 235, .24), rgba(82, 131, 177, .24));
-}
-
-#contact .scroll-container .pill-container .pill.github a {
-    color: #75dafa;
-}
-
-#contact .scroll-container .pill-container .pill.instagram {
-    background-image: linear-gradient(to right, rgba(177, 82, 150, .24), rgba(207, 164, 241, .24));
-}
-
-#contact .scroll-container .pill-container .pill.instagram a {
-    color: #e775fa;
-}
-
 #contact .scroll-container .pill-container .pill.linkedin {
-    background-image: linear-gradient(to right, rgba(134, 169, 214, .24), rgba(52, 98, 158, .24));
+    background-image: linear-gradient(to right, rgba(52, 98, 158, .24), rgba(134, 169, 214, .24));
 }
 
 #contact .scroll-container .pill-container .pill.linkedin a {
     color: #3fcbf8;
 }
 
+#contact .scroll-container .pill-container .pill.instagram {
+    background-image: linear-gradient(to right, rgba(207, 164, 241, .24), rgba(177, 82, 150, .24));
+}
+
+#contact .scroll-container .pill-container .pill.instagram a {
+    color: #e775fa;
+}
+
+#contact .scroll-container .pill-container .pill.github {
+    background-image: linear-gradient(to right, rgba(82, 131, 177, .24), rgba(128, 235, 235, .24));
+}
+
+#contact .scroll-container .pill-container .pill.github a {
+    color: #75dafa;
+}
+
 #contact .scroll-container .pill-container .pill.spotify {
-    background-image: linear-gradient(to right, rgba(84, 177, 82, .24), rgba(164, 241, 199, .24));
+    background-image: linear-gradient(to right, rgba(164, 241, 199, .24), rgba(84, 177, 82, .24));
 }
 
 #contact .scroll-container .pill-container .pill.spotify a {
     color: #87fa75;
+}
+
+#contact .scroll-container .pill-container .pill.anilist {
+    background-image: linear-gradient(to right, rgba(0, 120, 203, .24), rgba(130, 168, 217, .24));
+}
+
+#contact .scroll-container .pill-container .pill.anilist a {
+    color: #6fc4ff;
 }
 
 #contact .t-container {

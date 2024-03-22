@@ -198,8 +198,8 @@
             cardContainer.addEventListener('scroll', function () {
                 const scrollLeft = cardContainer.scrollLeft;
                 const cardWidth = document.querySelector('.card').offsetWidth;
-                const marginBetweenItems = 35;
-                const currentIndex = Math.floor((scrollLeft + marginBetweenItems) / (cardWidth + marginBetweenItems));
+                const marginBetweenItems = parseInt(getComputedStyle(cardContainer).gap);
+                const currentIndex = Math.floor((scrollLeft + marginBetweenItems * 4) / (cardWidth + marginBetweenItems));
 
                 document.getElementById('button1').classList.remove('button-focus');
                 document.getElementById('button2').classList.remove('button-focus');
@@ -215,7 +215,7 @@
         function scrollToCard(index) {
             const cardContainer = document.querySelector('.card-container');
             const cardWidth = document.querySelector('.card').offsetWidth;
-            const marginBetweenItems = 35;
+            const marginBetweenItems = parseInt(getComputedStyle(cardContainer).gap);
 
             cardContainer.scrollTo({ left: index * (cardWidth + marginBetweenItems), behavior: 'smooth' });
         }
