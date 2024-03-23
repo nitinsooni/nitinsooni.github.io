@@ -355,7 +355,7 @@ nav .nav-r a {
     margin-right: 15vw;
 }
 
-#portfolio .table .table-l .scroll-container .card-container .card img {
+#portfolio .table .table-l .scroll-container .card-container .card > img {
     position: absolute;
     top: -1.5px;
     right: 0;
@@ -557,8 +557,16 @@ nav .nav-r a {
     color: #3fcbf8;
 }
 
+#contact .scroll-container .pill-container .pill.whatsapp {
+    background-image: linear-gradient(to right, rgba(164, 241, 199, .24), rgba(84, 177, 82, .24));
+}
+
+#contact .scroll-container .pill-container .pill.whatsapp a {
+    color: #87fa75;
+}
+
 #contact .scroll-container .pill-container .pill.instagram {
-    background-image: linear-gradient(to right, rgba(207, 164, 241, .24), rgba(177, 82, 150, .24));
+    background-image: linear-gradient(to right, rgba(177, 82, 150, .24), rgba(207, 164, 241, .24));
 }
 
 #contact .scroll-container .pill-container .pill.instagram a {
@@ -566,7 +574,7 @@ nav .nav-r a {
 }
 
 #contact .scroll-container .pill-container .pill.github {
-    background-image: linear-gradient(to right, rgba(82, 131, 177, .24), rgba(128, 235, 235, .24));
+    background-image: linear-gradient(to right, rgba(128, 235, 235, .24), rgba(82, 131, 177, .24));
 }
 
 #contact .scroll-container .pill-container .pill.github a {
@@ -574,15 +582,15 @@ nav .nav-r a {
 }
 
 #contact .scroll-container .pill-container .pill.spotify {
-    background-image: linear-gradient(to right, rgba(164, 241, 199, .24), rgba(84, 177, 82, .24));
+    background-image: linear-gradient(to right, rgba(78, 169, 76, .24), rgba(146, 238, 188, .24));
 }
 
 #contact .scroll-container .pill-container .pill.spotify a {
-    color: #87fa75;
+    color: #7eee6d;
 }
 
 #contact .scroll-container .pill-container .pill.anilist {
-    background-image: linear-gradient(to right, rgba(0, 120, 203, .24), rgba(130, 168, 217, .24));
+    background-image: linear-gradient(to right, rgba(130, 168, 217, .24), rgba(0, 120, 203, .24));
 }
 
 #contact .scroll-container .pill-container .pill.anilist a {
@@ -652,25 +660,22 @@ nav .nav-r a {
     width: 55%;
 }
 
-#contact .table .table-r .card-container {
+#contact .table .table-r .container {
     display: flex;
     justify-content: center;
     padding: 1.5rem 0;
 }
 
-#contact .table .table-r .card-container .card {
+#contact .table .table-r .container .card {
     width: 28rem;
     height: 30rem;
     background: #1f1f1f;
     border: 1px solid rgba(255, 255, 255, .12);
     border-radius: 25px;
     position: relative;
-    display: flex;
-    align-items:center;
-    justify-content: center;
 }
 
-#contact .table .table-r .card-container .card img {
+#contact .table .table-r .container .card > img {
     position: absolute;
     top: -1.5px;
     right: 0;
@@ -679,6 +684,47 @@ nav .nav-r a {
     pointer-events: none;
 }
 
-#contact .table .table-r .card-container .card p {
-    color: #fae575;
+#contact .table .table-r .container .card .content i {
+    padding-right: .5rem;
+}
+
+#contact .table .table-r .container .card .content .block-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1.5rem;
+}
+
+#contact .table .table-r .container .card .content .block-top img {
+    border: 2px solid #b18a52;
+    border-radius: 100%;
+}
+
+#contact .table .table-r .container .card .content .block-top .text {
+    text-align: right;
+}
+
+#contact .table .table-r .container .card .content .block-top .text h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .8);
+}
+
+#contact .table .table-r .container .card .content .block-top .text p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .8);
+}
+
+#contact .table .table-r .container .card .content .block-bottom {
+    text-align: left;
+    padding: 0 2rem;
+}
+
+#contact .table .table-r .container .card .content .block-bottom p {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 2.2;
+    color: rgba(255, 255, 255, .8);
 }
