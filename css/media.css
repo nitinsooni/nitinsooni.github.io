@@ -167,6 +167,11 @@
         font-size: 1rem;
     }
 
+    #portfolio .table .table-r i {
+        font-size: 2.7rem;
+        padding-bottom: 1.2rem;
+    }
+
     #portfolio .table .table-r h3 {
         font-size: 2rem;
     }
@@ -209,6 +214,11 @@
     #contact .scroll-container .pill-container .pill a img {
         width: 24px;
         height: 24px;
+    }
+
+    #contact .table .table-l i {
+        font-size: 2.5rem;
+        padding-bottom: 1.2rem;
     }
 
     #contact .table .table-l h3 {

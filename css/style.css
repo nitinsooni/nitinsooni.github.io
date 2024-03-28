@@ -407,7 +407,15 @@ nav .nav-r a {
 #portfolio .table .table-r {
     width: 45%;
     text-align: left;
-    padding-top: 3.5rem;
+    padding-top: 1.5rem;
+}
+
+#portfolio .table .table-r i {
+    font-size: 3rem;
+    padding-bottom: 1.5rem;
+    background: -webkit-linear-gradient(0deg, #b18a52, #f1e8a4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #portfolio .table .table-r h3 {
@@ -418,10 +426,9 @@ nav .nav-r a {
 }
 
 #portfolio .table .table-r h3 .gradient-text {
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to right, #b18a52, #f1e8a4);
+    background: -webkit-linear-gradient(0deg, #b18a52, #f1e8a4);
     -webkit-background-clip: text;
-    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #portfolio .table .table-r p {
@@ -627,7 +634,15 @@ nav .nav-r a {
 #contact .table .table-l {
     width: 45%;
     text-align: left;
-    padding-top: 3.5rem;
+    padding-top: 1.5rem;
+}
+
+#contact .table .table-l i {
+    font-size: 2.7rem;
+    padding-bottom: 1.5rem;
+    background: -webkit-linear-gradient(0deg, #b18a52, #f1e8a4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #contact .table .table-l h3 {
@@ -638,10 +653,9 @@ nav .nav-r a {
 }
 
 #contact .table .table-l h3 .gradient-text {
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to right, #b18a52, #f1e8a4);
+    background: -webkit-linear-gradient(0deg, #b18a52, #f1e8a4);
     -webkit-background-clip: text;
-    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #contact .table .table-l p {
