@@ -12,6 +12,21 @@ body {
     font-family: 'Inter', sans-serif;
     background: black;
     color: white;
+    cursor: url('/assets/images/pointer.png'), auto;
+}
+
+a:hover,
+a:active {
+    cursor: url('/assets/images/link.png'), pointer;
+}
+
+input, textarea {
+    cursor: url('/assets/images/text.png'), text;
+}
+
+::selection {
+    color: black;
+    background-color: #fae575;
 }
 
 /*----------------------------------------------------*/
@@ -221,7 +236,7 @@ nav .nav-r a {
     border: none;
     position: absolute;
     transition: all .4s ease;
-    cursor: pointer;
+    cursor: url('/assets/images/link.png'), pointer;
 }
 
 /*----------------------------------------------------*/
@@ -286,10 +301,10 @@ nav .nav-r a {
     color: #fff;
     background: transparent;
     border: none;
-    padding: .25rem;
-    cursor: pointer;
-    letter-spacing: .025rem;
     border-bottom: 1.5px solid black;
+    padding: .25rem;
+    letter-spacing: .025rem;
+    cursor: url('/assets/images/link.png'), pointer;
 }
 
 #portfolio .table .table-l .nav-buttons .button-focus {
@@ -343,6 +358,7 @@ nav .nav-r a {
     background: #1f1f1f;
     border: 1px solid rgba(255, 255, 255, .12);
     border-radius: 25px;
+    box-shadow: rgb(24, 26, 27) 3px -3px 10px 0px inset;
     z-index: -1;
     scroll-snap-align: center;
 }
@@ -672,6 +688,7 @@ nav .nav-r a {
     background: #1f1f1f;
     border: 1px solid rgba(255, 255, 255, .12);
     border-radius: 25px;
+    box-shadow: rgb(24, 26, 27) 3px -3px 10px 0px inset;
     position: relative;
 }
 
