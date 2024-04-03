@@ -1,0 +1,81 @@
+// 1st nav button of portfolio card container gets in focus on site load
+window.onload = function(){
+    document.getElementById('button1').classList.add('button-focus');
+}
+
+
+// Show the scroll-to-top button when user scrolls down 20px
+let btnTop = document.getElementById('scroll-to-top');
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    btnTop.style.display = 'block';
+  } else {
+    btnTop.style.display = 'none';
+  }
+}
+
+// Scroll to the top of document when the user clicks scroll-to-top button
+function topFunction() {
+  document.body.scrollTop = 0; // for safari
+  document.documentElement.scrollTop = 0; // for chrome, firefox, ie and opera
+}
+
+
+// Portfolio card button gets in focus with scroll
+document.addEventListener('DOMContentLoaded', function () {
+    const cardContainer = document.querySelector('.card-container');
+    const buttons = document.querySelectorAll('.button');
+
+    cardContainer.addEventListener('scroll', function () {
+        const scrollLeft = cardContainer.scrollLeft;
+        const cardWidth = document.querySelector('.card').offsetWidth;
+        const marginBetweenItems = parseInt(getComputedStyle(cardContainer).gap);
+        const currentIndex = Math.floor((scrollLeft + marginBetweenItems * 4) / (cardWidth + marginBetweenItems));
+
+        document.getElementById('button1').classList.remove('button-focus');
+        document.getElementById('button2').classList.remove('button-focus');
+        document.getElementById('button3').classList.remove('button-focus');
+
+        if (buttons[currentIndex]) {
+            buttons[currentIndex].classList.add('button-focus');
+        }
+    });
+});
+
+// Click nav button to scroll cards
+function scrollToCard(index) {
+    const cardContainer = document.querySelector('.card-container');
+    const cardWidth = document.querySelector('.card').offsetWidth;
+    const marginBetweenItems = parseInt(getComputedStyle(cardContainer).gap);
+
+    cardContainer.scrollTo({ left: index * (cardWidth + marginBetweenItems), behavior: 'smooth' });
+}
+
+// Transfer social link scroll-container under table-r if screen width < 800
+const scrollContainer = document.getElementById('contact-scroll-container');
+const tableR = document.getElementById('contact-table-r');
+
+function moveScrollContainer() {
+    tableR.insertBefore(scrollContainer, tableR.firstChild);
+}
+
+if (window.innerWidth < 800) {
+    moveScrollContainer();
+}
+
+
+// Only activate bounce animation in social link scroll-container when scroll is on 0th position
+const pills = document.querySelectorAll('.pill');
+document.getElementById('contact-pill-container').addEventListener('scroll', function() {
+    if (this.scrollLeft === 0) {
+        pills.forEach(function(pill) {
+            pill.style.animation = 'bounce 2s infinite';
+        });
+    } else {
+        pills.forEach(function(pill) {
+            pill.style.animation = 'none';
+        });
+    }
+});

@@ -239,6 +239,22 @@ nav .nav-r a {
     cursor: url('/assets/images/link.png'), pointer;
 }
 
+#home #scroll-to-top {
+    z-index: 999;
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 2.5rem;
+    font-size: 1.25rem;
+    color: #fae575;
+    background: rgba(0, 0, 0, 0);
+    padding: .7rem .85rem;
+    border: 1px solid rgba(255, 255, 255, .24);
+    border-radius: 12px;
+    cursor: pointer;
+    backdrop-filter: blur(24px);
+}
+
 /*----------------------------------------------------*/
 
 #portfolio {

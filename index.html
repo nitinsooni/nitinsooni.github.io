@@ -56,6 +56,7 @@
                     </form>
                 </div>
             </div>
+            <button onclick="topFunction()" id="scroll-to-top"><i class="fa-solid fa-angle-up"></i></button>
         </section>
         <section id="portfolio">
             <img src="/assets/images/blur-circle.webp" class="blur-circle"/>
@@ -204,67 +205,6 @@
             </div>
         </section>
     </main>
-    <script>
-        // 1st nav button gets in focus on site load
-        window.onload = function(){
-            document.getElementById('button1').classList.add('button-focus');
-        }
-
-        // Button get in focus with scroll
-        document.addEventListener('DOMContentLoaded', function () {
-            const cardContainer = document.querySelector('.card-container');
-            const buttons = document.querySelectorAll('.button');
-
-            cardContainer.addEventListener('scroll', function () {
-                const scrollLeft = cardContainer.scrollLeft;
-                const cardWidth = document.querySelector('.card').offsetWidth;
-                const marginBetweenItems = parseInt(getComputedStyle(cardContainer).gap);
-                const currentIndex = Math.floor((scrollLeft + marginBetweenItems * 4) / (cardWidth + marginBetweenItems));
-
-                document.getElementById('button1').classList.remove('button-focus');
-                document.getElementById('button2').classList.remove('button-focus');
-                document.getElementById('button3').classList.remove('button-focus');
-
-                if (buttons[currentIndex]) {
-                    buttons[currentIndex].classList.add('button-focus');
-                }
-            });
-        });
-
-        // Click nav button to scroll card
-        function scrollToCard(index) {
-            const cardContainer = document.querySelector('.card-container');
-            const cardWidth = document.querySelector('.card').offsetWidth;
-            const marginBetweenItems = parseInt(getComputedStyle(cardContainer).gap);
-
-            cardContainer.scrollTo({ left: index * (cardWidth + marginBetweenItems), behavior: 'smooth' });
-        }
-
-        // Transfer scroll-container under table-r if screen width < 800
-        const scrollContainer = document.getElementById('contact-scroll-container');
-        const tableR = document.getElementById('contact-table-r');
-
-        function moveScrollContainer() {
-            tableR.insertBefore(scrollContainer, tableR.firstChild);
-        }
-
-        if (window.innerWidth < 800) {
-            moveScrollContainer();
-        }
-
-        // Only activate bounce animation when scroll is on 0 position
-        const pills = document.querySelectorAll('.pill');
-        document.getElementById('contact-pill-container').addEventListener('scroll', function() {
-            if (this.scrollLeft === 0) {
-                pills.forEach(function(pill) {
-                    pill.style.animation = 'bounce 2s infinite';
-                });
-            } else {
-                pills.forEach(function(pill) {
-                    pill.style.animation = 'none';
-                });
-            }
-        });
-    </script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
