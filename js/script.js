@@ -1,7 +1,24 @@
-// 1st nav button of portfolio card container gets in focus on site load
-window.onload = function(){
-    document.getElementById('button1').classList.add('button-focus');
-}
+// Navbar links gets in focus according to which section is in view
+window.addEventListener('scroll', function () {
+    const sections = document.querySelectorAll('.section');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    let current = '';
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop - sectionHeight / 3) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').substring(1) === current) {
+            link.classList.add('active');
+        }
+    });
+});
 
 
 // Show the scroll-to-top button when user scrolls down 20px
@@ -22,6 +39,11 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // for chrome, firefox, ie and opera
 }
 
+
+// 1st nav button of portfolio card container gets in focus on site load
+window.onload = function(){
+    document.getElementById('button1').classList.add('button-focus');
+}
 
 // Portfolio card button gets in focus with scroll
 document.addEventListener('DOMContentLoaded', function () {

@@ -24,6 +24,10 @@ input, textarea {
     cursor: url('/assets/images/text.png'), text;
 }
 
+button {
+    cursor: url('/assets/images/link.png'), pointer;
+}
+
 ::selection {
     color: black;
     background-color: #fae575;
@@ -70,6 +74,10 @@ nav .nav-l ul .nav-links a {
     padding: 8px 16px;
     text-decoration: none;
     transition: color .3s;
+}
+
+nav .nav-l ul .nav-links a.active {
+    color: #fae575;
 }
 
 nav .nav-r {
@@ -251,7 +259,6 @@ nav .nav-r a {
     padding: .7rem .85rem;
     border: 1px solid rgba(255, 255, 255, .24);
     border-radius: 12px;
-    cursor: pointer;
     backdrop-filter: blur(24px);
 }
 
@@ -320,7 +327,6 @@ nav .nav-r a {
     border-bottom: 1.5px solid black;
     padding: .25rem;
     letter-spacing: .025rem;
-    cursor: url('/assets/images/link.png'), pointer;
 }
 
 #portfolio .table .table-l .nav-buttons .button-focus {
