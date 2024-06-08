@@ -834,14 +834,42 @@ nav .nav-r a {
     color: rgba(255, 255, 255, .8);
 }
 
+#contact .table .table-r .container .card .content .block-top .text a {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .8);
+    text-decoration: none;
+}
+
 #contact .table .table-r .container .card .content .block-bottom {
     text-align: left;
     padding: 0 2rem;
 }
 
+#contact .table .table-r .container .card .content .block-bottom a {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 2;
+    color: rgba(255, 255, 255, .8);
+    text-decoration: none;
+}
+
 #contact .table .table-r .container .card .content .block-bottom p {
     font-size: 1rem;
     font-weight: 300;
-    line-height: 2.2;
+    line-height: 1.375;
     color: rgba(255, 255, 255, .8);
+}
+
+#contact .table .table-r .container .card .content .block-bottom .social-block {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem .5rem;
+}
+
+#contact .table .table-r .container .card .content .block-bottom .social-block a {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, .8);
+    padding: .75rem;
 }

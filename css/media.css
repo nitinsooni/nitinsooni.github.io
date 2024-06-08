@@ -348,9 +348,26 @@
         font-weight: 300;
     }
 
+    #contact .table .table-r .container .card .content .block-top .text a {
+        font-size: 0.9rem;
+        font-weight: 300;
+    }
+
+    #contact .table .table-r .container .card .content .block-bottom a {
+        font-size: 0.8rem;
+    }
+
     #contact .table .table-r .container .card .content .block-bottom p {
         font-size: 0.8rem;
-        font-weight: 300;
+    }
+
+    #contact .table .table-r .container .card .content .block-bottom .social-block {
+        padding: 1.5rem 0;
+    }
+
+    #contact .table .table-r .container .card .content .block-bottom .social-block a {
+        font-size: 1.1rem;
+        padding: .5rem;
     }
 }
 
@@ -388,5 +405,13 @@
     #contact .table .table-l .button-container a:hover {
         font-size: 16.9px;
         padding: .82rem 1.55rem;
+    }
+
+    #contact .table .table-r .container .card .content .block-top .text a:hover {
+        text-decoration: underline;
+    }
+
+    #contact .table .table-r .container .card .content .block-bottom a:hover {
+        text-decoration: underline;
     }
 }
