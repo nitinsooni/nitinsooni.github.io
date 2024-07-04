@@ -1,64 +1,64 @@
 @font-face {
     font-family: 'Inter';
-    font-style: normal;
-    font-weight: 100;
     src: url('/assets/fonts/Inter/Inter-Thin.woff2') format('woff2'), url('/assets/fonts/Inter/Inter-Thin.woff') format('woff');
+    font-weight: 100;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Inter';
-    font-style: normal;
-    font-weight: 200;
     src: url('/assets/fonts/Inter/Inter-ExtraLight.woff2') format('woff2'), url('/assets/fonts/Inter/Inter-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300;
     src: url('/assets/fonts/Inter/Inter-Light.woff2') format('woff2'), url('/assets/fonts/Inter/Inter-Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
     src: url('/assets/fonts/Inter/Inter-Regular.woff2') format('woff2'), url('/assets/fonts/Inter/Inter-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
     src: url('/assets/fonts/Inter/Inter-Medium.woff2') format('woff2'), url('/assets/fonts/Inter/Inter-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
     src: url('/assets/fonts/Inter/Inter-SemiBold.woff2') format('woff2'), url('/assets/fonts/Inter/Inter-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
     src: url('/assets/fonts/Inter/Inter-Bold.woff2') format('woff2'), url('/assets/fonts/Inter/Inter-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Inter';
-    font-style: normal;
-    font-weight: 800;
     src: url('/assets/fonts/Inter/Inter-ExtraBold.woff2') format('woff2'), url('/assets/fonts/Inter/Inter-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Inter';
-    font-style: normal;
-    font-weight: 900;
     src: url('/assets/fonts/Inter/Inter-Black.woff2') format('woff2'), url('/assets/fonts/Inter/Inter-Black.woff') format('woff');
+    font-weight: 900;
+    font-display: swap;
 }
 
 * {
@@ -783,8 +783,8 @@ nav .nav-r a {
 }
 
 #contact .table .table-r .container .card {
-    width: 28rem;
-    height: 30rem;
+    width: 26rem;
+    height: 32rem;
     background: #1f1f1f;
     border: 1px solid rgba(255, 255, 255, .12);
     border-radius: 25px;
@@ -796,7 +796,7 @@ nav .nav-r a {
     position: absolute;
     top: -1.5px;
     right: 0;
-    left: 160px;
+    left: 128px;
     bottom: 0;
     pointer-events: none;
 }
@@ -809,7 +809,7 @@ nav .nav-r a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 1.8rem;
+    padding: 2.2rem 1.8rem;
 }
 
 #contact .table .table-r .container .card .content .block-top img {
@@ -864,7 +864,7 @@ nav .nav-r a {
 #contact .table .table-r .container .card .content .block-bottom .social-block {
     display: flex;
     justify-content: space-around;
-    padding: 1rem .5rem;
+    padding: 1.2rem .5rem;
 }
 
 #contact .table .table-r .container .card .content .block-bottom .social-block a {
