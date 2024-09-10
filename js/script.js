@@ -75,6 +75,7 @@ function scrollToCard(index) {
     cardContainer.scrollTo({ left: index * (cardWidth + marginBetweenItems), behavior: 'smooth' });
 }
 
+/*
 // Transfer social link scroll-container under table-r if screen width < 800
 const scrollContainer = document.getElementById('contact-scroll-container');
 const tableR = document.getElementById('contact-table-r');
@@ -101,3 +102,4 @@ document.getElementById('contact-pill-container').addEventListener('scroll', fun
         });
     }
 });
+*/

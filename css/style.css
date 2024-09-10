@@ -363,6 +363,7 @@ nav .nav-r a {
 #portfolio .t-container {
     display: flex;
     justify-content: center;
+    margin-bottom: 2.5rem;
 }
 
 #portfolio .table {
@@ -548,6 +549,7 @@ nav .nav-r a {
 
 /*----------------------------------------------------*/
 
+/*
 #contact {
     width: 100%;
     text-align: center;
@@ -874,3 +876,4 @@ nav .nav-r a {
     color: rgba(255, 255, 255, .8);
     padding: .75rem;
 }
+*/
