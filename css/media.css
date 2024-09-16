@@ -39,23 +39,15 @@
 
     /*----------------------------------------------------*/
 
+    #contact .t-container {
+        padding: 0;
+    }
+
     #contact .table {
         width: 100%;
         align-items: center;
         flex-direction: column;
         row-gap: 2rem;
-    }
-
-    #contact .scroll-container .fade-overlay {
-        display: block;
-    }
-
-    #contact .scroll-container .pill-container {
-        justify-content: flex-start;
-    }
-
-    #contact .scroll-container .pill-container .pill {
-        animation: bounce 2s infinite;
     }
 
     #contact .table .table-l {
@@ -208,20 +200,6 @@
         font-size: 3rem;
     }
 
-    #contact .scroll-container .pill-container .pill {
-        border-radius: 10px;
-    }
-
-    #contact .scroll-container .pill-container .pill a {
-        font-size: 1rem;
-        padding: 8px 12px;
-    }
-
-    #contact .scroll-container .pill-container .pill a img {
-        width: 24px;
-        height: 24px;
-    }
-
     #contact .table .table-l i {
         font-size: 2.5rem;
         padding-bottom: 1.2rem;
@@ -244,7 +222,8 @@
     }
 
     #contact .table .table-r .container {
-        padding: 2rem 0;
+        padding-top: 1.5rem;
+        padding-bottom: 2.5rem;
     }
 }
 
@@ -315,12 +294,12 @@
     }
 
     #contact .table .table-r .container .card {
-        width: 20rem;
+        width: 19rem;
         height: 30rem;
     }
 
     #contact .table .table-r .container .card > img {
-        left: 31.8px;
+        left: 15.8px; /*31.8 for 20rem width*/
     }
 
     #contact .table .table-r .container .card .content .block-top {
@@ -359,6 +338,7 @@
 
     #contact .table .table-r .container .card .content .block-bottom p {
         font-size: 0.8rem;
+        padding-top: 1.5rem;
     }
 
     #contact .table .table-r .container .card .content .block-bottom .social-block {
@@ -367,7 +347,7 @@
 
     #contact .table .table-r .container .card .content .block-bottom .social-block a {
         font-size: 1.1rem;
-        padding: .5rem;
+        padding: .25rem .5rem;
     }
 }
 

@@ -74,32 +74,3 @@ function scrollToCard(index) {
 
     cardContainer.scrollTo({ left: index * (cardWidth + marginBetweenItems), behavior: 'smooth' });
 }
-
-/*
-// Transfer social link scroll-container under table-r if screen width < 800
-const scrollContainer = document.getElementById('contact-scroll-container');
-const tableR = document.getElementById('contact-table-r');
-
-function moveScrollContainer() {
-    tableR.insertBefore(scrollContainer, tableR.firstChild);
-}
-
-if (window.innerWidth < 800) {
-    moveScrollContainer();
-}
-
-
-// Only activate bounce animation in social link scroll-container when scroll is on 0th position
-const pills = document.querySelectorAll('.pill');
-document.getElementById('contact-pill-container').addEventListener('scroll', function() {
-    if (this.scrollLeft === 0) {
-        pills.forEach(function(pill) {
-            pill.style.animation = 'bounce 2s infinite';
-        });
-    } else {
-        pills.forEach(function(pill) {
-            pill.style.animation = 'none';
-        });
-    }
-});
-*/
