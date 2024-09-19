@@ -224,6 +224,7 @@ nav .nav-r a {
 #home .title img, #home .title svg {
     width: 530px;
 }
+
 #home .title svg {
     position: absolute;
     top: 10rem;
@@ -423,7 +424,7 @@ nav .nav-r a {
 #portfolio .table .table-l .scroll-container .card-container {
     display: grid;
     grid-auto-flow: column;
-    scroll-behavior: auto;
+    scroll-behavior: smooth;
     gap: 2.5rem;
     overflow-y: auto;
     overscroll-behavior-x: contain;
@@ -436,7 +437,7 @@ nav .nav-r a {
 }
 
 #portfolio .table .table-l .scroll-container .card-container .card {
-    width: 26rem;
+    width: 24rem;
     height: 32rem;
     padding-left: 2rem;
     padding-right: 1rem;
@@ -460,9 +461,9 @@ nav .nav-r a {
 
 #portfolio .table .table-l .scroll-container .card-container .card > img {
     position: absolute;
-    top: -1.5px;
+    top: -1.25px;
     right: 0;
-    left: 128px;
+    left: 95px;
     bottom: 0;
     pointer-events: none;
 }
@@ -657,70 +658,70 @@ nav .nav-r a {
 }
 
 #contact .table .table-r .container .card {
-    width: 26rem;
+    width: 25rem;
     height: 32rem;
     background: #1f1f1f;
     border: 1px solid rgba(255, 255, 255, .12);
     border-radius: 25px;
     box-shadow: rgb(24, 26, 27) 3px -3px 10px 0px inset;
-    position: relative;
+    transition: linear .25s;
 }
 
 #contact .table .table-r .container .card > img {
     position: absolute;
-    top: -1.5px;
+    top: -1.4px;
     right: 0;
-    left: 128px;
+    left: 112px;
     bottom: 0;
     pointer-events: none;
 }
 
-#contact .table .table-r .container .card .content i {
+#contact .table .table-r .container .card.one .content i {
     padding-right: .5rem;
 }
 
-#contact .table .table-r .container .card .content .block-top {
+#contact .table .table-r .container .card.one .content .block-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 2.2rem 1.8rem;
 }
 
-#contact .table .table-r .container .card .content .block-top img {
+#contact .table .table-r .container .card.one .content .block-top img {
     border: 2px solid #b18a52;
     border-radius: 100%;
 }
 
-#contact .table .table-r .container .card .content .block-top .text {
+#contact .table .table-r .container .card.one .content .block-top .text {
     text-align: right;
 }
 
-#contact .table .table-r .container .card .content .block-top .text h3 {
+#contact .table .table-r .container .card.one .content .block-top .text h3 {
     font-size: 1.1rem;
     font-weight: 500;
     line-height: 1.5;
     color: rgba(255, 255, 255, .8);
 }
 
-#contact .table .table-r .container .card .content .block-top .text p {
+#contact .table .table-r .container .card.one .content .block-top .text p {
     font-size: 1rem;
     line-height: 1.5;
     color: rgba(255, 255, 255, .8);
 }
 
-#contact .table .table-r .container .card .content .block-top .text a {
+#contact .table .table-r .container .card.one .content .block-top .text a {
     font-size: 1rem;
     line-height: 1.5;
     color: rgba(255, 255, 255, .8);
     text-decoration: none;
 }
 
-#contact .table .table-r .container .card .content .block-bottom {
+#contact .table .table-r .container .card.one .content .block-bottom {
     text-align: left;
     padding: 0 2rem;
 }
 
-#contact .table .table-r .container .card .content .block-bottom a {
+#contact .table .table-r .container .card.one .content .block-bottom a {
     font-size: 1rem;
     font-weight: 300;
     line-height: 2;
@@ -728,7 +729,7 @@ nav .nav-r a {
     text-decoration: none;
 }
 
-#contact .table .table-r .container .card .content .block-bottom p {
+#contact .table .table-r .container .card.one .content .block-bottom p {
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.375;
@@ -736,15 +737,37 @@ nav .nav-r a {
     padding-top: 2rem;
 }
 
-#contact .table .table-r .container .card .content .block-bottom .social-block {
+#contact .table .table-r .container .card.one .content .block-bottom .social-block {
     display: flex;
     justify-content: space-around;
     padding: 1.2rem .5rem;
 }
 
-#contact .table .table-r .container .card .content .block-bottom .social-block a {
+#contact .table .table-r .container .card.one .content .block-bottom .social-block a {
     font-size: 1.25rem;
     font-weight: 300;
     color: rgba(255, 255, 255, .8);
     padding: .75rem;
+}
+
+#contact .table .table-r .container .card.two p {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, .8);
+    padding: 1.5rem 2rem;
+}
+
+#contact .table .table-r .container .card.front {
+    box-shadow: rgb(12, 12, 12) -6px -6px 20px 0px;
+    z-index: 2;
+    position: relative;
+}
+
+#contact .table .table-r .container .card:not(.front) {
+    transform: rotate(-4deg) translateX(-4px) translateY(-8px);
+    transform-origin: bottom left;
+    opacity: .6;
+    z-index: 1;
+    position: absolute;
 }

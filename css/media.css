@@ -265,20 +265,20 @@
         left: 15.8px;
     }
 
-    #portfolio .table .table-l .scroll-container .card-container .card .content .heading{
+    #portfolio .table .table-l .scroll-container .card-container .card .content .heading {
         font-size: 1rem;
         margin-top: 1.75rem;
         margin-bottom: .25rem;
     }
 
-    #portfolio .table .table-l .scroll-container .card-container .card .content .sub-heading{
+    #portfolio .table .table-l .scroll-container .card-container .card .content .sub-heading {
         font-size: .9rem;
         margin-bottom: .35rem;
         margin-left: 1.5rem;
     }
 
-    #portfolio .table .table-l .scroll-container .card-container .card .content .text{
-        font-size: .75rem;
+    #portfolio .table .table-l .scroll-container .card-container .card .content .text {
+        font-size: .8rem;
         margin-top: .25rem;
         margin-left: 2.75rem;
     }
@@ -302,52 +302,60 @@
         left: 15.8px; /*31.8 for 20rem width*/
     }
 
-    #contact .table .table-r .container .card .content .block-top {
+    #contact .table .table-r .container .card.one .content .block-top {
         flex-direction: column;
         justify-content: center;
         padding: 1.8rem;
         gap: 1.5rem;
     }
 
-    #contact .table .table-r .container .card .content .block-top img {
+    #contact .table .table-r .container .card.one .content .block-top img {
         width: 90px;
     }
 
-    #contact .table .table-r .container .card .content .block-top .text {
+    #contact .table .table-r .container .card.one .content .block-top .text {
         text-align: center;
     }
 
-    #contact .table .table-r .container .card .content .block-top .text h3 {
+    #contact .table .table-r .container .card.one .content .block-top .text h3 {
         font-size: 1rem;
         font-weight: 500;
     }
 
-    #contact .table .table-r .container .card .content .block-top .text p {
+    #contact .table .table-r .container .card.one .content .block-top .text p {
         font-size: 0.9rem;
         font-weight: 300;
     }
 
-    #contact .table .table-r .container .card .content .block-top .text a {
+    #contact .table .table-r .container .card.one .content .block-top .text a {
         font-size: 0.9rem;
         font-weight: 300;
     }
 
-    #contact .table .table-r .container .card .content .block-bottom a {
+    #contact .table .table-r .container .card.one .content .block-bottom a {
         font-size: 0.8rem;
     }
 
-    #contact .table .table-r .container .card .content .block-bottom p {
+    #contact .table .table-r .container .card.one .content .block-bottom p {
         font-size: 0.8rem;
         padding-top: 1.5rem;
     }
 
-    #contact .table .table-r .container .card .content .block-bottom .social-block {
+    #contact .table .table-r .container .card.one .content .block-bottom .social-block {
         padding: 1.5rem 0;
     }
 
-    #contact .table .table-r .container .card .content .block-bottom .social-block a {
+    #contact .table .table-r .container .card.one .content .block-bottom .social-block a {
         font-size: 1.1rem;
         padding: .25rem .5rem;
+    }
+
+    #contact .table .table-r .container .card.two p {
+        font-size: 0.8rem;
+    }
+
+    #contact .table .table-r .container .card:not(.front) {
+        transform: rotate(-3deg) translateX(-3px) translateY(-6px);
     }
 }
 
@@ -402,12 +410,16 @@
         padding: .82rem 1.55rem;
     }
 
-    #contact .table .table-r .container .card .content .block-top .text a:hover {
+    #contact .table .table-r .container .card.one .content .block-top .text a:hover {
         text-decoration: underline;
     }
 
-    #contact .table .table-r .container .card .content .block-bottom a:hover {
+    #contact .table .table-r .container .card.one .content .block-bottom a:hover {
         text-decoration: underline;
+    }
+
+    #contact .table .table-r .container .card:not(.front):hover {
+        cursor: pointer;
     }
 }
 

@@ -26,17 +26,17 @@ let btnTop = document.getElementById('scroll-to-top');
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-    btnTop.style.display = 'block';
-  } else {
-    btnTop.style.display = 'none';
-  }
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        btnTop.style.display = 'block';
+    } else {
+        btnTop.style.display = 'none';
+    }
 }
 
 // Scroll to the top of document when the user clicks scroll-to-top button
 function topFunction() {
-  document.body.scrollTop = 0; // for safari
-  document.documentElement.scrollTop = 0; // for chrome, firefox, ie and opera
+    document.body.scrollTop = 0; // for safari
+    document.documentElement.scrollTop = 0; // for chrome, firefox, ie and opera
 }
 
 
@@ -72,5 +72,24 @@ function scrollToCard(index) {
     const cardWidth = document.querySelector('.card').offsetWidth;
     const marginBetweenItems = parseInt(getComputedStyle(cardContainer).gap);
 
-    cardContainer.scrollTo({ left: index * (cardWidth + marginBetweenItems), behavior: 'smooth' });
+    cardContainer.scrollTo({ left: index * (cardWidth + marginBetweenItems) });
 }
+
+
+// Swap cards when user click non-front card
+const one = document.querySelector('.one');
+const two = document.querySelector('.two');
+
+one.addEventListener('click', function() {
+    if (!this.classList.contains('front')) {
+        this.classList.add('front');
+        two.classList.remove('front');
+    }
+});
+
+two.addEventListener('click', function() {
+    if (!this.classList.contains('front')) {
+        this.classList.add('front');
+        one.classList.remove('front');
+    }
+});
