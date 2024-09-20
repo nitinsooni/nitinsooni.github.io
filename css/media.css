@@ -240,7 +240,7 @@
     }
 
     #portfolio .table .table-l .nav-buttons .button-focus {
-        border-bottom: 1.2px solid #fae575;
+        border-bottom: 1.2px solid var(--gold);
     }
 
     #portfolio .table .table-l .scroll-container .card-container {
@@ -319,7 +319,7 @@
 
     #contact .table .table-r .container .card.one .content .block-top .text h3 {
         font-size: 1rem;
-        font-weight: 500;
+        line-height: 1.5rem;
     }
 
     #contact .table .table-r .container .card.one .content .block-top .text p {
@@ -342,7 +342,7 @@
     }
 
     #contact .table .table-r .container .card.one .content .block-bottom .social-block {
-        padding: 1.5rem 0;
+        padding: 2.2rem 0;
     }
 
     #contact .table .table-r .container .card.one .content .block-bottom .social-block a {
@@ -376,7 +376,7 @@
 
 @media only screen and (min-width: 1100px) {
     nav .nav-l ul .nav-links a:hover {
-        color: #fae575;
+        color: var(--gold);
     }
 
     nav .nav-r a:hover {
@@ -419,7 +419,7 @@
     }
 
     #contact .table .table-r .container .card:not(.front):hover {
-        cursor: pointer;
+        cursor: url('/assets/images/link.png'), pointer;
     }
 }
 

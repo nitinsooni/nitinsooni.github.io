@@ -1,3 +1,8 @@
+:root {
+    --gold: #fae575;
+    --text: rgba(255, 255, 255, .8);
+}
+
 @font-face {
     font-family: 'Inter';
     src: url('/assets/fonts/Inter/Inter-Thin.woff2') format('woff2'), url('/assets/fonts/Inter/Inter-Thin.woff') format('woff');
@@ -94,7 +99,17 @@ button {
 
 ::selection {
     color: black;
-    background-color: #fae575;
+    background-color: var(--gold);
+}
+
+.gold-text {
+    color: var(--gold);
+}
+
+.gold-gradient-text {
+    background: -webkit-linear-gradient(0deg, #b18a52, #f1e8a4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /*----------------------------------------------------*/
@@ -141,7 +156,7 @@ nav .nav-l ul .nav-links a {
 }
 
 nav .nav-l ul .nav-links a.active {
-    color: #fae575;
+    color: var(--gold);
 }
 
 nav .nav-r {
@@ -153,7 +168,7 @@ nav .nav-r {
 nav .nav-r a {
     font-size: 1rem;
     font-weight: 500;
-    color: #fae575;
+    color: var(--gold);
     background: rgba(0, 0, 0, 0);
     padding: .75rem 1.5rem;
     border: 1px solid rgba(255, 255, 255, .24);
@@ -196,7 +211,7 @@ nav .nav-r a {
 #home .light-wrapper .lights-holder .light {
     width: 180px;
     height: 1000px;
-    background-image: linear-gradient(to bottom, #fae575 5%, rgba(255, 255, 255, 0) 68%);
+    background-image: linear-gradient(to bottom, var(--gold) 5%, rgba(255, 255, 255, 0) 68%);
     opacity: .4;
     filter: blur(18px);
 }
@@ -234,7 +249,7 @@ nav .nav-r a {
 }
 
 #home .title svg path {
-    stroke: #fae575;
+    stroke: var(--gold);
     stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -268,7 +283,7 @@ nav .nav-r a {
     align-items: center;
     justify-content: center;
     height: 4rem;
-    padding-top: 6rem;
+    padding-top: 7rem;
     padding-bottom: 9rem;
 }
 
@@ -295,14 +310,14 @@ nav .nav-r a {
 
 #home .contact-box .contact-bar form .text-field:focus {
     outline: none;
-    border-color: #fae575 !important;
+    border-color: var(--gold) !important;
 }
 
 #home .contact-box .contact-bar form .submit {
     color: black;
     font-size: 1rem;
     font-weight: 500;
-    background-color: #fae575;
+    background-color: var(--gold);
     padding: .9rem 1.5rem;
     margin-right: 3px;
     border-radius: 12px;
@@ -319,7 +334,7 @@ nav .nav-r a {
     bottom: 2rem;
     right: 2.5rem;
     font-size: 1.25rem;
-    color: #fae575;
+    color: var(--gold);
     background: rgba(0, 0, 0, 0);
     padding: .7rem .85rem;
     border: 1px solid rgba(255, 255, 255, .24);
@@ -387,7 +402,7 @@ nav .nav-r a {
 #portfolio .table .table-l .nav-buttons .button {
     font-size: 1.1rem;
     font-weight: 500;
-    color: #fff;
+    color: white;
     background: transparent;
     border: none;
     border-bottom: 1.5px solid black;
@@ -396,7 +411,7 @@ nav .nav-r a {
 }
 
 #portfolio .table .table-l .nav-buttons .button-focus {
-    border-bottom: 1.5px solid #fae575;
+    border-bottom: 1.5px solid var(--gold);
     transition: border .2s ease;
 }
 
@@ -481,7 +496,7 @@ nav .nav-r a {
     margin-top: .9rem;
     margin-bottom: .5rem;
     margin-left: 2rem;
-    color: rgba(255, 255, 255, .8);
+    color: var(--text);
 }
 
 #portfolio .table .table-l .scroll-container .card-container .card .content .text{
@@ -489,7 +504,7 @@ nav .nav-r a {
     font-weight: 300;
     margin-top: .35rem;
     margin-left: 3.5rem;
-    color: rgba(255, 255, 255, .8);
+    color: var(--text);
 }
 
 #portfolio .table .table-r {
@@ -513,14 +528,8 @@ nav .nav-r a {
     letter-spacing: .025rem;
 }
 
-#portfolio .table .table-r h3 .gradient-text {
-    background: -webkit-linear-gradient(0deg, #b18a52, #f1e8a4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 #portfolio .table .table-r p {
-    color: rgba(255, 255, 255, .8);
+    color: var(--text);
     font-size: 1.25rem;
     font-weight: 300;
     line-height: 1.375;
@@ -538,7 +547,7 @@ nav .nav-r a {
 #portfolio .table .table-r .button-container a {
     font-size: 1rem;
     font-weight: 500;
-    color: #fae575;
+    color: var(--gold);
     background: rgba(0, 0, 0, 0);
     padding: .75rem 1.5rem;
     border: 1px solid rgba(255, 255, 255, .24);
@@ -613,14 +622,8 @@ nav .nav-r a {
     letter-spacing: .025rem;
 }
 
-#contact .table .table-l h3 .gradient-text {
-    background: -webkit-linear-gradient(0deg, #b18a52, #f1e8a4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 #contact .table .table-l p {
-    color: rgba(255, 255, 255, .8);
+    color: var(--text);
     font-size: 1.25rem;
     font-weight: 300;
     line-height: 1.375;
@@ -638,7 +641,7 @@ nav .nav-r a {
 #contact .table .table-l .button-container a {
     font-size: 1rem;
     font-weight: 500;
-    color: #fae575;
+    color: var(--gold);
     background: rgba(0, 0, 0, 0);
     padding: .75rem 1.5rem;
     border: 1px solid rgba(255, 255, 255, .24);
@@ -664,7 +667,7 @@ nav .nav-r a {
     border: 1px solid rgba(255, 255, 255, .12);
     border-radius: 25px;
     box-shadow: rgb(24, 26, 27) 3px -3px 10px 0px inset;
-    transition: linear .25s;
+    transition: ease .5s;
 }
 
 #contact .table .table-r .container .card > img {
@@ -699,20 +702,20 @@ nav .nav-r a {
 #contact .table .table-r .container .card.one .content .block-top .text h3 {
     font-size: 1.1rem;
     font-weight: 500;
-    line-height: 1.5;
-    color: rgba(255, 255, 255, .8);
+    line-height: 1.8;
+    color: var(--text);
 }
 
 #contact .table .table-r .container .card.one .content .block-top .text p {
     font-size: 1rem;
     line-height: 1.5;
-    color: rgba(255, 255, 255, .8);
+    color: var(--text);
 }
 
 #contact .table .table-r .container .card.one .content .block-top .text a {
     font-size: 1rem;
     line-height: 1.5;
-    color: rgba(255, 255, 255, .8);
+    color: var(--text);
     text-decoration: none;
 }
 
@@ -725,7 +728,7 @@ nav .nav-r a {
     font-size: 1rem;
     font-weight: 300;
     line-height: 2;
-    color: rgba(255, 255, 255, .8);
+    color: var(--text);
     text-decoration: none;
 }
 
@@ -733,33 +736,38 @@ nav .nav-r a {
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.375;
-    color: rgba(255, 255, 255, .8);
+    color: var(--text);
     padding-top: 2rem;
 }
 
 #contact .table .table-r .container .card.one .content .block-bottom .social-block {
     display: flex;
     justify-content: space-around;
-    padding: 1.2rem .5rem;
+    padding: 2rem .5rem;
 }
 
 #contact .table .table-r .container .card.one .content .block-bottom .social-block a {
     font-size: 1.25rem;
     font-weight: 300;
-    color: rgba(255, 255, 255, .8);
+    color: var(--text);
     padding: .75rem;
+    line-height: 0;
+}
+
+#contact .table .table-r .container .card.one .content .block-bottom .social-block a i {
+    padding: 0;
 }
 
 #contact .table .table-r .container .card.two p {
     text-align: left;
     font-size: 1rem;
     font-weight: 300;
-    color: rgba(255, 255, 255, .8);
-    padding: 1.5rem 2rem;
+    color: var(--text);
+    padding: 2rem 2.5rem;
 }
 
 #contact .table .table-r .container .card.front {
-    box-shadow: rgb(12, 12, 12) -6px -6px 20px 0px;
+    box-shadow: rgb(12, 12, 12) -6px -6px 20px 0px, rgb(24, 26, 27) 3px -3px 10px 0px inset;
     z-index: 2;
     position: relative;
 }
