@@ -1,3 +1,14 @@
+// Disable loading screen when website fully loaded with fade-out animation
+const loadingScreen = document.querySelector('.loading-screen');
+
+window.addEventListener('load', function() {
+    loadingScreen.classList.add('loading-screen-hide');
+
+    setTimeout(function() {
+        loadingScreen.style.display = 'none';
+    }, 500);
+});
+
 // Navbar links gets in focus according to which section is in view
 window.addEventListener('scroll', function () {
     const sections = document.querySelectorAll('.section');
