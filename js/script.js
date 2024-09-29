@@ -1,4 +1,4 @@
-// Disable loading screen when website fully loaded with fade-out animation
+// Disable preloader screen when website fully loaded with fade-out animation
 const loadingScreen = document.querySelector('.preloader');
 
 window.addEventListener('load', function() {
@@ -6,7 +6,7 @@ window.addEventListener('load', function() {
 
     setTimeout(function() {
         loadingScreen.style.display = 'none';
-    }, 300);
+    }, 250);
 });
 
 // Navbar links gets in focus according to which section is in view

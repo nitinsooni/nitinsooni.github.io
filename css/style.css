@@ -115,16 +115,18 @@ button {
 /*----------------------------------------------------*/
 
 .preloader {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 999;
     opacity: 1;
-    transition: opacity .3s ease;
+    transition: opacity .25s ease;
     backdrop-filter: blur(48px);
 }
 
@@ -814,12 +816,18 @@ nav .nav-r a {
     padding: 0;
 }
 
-#contact .table .table-r .container .card.two p {
-    text-align: left;
-    font-size: 1rem;
-    font-weight: 300;
-    color: var(--text);
-    padding: 2rem 2.5rem;
+#contact .table .table-r .container .card.two .content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+#contact .table .table-r .container .card.two .content img {
+    height: 100%;
+    filter: grayscale(30%);
 }
 
 #contact .table .table-r .container .card.front {
