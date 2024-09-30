@@ -137,6 +137,7 @@ button {
     border-radius: 50%;
     display: inline-block;
     margin: 0 3px;
+    box-shadow: rgb(6, 6, 6) 1px 1px 5px -1px;
     animation: jump 0.8s infinite ease-in-out;
 }
 
@@ -311,6 +312,9 @@ nav .nav-r a {
     stroke-linejoin: round;
     stroke-dasharray: 632;
     stroke-dashoffset: 632;
+}
+
+.stroke-draw {
     animation: 1.5s ease .25s forwards draw;
 }
 
@@ -749,8 +753,10 @@ nav .nav-r a {
 }
 
 #contact .table .table-r .container .card.one .content .block-top img {
+    width: 100px;
     border: 2px solid #b18a52;
     border-radius: 100%;
+    filter: grayscale(10%);
 }
 
 #contact .table .table-r .container .card.one .content .block-top .text {
@@ -827,7 +833,7 @@ nav .nav-r a {
 
 #contact .table .table-r .container .card.two .content img {
     height: 100%;
-    filter: grayscale(30%);
+    filter: grayscale(25%);
 }
 
 #contact .table .table-r .container .card.front {
