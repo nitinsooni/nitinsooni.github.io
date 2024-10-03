@@ -198,8 +198,8 @@ nav .nav-l ul li {
 
 nav .nav-l ul .logo a {
     color: white;
-    font-weight: 500;
     font-size: 1.5rem;
+    font-weight: 500;
     letter-spacing: 2px;
     margin-right: 2rem;
     text-decoration: none;
@@ -259,7 +259,7 @@ nav .nav-r a {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    grid-column-gap: 70px;
+    column-gap: 70px;
     position: relative;
     top: -222px;
     transform: rotate(-30deg);
@@ -652,7 +652,8 @@ nav .nav-r a {
 #contact .t-container {
     display: flex;
     justify-content: center;
-    padding: 2rem 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 #contact .table {
@@ -848,4 +849,69 @@ nav .nav-r a {
     opacity: .6;
     z-index: 1;
     position: absolute;
+}
+
+#contact .gradient-ruler {
+    width: 100%;
+    height: 1px;
+    background-color: #0000;
+    background-image: linear-gradient(270deg, #ffffff12, #ffffff42 31%, #fae57566 68%, #ffffff12);
+}
+
+/*----------------------------------------------------*/
+
+footer {
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+}
+
+footer .container {
+    margin: auto;
+    width: 94%;
+    max-width: 80rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 8vw;
+}
+
+footer .container .wrapper-l {
+    width: 40%;
+}
+
+footer .container .wrapper-l h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-bottom: 1.5rem;
+}
+
+footer .container .wrapper-l p {
+    font-size: .875rem;
+    line-height: 1.375;
+}
+
+footer .container .wrapper-r {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+}
+
+footer .container .wrapper-r h3 {
+    font-size: 1.25rem;
+    font-weight: 300;
+    padding-bottom: 1rem;
+}
+
+footer .container .wrapper-r a {
+    display: block;
+    color: #ffffffb3;
+    font-size: .875rem;
+    padding: .5rem 0;
+    transition: color .3s;
+    text-decoration: none;
+}
+
+footer .container .wrapper-r .column {
+    width: 100%;
 }
