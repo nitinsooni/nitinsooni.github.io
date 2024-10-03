@@ -343,8 +343,7 @@ nav .nav-r a {
     align-items: center;
     justify-content: center;
     height: 4rem;
-    padding-top: 7rem;
-    padding-bottom: 9rem;
+    padding: 8rem 0;
 }
 
 #home .contact-box .contact-bar form {
@@ -903,11 +902,13 @@ footer .container .wrapper-r h3 {
     padding-bottom: 1rem;
 }
 
-footer .container .wrapper-r a {
-    display: block;
+footer .container .wrapper-r p {
+    padding: .5rem 0;
+}
+
+footer .container .wrapper-r p a {
     color: #ffffffb3;
     font-size: .875rem;
-    padding: .5rem 0;
     transition: color .3s;
     text-decoration: none;
 }
