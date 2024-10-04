@@ -226,7 +226,7 @@ nav .nav-r a {
     font-size: 1rem;
     font-weight: 500;
     color: var(--gold);
-    background: rgba(0, 0, 0, 0);
+    background: transparent;
     padding: .75rem 1.5rem;
     border: 1px solid rgba(255, 255, 255, .24);
     border-radius: 12px;
@@ -394,7 +394,7 @@ nav .nav-r a {
     right: 2.5rem;
     font-size: 1.25rem;
     color: var(--gold);
-    background: rgba(0, 0, 0, 0);
+    background: transparent;
     padding: .7rem .85rem;
     border: 1px solid rgba(255, 255, 255, .24);
     border-radius: 12px;
@@ -608,7 +608,7 @@ nav .nav-r a {
     font-size: 1rem;
     font-weight: 500;
     color: var(--gold);
-    background: rgba(0, 0, 0, 0);
+    background: transparent;
     padding: .75rem 1.5rem;
     border: 1px solid rgba(255, 255, 255, .24);
     border-radius: 12px;
@@ -704,7 +704,7 @@ nav .nav-r a {
     font-size: 1rem;
     font-weight: 500;
     color: var(--gold);
-    background: rgba(0, 0, 0, 0);
+    background: transparent;
     padding: .75rem 1.5rem;
     border: 1px solid rgba(255, 255, 255, .24);
     border-radius: 12px;
@@ -749,7 +749,7 @@ nav .nav-r a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2.2rem 1.8rem;
+    padding: 2.25rem 1.8rem;
 }
 
 #contact .table .table-r .container .card.one .content .block-top img {
@@ -781,6 +781,7 @@ nav .nav-r a {
     line-height: 1.5;
     color: var(--text);
     text-decoration: none;
+    transition: color .3s;
 }
 
 #contact .table .table-r .container .card.one .content .block-bottom {
@@ -794,6 +795,7 @@ nav .nav-r a {
     line-height: 2;
     color: var(--text);
     text-decoration: none;
+    transition: color .3s;
 }
 
 #contact .table .table-r .container .card.one .content .block-bottom p {
@@ -805,16 +807,18 @@ nav .nav-r a {
 }
 
 #contact .table .table-r .container .card.one .content .block-bottom .social-block {
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem .5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding-top: 2rem;
+    grid-row-gap: 1.5rem;
 }
 
 #contact .table .table-r .container .card.one .content .block-bottom .social-block a {
     font-size: 1.25rem;
-    font-weight: 300;
     color: var(--text);
     padding: .75rem;
+    margin: auto;
     line-height: 0;
 }
 
