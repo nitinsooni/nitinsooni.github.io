@@ -209,7 +209,7 @@ nav .nav-l ul .nav-links a {
     color: white;
     padding: 8px 16px;
     text-decoration: none;
-    transition: color .3s;
+    transition: color .3s ease;
 }
 
 nav .nav-l ul .nav-links a.active {
@@ -364,7 +364,7 @@ nav .nav-r a {
     padding: .9rem;
     padding-right: 8rem;
     margin-right: 3px;
-    transition: border-color .2s;
+    transition: border-color .2s ease;
 }
 
 #home .contact-box .contact-bar form .text-field:focus {
@@ -386,9 +386,8 @@ nav .nav-r a {
     cursor: url('/assets/images/link.png'), pointer;
 }
 
-#home #scroll-to-top {
+#home .scroll-to-top {
     z-index: 99;
-    display: none;
     position: fixed;
     bottom: 2rem;
     right: 2.5rem;
@@ -398,7 +397,15 @@ nav .nav-r a {
     padding: .7rem .85rem;
     border: 1px solid rgba(255, 255, 255, .24);
     border-radius: 12px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease;
     backdrop-filter: blur(24px);
+}
+
+#home .scroll-to-top-show {
+    opacity: 1;
+    visibility: visible;
 }
 
 /*----------------------------------------------------*/
@@ -729,7 +736,7 @@ nav .nav-r a {
     border: 1px solid rgba(255, 255, 255, .12);
     border-radius: 25px;
     box-shadow: rgb(24, 26, 27) 3px -3px 10px 0px inset;
-    transition: ease .5s;
+    transition: all .5s ease;
 }
 
 #contact .table .table-r .container .card > img {
@@ -781,7 +788,7 @@ nav .nav-r a {
     line-height: 1.5;
     color: var(--text);
     text-decoration: none;
-    transition: color .3s;
+    transition: color .3s ease;
 }
 
 #contact .table .table-r .container .card.one .content .block-bottom {
@@ -795,7 +802,7 @@ nav .nav-r a {
     line-height: 2;
     color: var(--text);
     text-decoration: none;
-    transition: color .3s;
+    transition: color .3s ease;
 }
 
 #contact .table .table-r .container .card.one .content .block-bottom p {
@@ -913,7 +920,7 @@ footer .container .wrapper-r p {
 footer .container .wrapper-r p a {
     color: #ffffffb3;
     font-size: .875rem;
-    transition: color .3s;
+    transition: color .3s ease;
     text-decoration: none;
 }
 

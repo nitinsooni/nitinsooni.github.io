@@ -174,7 +174,7 @@
         width: 100%;
     }
 
-    #home #scroll-to-top {
+    #home .scroll-to-top {
         bottom: 1.75rem;
         right: 1.75rem;
         padding: .65rem .8rem;

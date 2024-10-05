@@ -34,16 +34,15 @@ window.addEventListener('scroll', function () {
     });
 });
 
-
 // Show the scroll-to-top button when user scrolls down 20px
-let btnTop = document.getElementById('scroll-to-top');
+let btnTop = document.querySelector('.scroll-to-top');
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        btnTop.style.display = 'block';
+        btnTop.classList.add('scroll-to-top-show');
     } else {
-        btnTop.style.display = 'none';
+        btnTop.classList.remove('scroll-to-top-show');
     }
 }
 
@@ -52,7 +51,6 @@ function topFunction() {
     document.body.scrollTop = 0; // for safari
     document.documentElement.scrollTop = 0; // for chrome, firefox, ie and opera
 }
-
 
 // 1st nav button of portfolio card container gets in focus on site load
 window.onload = function(){
@@ -89,7 +87,6 @@ function scrollToCard(index) {
     cardContainer.scrollTo({ left: index * (cardWidth + marginBetweenItems) });
 }
 
-
 // Swap cards when user click non-front card
 const one = document.querySelector('.one');
 const two = document.querySelector('.two');
@@ -107,3 +104,6 @@ two.addEventListener('click', function() {
         one.classList.remove('front');
     }
 });
+
+// Dynamically change year in copyright text
+document.querySelector('.year').textContent = new Date().getFullYear();
