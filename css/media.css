@@ -394,21 +394,21 @@
     }
 
     #contact .table .table-r .container .card.one .content .block-top .text p {
-        font-size: 0.9rem;
+        font-size: .9rem;
         font-weight: 300;
     }
 
     #contact .table .table-r .container .card.one .content .block-top .text a {
-        font-size: 0.9rem;
+        font-size: .9rem;
         font-weight: 300;
     }
 
     #contact .table .table-r .container .card.one .content .block-bottom a {
-        font-size: 0.8rem;
+        font-size: .8rem;
     }
 
     #contact .table .table-r .container .card.one .content .block-bottom p {
-        font-size: 0.8rem;
+        font-size: .8rem;
         padding-top: 1.5rem;
     }
 
@@ -423,7 +423,7 @@
     }
 
     #contact .table .table-r .container .card.two p {
-        font-size: 0.8rem;
+        font-size: .8rem;
     }
 
     #contact .table .table-r .container .card:not(.front) {
@@ -450,7 +450,7 @@
     }
 
     .gradient-effect {
-        animation: 1.2s ease .25s forwards back-gradient;
+        animation: back-gradient 1.2s ease .25s forwards;
     }
 
     @keyframes back-gradient {
@@ -521,7 +521,7 @@
     }
 
     .gradient-effect {
-        animation: 2.2s ease .25s forwards back-gradient;
+        animation: back-gradient 2.2s ease .25s forwards;
     }
 
     @keyframes back-gradient {
