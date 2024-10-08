@@ -14,8 +14,8 @@ window.addEventListener('load', function() {
 
 // Navbar links gets in focus according to which section is in view
 window.addEventListener('scroll', function () {
-    const sections = document.querySelectorAll('.section');
-    const navLinks = document.querySelectorAll('.nav-links a');
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('nav .nav-l ul .nav-links a');
 
     let current = '';
     sections.forEach(section => {
@@ -35,7 +35,7 @@ window.addEventListener('scroll', function () {
 });
 
 // Show the scroll-to-top button when user scrolls down 20px
-let btnTop = document.querySelector('.scroll-to-top');
+let btnTop = document.querySelector('#home .scroll-to-top');
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -59,12 +59,12 @@ window.onload = function(){
 
 // Portfolio card button gets in focus with scroll
 document.addEventListener('DOMContentLoaded', function () {
-    const cardContainer = document.querySelector('.card-container');
-    const buttons = document.querySelectorAll('.button');
+    const cardContainer = document.querySelector('#portfolio .table .table-l .scroll-container .card-container');
+    const buttons = document.querySelectorAll('#portfolio .table .table-l .nav-buttons .button');
 
     cardContainer.addEventListener('scroll', function () {
         const scrollLeft = cardContainer.scrollLeft;
-        const cardWidth = document.querySelector('.card').offsetWidth;
+        const cardWidth = document.querySelector('#portfolio .table .table-l .scroll-container .card-container .card').offsetWidth;
         const marginBetweenItems = parseInt(getComputedStyle(cardContainer).gap);
         const currentIndex = Math.floor((scrollLeft + marginBetweenItems * 4) / (cardWidth + marginBetweenItems));
 
@@ -78,32 +78,82 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// Click nav button to scroll cards
+// Click nav button to scroll cards in portfolio
 function scrollToCard(index) {
-    const cardContainer = document.querySelector('.card-container');
-    const cardWidth = document.querySelector('.card').offsetWidth;
+    const cardContainer = document.querySelector('#portfolio .table .table-l .scroll-container .card-container');
+    const cardWidth = document.querySelector('#portfolio .table .table-l .scroll-container .card-container .card').offsetWidth;
     const marginBetweenItems = parseInt(getComputedStyle(cardContainer).gap);
 
     cardContainer.scrollTo({ left: index * (cardWidth + marginBetweenItems) });
 }
 
 // Swap cards when user click non-front card
-const one = document.querySelector('.one');
-const two = document.querySelector('.two');
+const cardOne = document.querySelector('#contact .table .table-r .container .card.one');
+const cardTwo = document.querySelector('#contact .table .table-r .container .card.two');
+let frontCard = cardOne;
 
-one.addEventListener('click', function() {
-    if (!this.classList.contains('front')) {
-        this.classList.add('front');
-        two.classList.remove('front');
+cardOne.addEventListener('click', function() {
+    if (frontCard !== cardOne) {
+        swapCards(cardOne);
     }
 });
 
-two.addEventListener('click', function() {
-    if (!this.classList.contains('front')) {
-        this.classList.add('front');
-        one.classList.remove('front');
+cardTwo.addEventListener('click', function() {
+    if (frontCard !== cardTwo) {
+        swapCards(cardTwo);
     }
 });
+
+function swapCards(selectedCard) {
+    selectedCard.classList.add('front');
+    frontCard.classList.remove('front');
+    frontCard = selectedCard;
+}
+
+// Swap cards when user horizontal swipe on front card
+let touchStartX = 0;
+let touchEndX = 0;
+const minSwipeDistance = 100;   // minimum swipe distance in pixels
+const maxSwipeTime = 300;   // maximum time for a swipe (in milliseconds)
+
+cardOne.addEventListener('touchstart', (event) => {
+    if (frontCard === cardOne) {
+        touchStartX = event.changedTouches[0].screenX;
+        touchStartTime = new Date().getTime();
+    }
+});
+
+cardOne.addEventListener('touchend', (event) => {
+    if (frontCard === cardOne) {
+        touchEndX = event.changedTouches[0].screenX;
+        touchEndTime = new Date().getTime();
+        handleSwipe();
+    }
+});
+
+cardTwo.addEventListener('touchstart', (event) => {
+    if (frontCard === cardTwo) {
+        touchStartX = event.changedTouches[0].screenX;
+        touchStartTime = new Date().getTime();
+    }
+});
+
+cardTwo.addEventListener('touchend', (event) => {
+    if (frontCard === cardTwo) {
+        touchEndX = event.changedTouches[0].screenX;
+        touchEndTime = new Date().getTime();
+        handleSwipe();
+    }
+});
+
+function handleSwipe() {
+    const distance = touchEndX - touchStartX;
+    const timeTaken = touchEndTime  - touchStartTime;
+
+    if (Math.abs(distance) > minSwipeDistance && timeTaken < maxSwipeTime) {
+        swapCards(frontCard === cardOne ? cardTwo : cardOne);
+    }
+}
 
 // Dynamically change year in copyright text
-document.querySelector('.year').textContent = new Date().getFullYear();
+document.querySelector('footer .container .wrapper-l p .year').textContent = new Date().getFullYear();
