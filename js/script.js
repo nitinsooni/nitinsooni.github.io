@@ -54,13 +54,13 @@ function topFunction() {
 
 // 1st nav button of portfolio card container gets in focus on site load
 window.onload = function(){
-    document.getElementById('button1').classList.add('button-focus');
+    document.getElementById('nav-button1').classList.add('nav-button-focus');
 }
 
 // Portfolio card button gets in focus with scroll
 document.addEventListener('DOMContentLoaded', function () {
     const cardContainer = document.querySelector('#portfolio .table .table-l .scroll-container .card-container');
-    const buttons = document.querySelectorAll('#portfolio .table .table-l .nav-buttons .button');
+    const buttons = document.querySelectorAll('#portfolio .table .table-l .nav-button-container .nav-button');
 
     cardContainer.addEventListener('scroll', function () {
         const scrollLeft = cardContainer.scrollLeft;
@@ -68,12 +68,12 @@ document.addEventListener('DOMContentLoaded', function () {
         const marginBetweenItems = parseInt(getComputedStyle(cardContainer).gap);
         const currentIndex = Math.floor((scrollLeft + marginBetweenItems * 4) / (cardWidth + marginBetweenItems));
 
-        document.getElementById('button1').classList.remove('button-focus');
-        document.getElementById('button2').classList.remove('button-focus');
-        document.getElementById('button3').classList.remove('button-focus');
+        document.getElementById('nav-button1').classList.remove('nav-button-focus');
+        document.getElementById('nav-button2').classList.remove('nav-button-focus');
+        document.getElementById('nav-button3').classList.remove('nav-button-focus');
 
         if (buttons[currentIndex]) {
-            buttons[currentIndex].classList.add('button-focus');
+            buttons[currentIndex].classList.add('nav-button-focus');
         }
     });
 });

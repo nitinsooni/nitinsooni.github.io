@@ -6,8 +6,8 @@
     <meta name="color-scheme" content="only dark">
     <meta name="darkreader-lock">
     <title>Nitin Soni's Digital Space</title>
-    <link rel="stylesheet" href="/css/style.min.css">
-    <link rel="stylesheet" href="/css/media.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/media.css">
     <link rel="icon" href="/favicon.ico" sizes="48x48">
     <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -32,7 +32,7 @@
             </ul>
         </div>
         <div class="nav-r">
-            <a href="mailto:nitinsoooni@gmail.com">E-mail me</a>
+            <a class="button" href="mailto:nitinsoooni@gmail.com">E-mail me</a>
         </div>
     </nav>
     <main>
@@ -45,18 +45,18 @@
                 </div>
             </div>
             <div class="title">
-                <img src="/assets/images/greetings.svg"><!--Arizonia Font-->
+                <h1>Greetings</h1>
                 <svg viewBox="0 0 530 121" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14.3842 62.6465C-13.5586 90.2972 1.53864 133.508 66.4018 106.456C131.264 79.4047 148.186 89.771 190.258 105.98C232.33 122.19 280.586 127.623 339.926 103.981C402.249 82.3266 422.278 99.0596 464.599 110.393C515.868 123.715 538.408 96.4687 525.376 78.2974C520.937 71.0188 508.251 72.1704 512.514 80.2658">
                 </svg>
-                <h1>to You, Mate</h1>
+                <h2>to You, Mate</h2>
                 <p>Welcome! I'm <span class="gold-text">Nitin Soni</span> - explore my portfolio,<br>connect via diverse contact options, and engage on<br>social platforms for deeper insights.</p>
             </div>
             <div class="contact-box">
                 <div class="contact-bar">
                     <form action="mailto:nitinsoooni@gmail.com" method="post" enctype="text/plain">
                         <input type="text" class="text-field" name="body" placeholder="Type your message..." required>
-                        <input type="submit" class="submit" value="E-mail me">
+                        <input type="submit" class="button submit" value="E-mail me">
                     </form>
                 </div>
             </div>
@@ -70,10 +70,10 @@
             <div class="t-container">
                 <div class="table">
                     <div class="table-l">
-                        <div class="nav-buttons">
-                            <button class="button" id="button1" onclick="scrollToCard(0)">Skills</button>
-                            <button class="button" id="button2" onclick="scrollToCard(1)">Education</button>
-                            <button class="button" id="button3" onclick="scrollToCard(2)">Work Ex.</button>
+                        <div class="nav-button-container">
+                            <button class="nav-button" id="nav-button1" onclick="scrollToCard(0)">Skills</button>
+                            <button class="nav-button" id="nav-button2" onclick="scrollToCard(1)">Education</button>
+                            <button class="nav-button" id="nav-button3" onclick="scrollToCard(2)">Work Ex.</button>
                         </div>
                         <div class="scroll-container">
                             <div class="fade-overlay left-fade"></div>
@@ -134,7 +134,7 @@
                         <p>Explore my academic journey, diverse skill set, and professional experience.</p>
                         <p>Want the full picture<span class="gold-gradient-text">?</span> Download my resume and let's explore opportunities together.</p>
                         <div class="button-container">
-                            <a href="https://drive.google.com/file/d/1s7ycaGfGqsZ1dIJjvkzpXJ5g9o7XT69F/view" target="_blank">Get Resume</a>
+                            <a class="button" href="https://drive.google.com/file/d/1s7ycaGfGqsZ1dIJjvkzpXJ5g9o7XT69F/view" target="_blank">Get Resume</a>
                         </div>
                     </div>
                 </div>
@@ -153,7 +153,7 @@
                         <p>Discover more about me and connect through my social links to stay in the loop.</p>
                         <p>Feel free to reach out <span class="gold-gradient-text">-</span> I'm just a message away<span class="gold-gradient-text">!</span></p>
                         <div class="button-container">
-                            <a href="mailto:nitinsoooni@gmail.com">E-mail me</a>
+                            <a class="button" href="mailto:nitinsoooni@gmail.com">E-mail me</a>
                         </div>
                     </div>
                     <div class="table-r">
