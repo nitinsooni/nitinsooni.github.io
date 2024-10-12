@@ -1,11 +1,11 @@
 // Disable preloader screen when website fully loaded with fade-out animation and then start website animations
-const loadingScreen = document.querySelector('.preloader');
+const preloader = document.querySelector('.preloader');
 
 window.addEventListener('load', function() {
-    loadingScreen.classList.add('preloader-hide');
+    preloader.classList.add('preloader-hide');
 
     setTimeout(function() {
-        loadingScreen.style.display = 'none';
+        preloader.style.display = 'none';
     }, 250);
 
     document.querySelector('#home .title svg path').classList.add('stroke-draw');
@@ -15,7 +15,7 @@ window.addEventListener('load', function() {
 // Navbar links gets in focus according to which section is in view
 window.addEventListener('scroll', function () {
     const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('nav .nav-l ul .nav-links a');
+    const navLinks = document.querySelectorAll('nav .nav-l ul .nav-link a');
 
     let current = '';
     sections.forEach(section => {

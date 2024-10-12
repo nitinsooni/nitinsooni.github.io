@@ -139,7 +139,7 @@ button {
 .preloader {
     width: 100vw;
     height: 100vh;
-    background-color: transparent;
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -208,17 +208,7 @@ nav {
     backdrop-filter: blur(24px);
 }
 
-nav .nav-l ul {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-nav .nav-l ul li {
-    list-style: none;
-}
-
-nav .nav-l ul .logo a {
+nav .nav-l .logo {
     color: var(--text-primary);
     font-size: 1.5rem;
     font-weight: 500;
@@ -227,14 +217,24 @@ nav .nav-l ul .logo a {
     text-decoration: none;
 }
 
-nav .nav-l ul .nav-links a {
+nav .nav-l, nav .nav-l ul {
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-l ul li {
+    list-style: none;
+}
+
+nav .nav-l ul .nav-link a {
     color: var(--text-primary);
-    padding: 8px 16px;
+    font-size: 1rem;
+    padding: .5rem 1rem;
     text-decoration: none;
     transition: color .3s ease;
 }
 
-nav .nav-l ul .nav-links a.active {
+nav .nav-l ul .nav-link a.active {
     color: var(--gold);
 }
 
@@ -278,7 +278,7 @@ nav .nav-r {
 #home .light-wrapper .lights-holder .light {
     width: 180px;
     height: 1000px;
-    background-image: linear-gradient(to bottom, var(--gold) 5%, rgba(255, 255, 255, 0) 68%);
+    background-image: linear-gradient(to bottom, var(--gold) 5%, transparent 68%);
     opacity: .4;
     filter: blur(18px);
 }
@@ -899,7 +899,7 @@ footer .container .wrapper-r p {
 }
 
 footer .container .wrapper-r p a {
-    color: #ffffffb3;
+    color: rgba(255, 255, 255, .7);
     font-size: .875rem;
     transition: color .3s ease;
     text-decoration: none;
