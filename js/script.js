@@ -155,5 +155,26 @@ function handleSwipe() {
     }
 }
 
+// Trigger animation when user scrolled to contact card
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        const cardBack = document.querySelector('#contact .table .table-r .container .card:not(.front)');
+        if (entry.isIntersecting && entry.target === cardBack) {
+            cardBack.classList.add('active');
+        }
+        setTimeout(function() {
+            cardBack.classList.remove('active');
+        }, 2000);
+    });
+}, {
+    root: null,
+    rootMargin: '-40% 0px',
+    threshold: 0
+});
+
+document.querySelectorAll('#contact .table .table-r .container .card').forEach((card) => {
+    observer.observe(card);
+});
+
 // Dynamically change year in copyright text
 document.querySelector('footer .container .wrapper-l p .year').textContent = new Date().getFullYear();
