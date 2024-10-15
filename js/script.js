@@ -159,12 +159,12 @@ function handleSwipe() {
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         const cardBack = document.querySelector('#contact .table .table-r .container .card:not(.front)');
-        if (entry.isIntersecting && entry.target === cardBack) {
+        if (entry.isIntersecting && entry.target === cardBack && ! cardBack.classList.contains('active')) {
             cardBack.classList.add('active');
+            setTimeout(function() {
+                cardBack.style.animation = 'none';
+            }, 2000);
         }
-        setTimeout(function() {
-            cardBack.classList.remove('active');
-        }, 2000);
     });
 }, {
     root: null,
