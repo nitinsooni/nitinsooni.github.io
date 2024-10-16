@@ -130,8 +130,35 @@ button {
     border: 1px solid rgba(255, 255, 255, .24);
     border-radius: 12px;
     text-decoration: none;
-    transition: all .4s ease;
+    transition: font-size .4s ease, padding .4s ease;
     backdrop-filter: blur(24px);
+}
+
+.paragraph i,
+.paragraph h3,
+.paragraph p,
+.paragraph a {
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateX(-.5rem);
+    transition: all .8s ease, font-size .4s ease, padding .4s ease;
+}
+
+.paragraph.active i,
+.paragraph.active h3,
+.paragraph.active p,
+.paragraph.active a {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.paragraph.active p {
+    transition-delay: .2s;
+}
+
+.paragraph.active a {
+    transition: all .8s ease .4s, font-size .4s ease 0s, padding .4s ease 0s;
 }
 
 /*----------------------------------------------------*/
@@ -721,7 +748,7 @@ nav .nav-r {
     background: #1f1f1f;
     border: 1px solid rgba(255, 255, 255, .12);
     border-radius: 25px;
-    box-shadow: rgb(24, 26, 27) 3px -3px 10px 0px inset;
+    box-shadow: rgb(12, 12, 12) -6px -6px 20px 0px, rgb(24, 26, 27) 3px -3px 10px 0px inset;
     transition: all .5s ease;
 }
 
@@ -830,7 +857,6 @@ nav .nav-r {
 }
 
 #contact .table .table-r .container .card.front {
-    box-shadow: rgb(12, 12, 12) -6px -6px 20px 0px, rgb(24, 26, 27) 3px -3px 10px 0px inset;
     z-index: 2;
     position: relative;
 }

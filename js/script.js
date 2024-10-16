@@ -12,6 +12,22 @@ window.addEventListener('load', function() {
     document.getElementById('home').classList.add('gradient-effect');
 });
 
+// Trigger animation when user scrolled to paragraphs
+const paragraphs = document.querySelectorAll('.paragraph');
+const paraObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+        }
+    });
+}, {
+    root: null,
+    rootMargin: '-25% 0px',
+    threshold: 0
+});
+
+paragraphs.forEach((el) => paraObserver.observe(el));
+
 // Navbar links gets in focus according to which section is in view
 window.addEventListener('scroll', function () {
     const sections = document.querySelectorAll('section');
@@ -156,7 +172,7 @@ function handleSwipe() {
 }
 
 // Trigger animation when user scrolled to contact card
-const observer = new IntersectionObserver((entries) => {
+const cardObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         const cardBack = document.querySelector('#contact .table .table-r .container .card:not(.front)');
         if (entry.isIntersecting && entry.target === cardBack && ! cardBack.classList.contains('active')) {
@@ -168,12 +184,12 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, {
     root: null,
-    rootMargin: '-40% 0px',
+    rootMargin: '-35% 0px',
     threshold: 0
 });
 
 document.querySelectorAll('#contact .table .table-r .container .card').forEach((card) => {
-    observer.observe(card);
+    cardObserver.observe(card);
 });
 
 // Dynamically change year in copyright text
