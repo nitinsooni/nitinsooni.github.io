@@ -446,7 +446,7 @@
     }
 
     .gradient-effect {
-        animation: back-gradient 1.2s ease .25s forwards;
+        animation: back-gradient 1.2s .25s forwards;
     }
 
     @keyframes back-gradient {
@@ -502,7 +502,7 @@
     }
 
     .gradient-effect {
-        animation: back-gradient 2.2s ease .25s forwards;
+        animation: back-gradient 2.2s .25s forwards;
     }
 
     @keyframes back-gradient {

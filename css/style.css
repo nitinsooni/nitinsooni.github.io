@@ -130,7 +130,7 @@ button {
     border: 1px solid rgba(255, 255, 255, .24);
     border-radius: 12px;
     text-decoration: none;
-    transition: font-size .4s ease, padding .4s ease;
+    transition: font-size .4s, padding .4s, margin .4s;
     backdrop-filter: blur(24px);
 }
 
@@ -139,9 +139,9 @@ button {
 .paragraph p,
 .paragraph a {
     opacity: 0;
-    filter: blur(2px);
-    transform: translateX(-.5rem);
-    transition: all .8s ease, font-size .4s ease, padding .4s ease;
+    filter: blur(3px);
+    transform: translateX(-1rem);
+    transition: all .7s, font-size .4s, padding .4s;
 }
 
 .paragraph.active i,
@@ -158,7 +158,7 @@ button {
 }
 
 .paragraph.active a {
-    transition: all .8s ease .4s, font-size .4s ease 0s, padding .4s ease 0s;
+    transition: all .7s .4s, font-size .4s 0s, padding .4s 0s;
 }
 
 /*----------------------------------------------------*/
@@ -175,7 +175,7 @@ button {
     left: 0;
     z-index: 999;
     opacity: 1;
-    transition: opacity .25s ease;
+    transition: opacity .25s;
     backdrop-filter: blur(48px);
 }
 
@@ -210,7 +210,6 @@ button {
     0%, 40%, 100% {
         transform: translateY(-12px);
     }
-
     20% {
         transform: translateY(-24px);
     }
@@ -258,7 +257,7 @@ nav .nav-l ul .nav-link a {
     font-size: 1rem;
     padding: .5rem 1rem;
     text-decoration: none;
-    transition: color .3s ease;
+    transition: color .3s;
 }
 
 nav .nav-l ul .nav-link a.active {
@@ -355,7 +354,7 @@ nav .nav-r {
 }
 
 .stroke-draw {
-    animation: draw 1.5s ease .25s forwards;
+    animation: draw 1.5s .25s forwards;
 }
 
 @keyframes draw {
@@ -404,7 +403,7 @@ nav .nav-r {
     padding: .9rem;
     padding-right: 8rem;
     margin-right: 3px;
-    transition: border-color .2s ease;
+    transition: border-color .2s;
 }
 
 #home .contact-box .contact-bar form .text-field:focus {
@@ -435,7 +434,7 @@ nav .nav-r {
     border-radius: 12px;
     opacity: 0;
     visibility: hidden;
-    transition: all .3s ease;
+    transition: all .3s;
     backdrop-filter: blur(24px);
 }
 
@@ -514,7 +513,7 @@ nav .nav-r {
 
 #portfolio .table .table-l .nav-button-container .nav-button-focus {
     border-bottom: 1.5px solid var(--gold);
-    transition: border .2s ease;
+    transition: border .2s;
 }
 
 #portfolio .table .table-l .scroll-container {
@@ -748,13 +747,13 @@ nav .nav-r {
     background: #1f1f1f;
     border: 1px solid rgba(255, 255, 255, .12);
     border-radius: 25px;
-    box-shadow: rgb(12, 12, 12) -6px -6px 20px 0px, rgb(24, 26, 27) 3px -3px 10px 0px inset;
-    transition: all .5s ease;
+    box-shadow: rgb(24, 26, 27) 3px -3px 10px 0px inset;
+    transition: all .5s;
 }
 
 #contact .table .table-r .container .card a {
     color: var(--text-secondary);
-    transition: color .3s ease;
+    transition: color .3s;
     text-decoration: none;
 }
 
@@ -859,6 +858,7 @@ nav .nav-r {
 #contact .table .table-r .container .card.front {
     z-index: 2;
     position: relative;
+    box-shadow: rgb(12, 12, 12) -6px -6px 20px 0px, rgb(24, 26, 27) 3px -3px 10px 0px inset;
 }
 
 #contact .table .table-r .container .card:not(.front) {
@@ -944,7 +944,7 @@ footer .container .wrapper-r p {
 footer .container .wrapper-r p a {
     color: rgba(255, 255, 255, .7);
     font-size: .875rem;
-    transition: color .3s ease;
+    transition: color .3s;
     text-decoration: none;
 }
 
