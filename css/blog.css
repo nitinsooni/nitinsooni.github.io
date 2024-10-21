@@ -23,7 +23,7 @@
     width: 100%;
     max-width: 80rem;
     margin: auto;
-    padding-bottom: 6rem;
+    padding: 0 1rem 6rem 1rem;
 }
 
 #blog .blog-table .container {
@@ -80,4 +80,46 @@
     font-weight: 300;
     line-height: 1.375;
     padding-top: .5rem;
+}
+
+
+@media only screen and (max-width: 1100px) {
+    #blog .title {
+        padding-top: 10rem;
+        padding-bottom: 7rem;
+    }
+
+    #blog .blog-table {
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 5rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #blog .title {
+        padding-bottom: 5rem;
+    }
+
+    #blog .title h1 {
+        font-size: 4rem;
+    }
+
+    #blog .blog-table {
+        padding-bottom: 3.5rem;
+    }
+
+    #blog .blog-table .container .text-title {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    #blog .title h1 {
+        font-size: 3rem;
+    }
+
+    #blog .blog-table {
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
 }
