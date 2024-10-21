@@ -83,7 +83,6 @@
 
 html {
     scroll-behavior: smooth;
-    overscroll-behavior-y: none;
 }
 
 body {
@@ -91,6 +90,7 @@ body {
     background: var(--background);
     color: var(--text-primary);
     cursor: url('/assets/images/pointer.png'), auto;
+    line-height: 1.375;
 }
 
 a:hover,
@@ -348,7 +348,7 @@ nav .nav-r {
 }
 
 #home .title {
-    padding-top: 8.1rem;
+    padding-top: 8rem;
 }
 
 #home .title h1 {
@@ -360,7 +360,7 @@ nav .nav-r {
 #home .title svg {
     width: 530px;
     position: absolute;
-    top: 10rem;
+    top: 10.4rem;
     left: 0;
     right: 0;
     margin: auto;
@@ -388,14 +388,13 @@ nav .nav-r {
 #home .title h2 {
     font-size: 4.8rem;
     font-weight: 600;
-    line-height: 1.15;
+    line-height: 1.2;
     word-spacing: -4px;
 }
 
 #home .title p {
     font-size: 1.25rem;
     font-weight: 200;
-    line-height: 1.375;
     margin-top: 32px;
 }
 
@@ -472,7 +471,7 @@ nav .nav-r {
 #portfolio .title h2 {
     font-size: 4rem;
     font-weight: 400;
-    line-height: 1;
+    line-height: 1.2;
     letter-spacing: .025rem;
     padding-top: 2px;
 }
@@ -546,6 +545,7 @@ nav .nav-r {
     overscroll-behavior-x: contain;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
+    line-height: 1.2;
 }
 
 #portfolio .table .table-l .scroll-container .card-container::-webkit-scrollbar {
@@ -626,7 +626,7 @@ nav .nav-r {
 #portfolio .table .table-r h3 {
     font-size: 2.5rem;
     font-weight: 400;
-    line-height: 1.15;
+    line-height: 1.2;
     letter-spacing: .025rem;
 }
 
@@ -634,7 +634,6 @@ nav .nav-r {
     color: var(--text-secondary);
     font-size: 1.25rem;
     font-weight: 300;
-    line-height: 1.375;
     margin: 1.2rem 0;
 }
 
@@ -674,7 +673,7 @@ nav .nav-r {
 #contact .title h2 {
     font-size: 4rem;
     font-weight: 400;
-    line-height: 1;
+    line-height: 1.2;
     letter-spacing: .025rem;
 }
 
@@ -710,7 +709,7 @@ nav .nav-r {
 #contact .table .table-l h3 {
     font-size: 2.5rem;
     font-weight: 400;
-    line-height: 1.15;
+    line-height: 1.2;
     letter-spacing: .025rem;
 }
 
@@ -718,7 +717,6 @@ nav .nav-r {
     color: var(--text-secondary);
     font-size: 1.25rem;
     font-weight: 300;
-    line-height: 1.375;
     margin: 1.2rem 0;
 }
 
@@ -818,7 +816,6 @@ nav .nav-r {
 #contact .table .table-r .container .card.one .content .block-bottom p {
     font-size: 1rem;
     font-weight: 300;
-    line-height: 1.375;
     padding-top: 2rem;
 }
 
@@ -894,6 +891,201 @@ nav .nav-r {
 
 /*----------------------------------------------------*/
 
+#blog {
+    width: 100%;
+}
+
+#blog .title {
+    text-align: center;
+    padding-top: 11rem;
+    padding-bottom: 9rem;
+    background-image: linear-gradient(transparent 74%, var(--background)), radial-gradient(circle, #282828, var(--background));
+}
+
+#blog .title h1 {
+    font-size: 6rem;
+    font-weight: 500;
+    letter-spacing: .025rem;
+    line-height: 1.2;
+}
+
+#blog .blog-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    padding: 0 1rem 6rem 1rem;
+}
+
+#blog .blog-table .container {
+    width: 100%;
+    height: 100%;
+    padding: .75rem;
+    background-color: rgba(255, 255, 255, .12);
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 1rem;
+    text-decoration: none;
+}
+
+#blog .blog-table .container .image-container {
+    width: 100%;
+    padding-top: 66.66%;
+    position: relative;
+}
+
+#blog .blog-table .container .image-container img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, .24);
+    border-radius: .75rem;
+    position: absolute;
+    box-shadow: 0 3px 12px 2px rgba(0, 0, 0, .4);
+    inset: 0%;
+    object-fit: cover;
+}
+
+#blog .blog-table .container .text-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: .75rem 0 0;
+}
+
+#blog .blog-table .container .text-info .date {
+    color: rgba(231, 237, 239, .6);
+    font-size: .875rem;
+}
+
+#blog .blog-table .container .text-info .category {
+    color: var(--gold);
+    background-color: rgba(250, 229, 117, .24);
+    font-size: .875rem;
+    border-radius: .5rem;
+    padding: .25rem .5rem;
+}
+
+#blog .blog-table .container .text-title {
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    font-weight: 300;
+    padding-top: .5rem;
+}
+
+/*----------------------------------------------------*/
+
+#blog-data {
+    width: 100%;
+    padding: 7rem 2.5rem;
+}
+
+#blog-data .blur-circle {
+    width: 240px;
+    height: 240px;
+    filter: blur(160px);
+    background-image: linear-gradient(111deg, #b18a52, #f1e8a4);
+    border-radius: 1000px;
+    position: absolute;
+    top: 4%;
+    left: -1%;
+    z-index: -1;
+}
+
+#blog-data .blog-head {
+    width: 100%;
+    max-width: 64rem;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+#blog-data .blog-head .info-container {
+    width: 50%;
+    padding: 3rem 0;
+}
+
+#blog-data .blog-head .info-container a {
+    transition: color .3s;
+}
+
+#blog-data .blog-head .info-container > a {
+    font-size: .875rem;
+    color: rgba(255, 255, 255, .7);
+    text-decoration: none;
+}
+
+#blog-data .blog-head .info-container > a i {
+    padding-right: .5rem;
+    opacity: .6;
+}
+
+#blog-data .blog-head .info-container h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: .025rem;
+    padding: .5rem 0;
+}
+
+#blog-data .blog-head .info-container .detail-block {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .6rem 0;
+}
+
+#blog-data .blog-head .info-container .detail-block p, #blog-data .blog-head .info-container .detail-block a {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+#blog-data .blog-head .info-container .detail-block .category {
+    color: var(--gold);
+    background-color: rgba(250, 229, 117, .24);
+    font-size: .875rem;
+    border-radius: .5rem;
+    padding: .25rem .5rem;
+}
+
+#blog-data .blog-head .info-container .detail-block .dot {
+    color: rgba(231, 237, 239, .6);
+    font-size: .875rem;
+}
+
+#blog-data .blog-head .info-container > p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    padding-top: .5rem;
+}
+
+#blog-data .blog-head .image-container {
+    width: 50%;
+}
+
+#blog-data .blog-head .image-container .block {
+    width: 100%;
+    padding-top: 66.66%;
+    position: relative;
+}
+
+#blog-data .blog-head .image-container .block img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, .24);
+    border-radius: .75rem;
+    position: absolute;
+    box-shadow: 0 3px 12px 2px rgba(0, 0, 0, .4);
+    inset: 0%;
+    object-fit: cover;
+}
+
+/*----------------------------------------------------*/
+
 footer {
     padding-top: 2.5rem;
     padding-bottom: 4rem;
@@ -921,7 +1113,6 @@ footer .container .wrapper-l h2 {
 
 footer .container .wrapper-l p {
     font-size: .875rem;
-    line-height: 1.375;
 }
 
 footer .container .wrapper-r {

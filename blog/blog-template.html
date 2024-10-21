@@ -8,6 +8,10 @@
     <title>Nitin Soni • Blog</title>
     <link rel="stylesheet" href="/css/style.min.css">
     <link rel="stylesheet" href="/css/media.min.css">
+<!--
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/media.css">
+-->
     <link rel="icon" href="/favicon.ico" sizes="48x48">
     <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -26,16 +30,42 @@
         <div class="nav-l">
             <a class="logo" href="/index.html">NITIN SONI</a>
             <ul>
-                <li class="nav-link"><a href="#home">Home</a></li>
-                <li class="nav-link"><a href="#portfolio">Portfolio</a></li>
-                <li class="nav-link"><a href="#contact">Contact</a></li>
+                <li class="nav-link"><a href="/index.html#home">Home</a></li>
+                <li class="nav-link"><a href="/index.html#portfolio">Portfolio</a></li>
+                <li class="nav-link"><a href="/index.html#contact">Contact</a></li>
+                <li class="nav-link"><a href="/blog.html">Blog</a></li>
             </ul>
         </div>
         <div class="nav-r">
             <a class="button" href="mailto:nitinsoooni@gmail.com">E-mail me</a>
         </div>
     </nav>
+    <button onclick="topFunction()" class="scroll-to-top"><i class="fa-solid fa-angle-up"></i></button>
     <main>
+        <section id="blog-data">
+            <img src="/assets/images/blur-circle.webp" class="blur-circle">
+            <div class="blog-head">
+                <div class="info-container">
+                    <a href="/blog.html"><i class="fa-solid fa-arrow-left-long"></i>Blog</a>
+                    <h1>You're a wizard, Harry</h1>
+                    <div class="detail-block">
+                        <p>September 15, 1984</p>
+                        <p class="dot">•</p>
+                        <a href="#">Nitin Soni</a>
+                        <p class="dot">•</p>
+                        <a href="#" class="category">Muggle News</a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec fermentum volutpat. Proin lacus, rhoncus in dapibus.</p>
+                </div>
+                <div class="image-container">
+                    <div class="block">
+                        <img src="/assets/images/blog/hogwarts.webp" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="blog-body">
+            </div>
+        </section>
     </main>
     <footer>
         <div class="container">
@@ -64,6 +94,6 @@
             </div>
         </div>
     </footer>
-    <script src="/js/script.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>

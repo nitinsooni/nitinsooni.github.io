@@ -65,6 +65,40 @@
 
     /*----------------------------------------------------*/
 
+    #blog .title {
+        padding-top: 10rem;
+        padding-bottom: 7rem;
+    }
+
+    #blog .blog-table {
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 5rem;
+    }
+
+    /*----------------------------------------------------*/
+
+    #blog-data {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    #blog-data .blog-head {
+        flex-direction: column-reverse;
+        padding: 2rem 0;
+    }
+
+    #blog-data .blog-head .info-container {
+        width: 100%;
+        max-width: 35rem;
+        padding: 0;
+    }
+
+    #blog-data .blog-head .image-container {
+        width: 100%;
+    }
+
+    /*----------------------------------------------------*/
+
     footer {
         padding-top: 3rem;
         padding-bottom: 3.5rem;
@@ -129,7 +163,7 @@
     /*----------------------------------------------------*/
 
     #home .title {
-        padding-top: 10.7rem;
+        padding-top: 10.4rem;
     }
 
     #home .title h1 {
@@ -258,6 +292,43 @@
 
     /*----------------------------------------------------*/
 
+    #blog .title {
+        padding-bottom: 5rem;
+    }
+
+    #blog .title h1 {
+        font-size: 4rem;
+    }
+
+    #blog .blog-table {
+        padding-bottom: 3.5rem;
+    }
+
+    #blog .blog-table .container .text-title {
+        font-size: 1rem;
+    }
+
+    /*----------------------------------------------------*/
+
+    #blog-data {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    #blog-data .blur-circle {
+        display: none;
+    }
+
+    #blog-data .blog-head .info-container h1 {
+        font-size: 2.25rem;
+    }
+
+    #blog-data .blog-head .info-container > p {
+        font-size: 1rem;
+    }
+
+    /*----------------------------------------------------*/
+
     footer {
         padding-top: 2.5rem;
         padding-bottom: 3rem;
@@ -300,6 +371,7 @@
 
     #portfolio .table .table-l .scroll-container .card-container {
         gap: 2rem;
+        line-height: 1.375;
     }
 
     #portfolio .table .table-l .scroll-container .card-container .card {
@@ -428,6 +500,42 @@
 
     /*----------------------------------------------------*/
 
+    #blog .title h1 {
+        font-size: 3.2rem;
+    }
+
+    #blog .blog-table {
+        grid-template-columns: 1fr;
+        grid-gap: 1.2rem;
+    }
+
+    /*----------------------------------------------------*/
+
+    #blog-data {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #blog-data .blog-head {
+        flex-direction: column;
+    }
+
+    #blog-data .blog-head .info-container h1 {
+        font-size: 2rem;
+        padding-top: 1.2rem;
+    }
+
+    #blog-data .blog-head .info-container .detail-block {
+        flex-wrap: wrap;
+    }
+
+    #blog-data .blog-head .info-container .detail-block p, #blog-data .blog-head .info-container .detail-block a {
+        font-size: .9rem;
+        font-weight: 300;
+    }
+
+    /*----------------------------------------------------*/
+
     footer .container {
         width: 88%;
     }
@@ -487,6 +595,12 @@
 
     #contact .table .table-r .container .card:not(.front):hover {
         cursor: url('/assets/images/link.png'), pointer;
+    }
+
+    /*----------------------------------------------------*/
+
+    #blog-data .blog-head .info-container a:not(.category):hover {
+        color: var(--text-primary);
     }
 
     /*----------------------------------------------------*/
