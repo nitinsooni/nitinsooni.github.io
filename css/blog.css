@@ -61,12 +61,12 @@
     margin: .75rem 0 0;
 }
 
-#blog .blog-table .container .text-info .left {
+#blog .blog-table .container .text-info .date {
     color: rgba(231, 237, 239, .6);
     font-size: .875rem;
 }
 
-#blog .blog-table .container .text-info .right {
+#blog .blog-table .container .text-info .category {
     color: var(--gold);
     background-color: rgba(250, 229, 117, .24);
     font-size: .875rem;
@@ -115,11 +115,11 @@
 
 @media only screen and (max-width: 540px) {
     #blog .title h1 {
-        font-size: 3rem;
+        font-size: 3.2rem;
     }
 
     #blog .blog-table {
         grid-template-columns: 1fr;
-        grid-gap: 1rem;
+        grid-gap: 1.2rem;
     }
 }

@@ -1,17 +1,3 @@
-// Disable preloader screen when website fully loaded with fade-out animation and then start website animations
-const preloader = document.querySelector('.preloader');
-
-window.addEventListener('load', function() {
-    preloader.classList.add('preloader-hide');
-
-    setTimeout(function() {
-        preloader.style.display = 'none';
-    }, 250);
-
-    document.querySelector('#home .title svg path').classList.add('stroke-draw');
-    document.getElementById('home').classList.add('gradient-effect');
-});
-
 // Trigger animation when user scrolled to paragraphs
 const paragraphs = document.querySelectorAll('.paragraph');
 const paraObserver = new IntersectionObserver((entries) => {
@@ -49,24 +35,6 @@ window.addEventListener('scroll', function () {
         }
     });
 });
-
-// Show the scroll-to-top button when user scrolls down 20px
-let btnTop = document.querySelector('#home .scroll-to-top');
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        btnTop.classList.add('scroll-to-top-show');
-    } else {
-        btnTop.classList.remove('scroll-to-top-show');
-    }
-}
-
-// Scroll to the top of document when the user clicks scroll-to-top button
-function topFunction() {
-    document.body.scrollTop = 0; // for safari
-    document.documentElement.scrollTop = 0; // for chrome, firefox, ie and opera
-}
 
 // 1st nav button of portfolio card container gets in focus on site load
 window.onload = function(){
@@ -191,6 +159,3 @@ const cardObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll('#contact .table .table-r .container .card').forEach((card) => {
     cardObserver.observe(card);
 });
-
-// Dynamically change year in copyright text
-document.querySelector('footer .container .wrapper-l p .year').textContent = new Date().getFullYear();

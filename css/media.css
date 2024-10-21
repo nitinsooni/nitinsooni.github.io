@@ -120,6 +120,12 @@
         display: none;
     }
 
+    #home .scroll-to-top {
+        bottom: 1.75rem;
+        right: 1.75rem;
+        padding: .65rem .8rem;
+    }
+
     /*----------------------------------------------------*/
 
     #home .title {
@@ -171,12 +177,6 @@
         margin-right: 0;
         position: static;
         width: 100%;
-    }
-
-    #home .scroll-to-top {
-        bottom: 1.75rem;
-        right: 1.75rem;
-        padding: .65rem .8rem;
     }
 
     /*----------------------------------------------------*/
