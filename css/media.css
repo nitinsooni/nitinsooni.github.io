@@ -84,7 +84,7 @@
 
     #blog-data .blog-head {
         flex-direction: column-reverse;
-        padding: 2rem 0;
+        padding: 3rem 0;
     }
 
     #blog-data .blog-head .info-container {
@@ -150,11 +150,31 @@
         display: none;
     }
 
+    nav .nav-l .hamburger {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 21px;
+        right: 2.2rem;
+    }
+
+    nav .nav-l .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    nav .nav-l .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    nav .nav-l .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
     nav .nav-r {
         display: none;
     }
 
-    #home .scroll-to-top {
+    .scroll-to-top {
         bottom: 1.75rem;
         right: 1.75rem;
         padding: .65rem .8rem;
