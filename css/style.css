@@ -272,24 +272,41 @@ nav .nav-l ul .nav-link a.active {
 nav .nav-l .hamburger {
     display: none;
     position: absolute;
-    top: 21px;
-    right: 8%;
+    top: 14px;
+    right: 5%;
+    cursor: url('/assets/images/link.png'), pointer;
+    transition: transform .4s;
     z-index: 999;
 }
 
 nav .nav-l .hamburger.active {
     position: fixed;
+    transform: rotate(45deg);
     pointer-events: all;
 }
 
-nav .nav-l .hamburger .bar {
-    display: block;
-    width: 20px;
-    height: 2px;
-    margin: 6px auto;
-    background-color: var(--text-primary);
-    border-radius: 20px;
-    transition: all .3s ease-in-out;
+nav .nav-l .hamburger .line {
+    fill: none;
+    transition: stroke-dasharray .4s, stroke-dashoffset .4s;
+    stroke: var(--text-primary);
+    stroke-width: 5.5;
+    stroke-linecap: round;
+}
+
+nav .nav-l .hamburger:nth-child(1) {
+    stroke-dasharray: 40 121;
+}
+
+nav .nav-l .hamburger:nth-child(3) {
+    stroke-dasharray: 40 121;
+}
+
+nav .nav-l .hamburger.active:nth-child(1) {
+    stroke-dashoffset: -68px;
+}
+
+nav .nav-l .hamburger.active:nth-child(3) {
+    stroke-dashoffset: -68px;
 }
 
 nav .nav-r {
@@ -308,15 +325,15 @@ nav .nav-overlay {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: transparent;
+    background: rgba(0, 0, 0, .3);
     backdrop-filter: blur(48px);
-    clip-path: circle(50px at 90% -20%);
+    clip-path: circle(50px at 100% -20%);
     transition: clip-path 1s ease-out;
     pointer-events: none;
 }
 
 nav .nav-overlay.active {
-    clip-path: circle(1000px at 90% -10%);
+    clip-path: circle(1000px at 80% -10%);
     pointer-events: all;
 }
 

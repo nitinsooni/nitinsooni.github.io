@@ -20,8 +20,6 @@ window.addEventListener('load', function() {
 const hamburger = document.querySelector('nav .nav-l .hamburger');
 const navMenu = document.querySelector('nav .nav-overlay');
 
-hamburger.addEventListener('click', mobileMenu);
-
 function mobileMenu() {
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
