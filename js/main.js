@@ -27,7 +27,7 @@ function mobileMenu() {
 }
 
 // Disable hamburger and nav menu when user click nav menu's link
-const navLink = document.querySelectorAll('nav .nav-overlay .nav-link');
+const navLink = document.querySelectorAll('nav .nav-overlay .container .nav-link');
 
 navLink.forEach(n => n.addEventListener('click', closeMenu));
 

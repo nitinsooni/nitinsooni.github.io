@@ -337,11 +337,23 @@ nav .nav-overlay.active {
     pointer-events: all;
 }
 
-nav .nav-overlay .nav-link {
+nav .nav-overlay .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+nav .nav-overlay .container .nav-link {
     color: var(--text-primary);
     font-size: 1.2rem;
     text-decoration: none;
-    margin: 1rem 0;
+    margin: 1.2rem 0;
+}
+
+nav .nav-overlay .container .nav-link i {
+    font-size: 1.3rem;
+    padding-right: .75rem;
 }
 
 .scroll-to-top {
