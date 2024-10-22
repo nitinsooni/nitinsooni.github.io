@@ -8,6 +8,8 @@ window.addEventListener('load', function() {
         preloader.style.display = 'none';
     }, 250);
 
+    document.body.classList.remove('no-scroll-touch');
+
     if (document.body.classList.contains('index-page')) {
         document.querySelector('#home .title svg path').classList.add('stroke-draw');
         document.getElementById('home').classList.add('gradient-effect');
@@ -23,6 +25,7 @@ hamburger.addEventListener('click', mobileMenu);
 function mobileMenu() {
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
+    document.body.classList.toggle('no-scroll-touch');
 }
 
 // Disable hamburger and nav menu when user click nav menu's link
@@ -33,6 +36,7 @@ navLink.forEach(n => n.addEventListener('click', closeMenu));
 function closeMenu() {
     hamburger.classList.remove('active');
     navMenu.classList.remove('active');
+    document.body.classList.toggle('no-scroll-touch');
 }
 
 // Show the scroll-to-top button when user scrolls down 20px

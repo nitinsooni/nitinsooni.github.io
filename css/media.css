@@ -153,9 +153,6 @@
     nav .nav-l .hamburger {
         display: block;
         cursor: pointer;
-        position: absolute;
-        top: 21px;
-        right: 2.2rem;
     }
 
     nav .nav-l .hamburger.active .bar:nth-child(1) {
