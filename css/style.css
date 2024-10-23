@@ -280,7 +280,6 @@ nav .nav-l .hamburger {
 }
 
 nav .nav-l .hamburger.active {
-    position: fixed;
     transform: rotate(45deg);
     pointer-events: all;
 }
@@ -327,33 +326,34 @@ nav .nav-overlay {
     justify-content: center;
     background: rgba(0, 0, 0, .3);
     backdrop-filter: blur(48px);
-    clip-path: circle(50px at 100% -20%);
+    clip-path: circle(0 at 100% 0);
     transition: clip-path 1s ease-out;
     pointer-events: none;
 }
 
 nav .nav-overlay.active {
-    clip-path: circle(1000px at 80% -10%);
+    clip-path: circle(150% at 80% -10%);
     pointer-events: all;
-}
-
-nav .nav-overlay .container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
 }
 
 nav .nav-overlay .container .nav-link {
     color: var(--text-primary);
-    font-size: 1.2rem;
     text-decoration: none;
-    margin: 1.2rem 0;
+    display: grid;
+    grid-template-columns: 2rem auto;
+    gap: 1rem;
+    margin: 2.5rem 0;
 }
 
 nav .nav-overlay .container .nav-link i {
-    font-size: 1.3rem;
-    padding-right: .75rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+nav .nav-overlay .container .nav-link .text {
+    font-size: 1.2rem;
+    text-align: left;
 }
 
 .scroll-to-top {
