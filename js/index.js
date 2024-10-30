@@ -94,6 +94,12 @@ function swapCards(selectedCard) {
     frontCard = selectedCard;
 }
 
+// Swap cards when user click swap-card button
+function swapButton() {
+    event.stopPropagation();
+    swapCards(frontCard === cardOne ? cardTwo : cardOne);
+}
+
 // Swap cards when user horizontal swipe on front card
 let touchStartX = 0;
 let touchEndX = 0;

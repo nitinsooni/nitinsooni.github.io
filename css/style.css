@@ -341,7 +341,7 @@ nav .nav-overlay .container .nav-link {
     text-decoration: none;
     display: grid;
     grid-template-columns: 2rem auto;
-    gap: 1rem;
+    gap: .8rem;
     margin: 2.5rem 0;
 }
 
@@ -848,6 +848,19 @@ nav .nav-overlay .container .nav-link .text {
     left: 95px;
     bottom: 0;
     pointer-events: none;
+}
+
+#contact .table .table-r .container .card .swap-button {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.25rem;
+    font-size: 1.1rem;
+    color: var(--gold);
+    background: transparent;
+    padding: .55rem .7rem;
+    border: 1px solid rgba(255, 255, 255, .24);
+    border-radius: 12px;
+    backdrop-filter: blur(24px);
 }
 
 #contact .table .table-r .container .card.one .content i {

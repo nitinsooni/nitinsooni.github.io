@@ -433,6 +433,13 @@
         left: 15.8px; /*31.8 for 20rem width*/
     }
 
+    #contact .table .table-r .container .card .swap-button {
+        bottom: 1.2rem;
+        right: 1rem;
+        font-size: 1rem;
+        padding: .5rem .6rem;
+    }
+
     #contact .table .table-r .container .card.one .content .block-top {
         flex-direction: column;
         justify-content: center;
