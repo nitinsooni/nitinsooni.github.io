@@ -7,72 +7,10 @@
 
 @font-face {
     font-family: 'Arizonia';
-    src: url('/assets/fonts/Arizonia/Arizonia-Regular.woff2') format('woff2'), url('/assets/fonts/Arizonia/Arizonia-Regular.ttf') format('truetype');
+    font-style: normal;
     font-weight: 400;
     font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('/assets/fonts/Inter/Inter-Thin.woff2') format('woff2'), url('/assets/fonts/Inter/Inter-Thin.ttf') format('truetype');
-    font-weight: 100;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('/assets/fonts/Inter/Inter-ExtraLight.woff2') format('woff2'), url('/assets/fonts/Inter/Inter-ExtraLight.ttf') format('truetype');
-    font-weight: 200;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('/assets/fonts/Inter/Inter-Light.woff2') format('woff2'), url('/assets/fonts/Inter/Inter-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('/assets/fonts/Inter/Inter-Regular.woff2') format('woff2'), url('/assets/fonts/Inter/Inter-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('/assets/fonts/Inter/Inter-Medium.woff2') format('woff2'), url('/assets/fonts/Inter/Inter-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('/assets/fonts/Inter/Inter-SemiBold.woff2') format('woff2'), url('/assets/fonts/Inter/Inter-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('/assets/fonts/Inter/Inter-Bold.woff2') format('woff2'), url('/assets/fonts/Inter/Inter-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('/assets/fonts/Inter/Inter-ExtraBold.woff2') format('woff2'), url('/assets/fonts/Inter/Inter-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('/assets/fonts/Inter/Inter-Black.woff2') format('woff2'), url('/assets/fonts/Inter/Inter-Black.ttf') format('truetype');
-    font-weight: 900;
-    font-display: swap;
+    src: url('/assets/fonts/arizonia/Arizonia-Regular.woff2') format('woff2');
 }
 
 * {
@@ -87,6 +25,8 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
     background: var(--background);
     color: var(--text-primary);
     cursor: url('/assets/images/pointer.png'), auto;
@@ -96,6 +36,12 @@ body {
 .no-scroll-touch {
     pointer-events: none;
     overflow: hidden;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'InterDisplay', sans-serif;
 }
 
 a:hover,
@@ -240,11 +186,14 @@ nav {
 }
 
 nav .nav-l .logo {
-    color: var(--text-primary);
     font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: 2px;
     margin-right: 2rem;
+}
+
+nav .nav-l .logo a {
+    color: var(--text-primary);
     text-decoration: none;
 }
 
@@ -341,7 +290,7 @@ nav .nav-overlay .container .nav-link {
     text-decoration: none;
     display: grid;
     grid-template-columns: 2rem auto;
-    gap: .8rem;
+    gap: .9rem;
     margin: 2.5rem 0;
 }
 
@@ -437,7 +386,7 @@ nav .nav-overlay .container .nav-link .text {
     padding-top: 8rem;
 }
 
-#home .title h1 {
+#home .title .title-top {
     font-family: 'Arizonia', cursive;
     font-size: 8rem;
     font-weight: 400;
@@ -471,7 +420,7 @@ nav .nav-overlay .container .nav-link .text {
     }
 }
 
-#home .title h2 {
+#home .title .title-bottom {
     font-size: 4.8rem;
     font-weight: 600;
     line-height: 1.2;
@@ -885,7 +834,7 @@ nav .nav-overlay .container .nav-link .text {
     text-align: right;
 }
 
-#contact .table .table-r .container .card.one .content .block-top .text h3 {
+#contact .table .table-r .container .card.one .content .block-top .text h5 {
     font-size: 1.1rem;
     font-weight: 500;
     line-height: 1.8;
@@ -1122,7 +1071,7 @@ nav .nav-overlay .container .nav-link .text {
     opacity: .6;
 }
 
-#blog-data .blog-head .info-container h1 {
+#blog-data .blog-head .info-container h3 {
     font-size: 2.5rem;
     font-weight: 400;
     line-height: 1.2;
@@ -1203,7 +1152,7 @@ footer .container .wrapper-l {
     width: 40%;
 }
 
-footer .container .wrapper-l h2 {
+footer .container .wrapper-l h4 {
     font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: 2px;
@@ -1221,7 +1170,7 @@ footer .container .wrapper-r {
     column-gap: 2rem;
 }
 
-footer .container .wrapper-r h3 {
+footer .container .wrapper-r h5 {
     font-size: 1.25rem;
     font-weight: 300;
     padding-bottom: 1rem;
