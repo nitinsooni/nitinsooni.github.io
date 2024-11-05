@@ -1,8 +1,16 @@
 :root {
-    --text-primary: white;
-    --text-secondary: rgba(255, 255, 255, .8);
-    --gold: #fae575;
-    --background: black;
+    color-scheme: dark;
+
+    --text-primary: rgb(255, 255, 255);
+    --text-secondary: rgba(255, 255, 255, .9);
+    --text-tertiary: rgba(255, 255, 255, .8);
+    --text-muted: rgba(255, 255, 255, .7);
+    --accent-gold: #fae575;
+    --background-primary: rgb(0, 0, 0);
+    --background-secondary: #1f1f1f;
+    --border-primary: rgba(255, 255, 255, .24);
+    --border-secondary: rgba(255, 255, 255, .18);
+    --border-tertiary: rgba(255, 255, 255, .12);
 }
 
 @font-face {
@@ -27,7 +35,8 @@ body {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    background: var(--background);
+    font-feature-settings: 'cv11';
+    background: var(--background-primary);
     color: var(--text-primary);
     cursor: url('/assets/images/pointer.png'), auto;
     line-height: 1.375;
@@ -58,27 +67,27 @@ button {
 }
 
 ::selection {
-    color: var(--background);
-    background-color: var(--gold);
+    color: var(--background-primary);
+    background-color: var(--accent-gold);
 }
 
 .gold-text {
-    color: var(--gold);
+    color: var(--accent-gold) !important;
 }
 
 .gold-gradient-text {
-    background: -webkit-linear-gradient(0deg, #b18a52, #f1e8a4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(0deg, #b18a52, #f1e8a4) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
 }
 
 .button {
     font-size: 1rem;
     font-weight: 500;
-    color: var(--gold);
+    color: var(--accent-gold);
     background: transparent;
     padding: .75rem 1.5rem;
-    border: 1px solid rgba(255, 255, 255, .24);
+    border: 1px solid var(--border-primary);
     border-radius: 12px;
     text-decoration: none;
     transition: font-size .4s, padding .4s, margin .4s;
@@ -131,7 +140,7 @@ button {
 }
 
 .preloader .dot {
-    background-color: var(--gold);
+    background-color: var(--accent-gold);
     height: 12px;
     width: 12px;
     border-radius: 50%;
@@ -212,10 +221,6 @@ nav .nav-l ul .nav-link a {
     padding: .5rem 1rem;
     text-decoration: none;
     transition: color .3s;
-}
-
-nav .nav-l ul .nav-link a.active {
-    color: var(--gold);
 }
 
 nav .nav-l .hamburger {
@@ -311,10 +316,10 @@ nav .nav-overlay .container .nav-link .text {
     bottom: 2rem;
     right: 2.5rem;
     font-size: 1.25rem;
-    color: var(--gold);
+    color: var(--accent-gold);
     background: transparent;
     padding: .7rem .85rem;
-    border: 1px solid rgba(255, 255, 255, .24);
+    border: 1px solid var(--border-primary);
     border-radius: 12px;
     opacity: 0;
     visibility: hidden;
@@ -332,7 +337,7 @@ nav .nav-overlay .container .nav-link .text {
 #home {
     width: 100%;
     text-align: center;
-    background-image: linear-gradient(transparent 74%, var(--background)), radial-gradient(circle, #282828, var(--background));
+    background-image: linear-gradient(transparent 74%, var(--background-primary)), radial-gradient(circle, #282828, var(--background-primary));
 }
 
 #home .light-wrapper {
@@ -361,7 +366,7 @@ nav .nav-overlay .container .nav-link .text {
 #home .light-wrapper .lights-holder .light {
     width: 180px;
     height: 1000px;
-    background-image: linear-gradient(to bottom, var(--gold) 5%, transparent 68%);
+    background-image: linear-gradient(to bottom, var(--accent-gold) 5%, transparent 68%);
     opacity: .4;
     filter: blur(18px);
 }
@@ -402,7 +407,7 @@ nav .nav-overlay .container .nav-link .text {
 }
 
 #home .title svg path {
-    stroke: var(--gold);
+    stroke: var(--accent-gold);
     stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -411,7 +416,7 @@ nav .nav-overlay .container .nav-link .text {
 }
 
 .stroke-draw {
-    animation: draw 1.5s .25s forwards;
+    animation: draw 1.5s .2s forwards;
 }
 
 @keyframes draw {
@@ -421,7 +426,7 @@ nav .nav-overlay .container .nav-link .text {
 }
 
 #home .title .title-bottom {
-    font-size: 4.8rem;
+    font-size: 4.7rem;
     font-weight: 600;
     line-height: 1.2;
     word-spacing: -4px;
@@ -453,8 +458,8 @@ nav .nav-overlay .container .nav-link .text {
     font-family: 'Inter', sans-serif;
     font-size: 15px;
     width: 100%;
-    background-color: rgba(255, 255, 255, .12);
-    border: 1px solid rgba(255, 255, 255, .16);
+    background-color: var(--border-tertiary);
+    border: 1px solid var(--border-secondary);
     border-radius: 12px;
     padding: .9rem;
     padding-right: 8rem;
@@ -464,12 +469,12 @@ nav .nav-overlay .container .nav-link .text {
 
 #home .contact-box .contact-bar form .text-field:focus {
     outline: none;
-    border-color: var(--gold) !important;
+    border-color: var(--accent-gold) !important;
 }
 
 #home .contact-box .contact-bar form .submit {
-    color: var(--background);
-    background-color: var(--gold);
+    color: var(--background-primary);
+    background-color: var(--accent-gold);
     padding: .9rem 1.5rem;
     margin-right: 3px;
     border: none;
@@ -546,7 +551,7 @@ nav .nav-overlay .container .nav-link .text {
 }
 
 #portfolio .table .table-l .nav-button-container .nav-button-focus {
-    border-bottom: 1.5px solid var(--gold);
+    border-bottom: 1.5px solid var(--accent-gold);
     transition: border .2s;
 }
 
@@ -563,12 +568,12 @@ nav .nav-overlay .container .nav-link .text {
 
 #portfolio .table .table-l .scroll-container .left-fade {
     left: 0;
-    background: linear-gradient(to left, transparent, var(--background));
+    background: linear-gradient(to left, transparent, var(--background-primary));
 }
 
 #portfolio .table .table-l .scroll-container .right-fade {
     right: 0;
-    background: linear-gradient(to right, transparent, var(--background));
+    background: linear-gradient(to right, transparent, var(--background-primary));
 }
 
 #portfolio .table .table-l .scroll-container .card-container {
@@ -594,8 +599,8 @@ nav .nav-overlay .container .nav-link .text {
     padding-right: 1rem;
     text-align: left;
     position: relative;
-    background: #1f1f1f;
-    border: 1px solid rgba(255, 255, 255, .12);
+    background: var(--background-secondary);
+    border: 1px solid var(--border-tertiary);
     border-radius: 25px;
     box-shadow: rgb(24, 26, 27) 3px -3px 10px 0px inset;
     z-index: -1;
@@ -612,10 +617,8 @@ nav .nav-overlay .container .nav-link .text {
 
 #portfolio .table .table-l .scroll-container .card-container .card > img {
     position: absolute;
-    top: -1.25px;
-    right: 0;
-    left: 95px;
-    bottom: 0;
+    top: -1px;
+    right: -1px;
     pointer-events: none;
 }
 
@@ -624,7 +627,7 @@ nav .nav-overlay .container .nav-link .text {
     font-weight: 500;
     letter-spacing: .025rem;
     margin-top: 2rem;
-    color: rgba(255, 255, 255, .9);
+    color: var(--text-secondary);
 }
 
 #portfolio .table .table-l .scroll-container .card-container .card .content .sub-heading{
@@ -632,7 +635,7 @@ nav .nav-overlay .container .nav-link .text {
     margin-top: .9rem;
     margin-bottom: .5rem;
     margin-left: 2rem;
-    color: var(--text-secondary);
+    color: var(--text-tertiary);
 }
 
 #portfolio .table .table-l .scroll-container .card-container .card .content .text{
@@ -640,7 +643,7 @@ nav .nav-overlay .container .nav-link .text {
     font-weight: 300;
     margin-top: .35rem;
     margin-left: 3.5rem;
-    color: var(--text-secondary);
+    color: var(--text-tertiary);
 }
 
 #portfolio .table .table-r {
@@ -666,7 +669,7 @@ nav .nav-overlay .container .nav-link .text {
 }
 
 #portfolio .table .table-r p {
-    color: var(--text-secondary);
+    color: var(--text-tertiary);
     font-size: 1.25rem;
     font-weight: 300;
     margin: 1.2rem 0;
@@ -749,7 +752,7 @@ nav .nav-overlay .container .nav-link .text {
 }
 
 #contact .table .table-l p {
-    color: var(--text-secondary);
+    color: var(--text-tertiary);
     font-size: 1.25rem;
     font-weight: 300;
     margin: 1.2rem 0;
@@ -776,26 +779,24 @@ nav .nav-overlay .container .nav-link .text {
 #contact .table .table-r .container .card {
     width: 24rem;
     height: 32rem;
-    color: var(--text-secondary);
-    background: #1f1f1f;
-    border: 1px solid rgba(255, 255, 255, .12);
+    color: var(--text-tertiary);
+    background: var(--background-secondary);
+    border: 1px solid var(--border-tertiary);
     border-radius: 25px;
     box-shadow: rgb(24, 26, 27) 3px -3px 10px 0px inset;
     transition: all .5s;
 }
 
 #contact .table .table-r .container .card a {
-    color: var(--text-secondary);
+    color: var(--text-tertiary);
     transition: color .3s;
     text-decoration: none;
 }
 
 #contact .table .table-r .container .card > img {
     position: absolute;
-    top: -1.4px;
-    right: 0;
-    left: 95px;
-    bottom: 0;
+    top: -1px;
+    right: -1px;
     pointer-events: none;
 }
 
@@ -804,10 +805,10 @@ nav .nav-overlay .container .nav-link .text {
     bottom: 1.5rem;
     right: 1.25rem;
     font-size: 1.1rem;
-    color: var(--gold);
+    color: var(--accent-gold);
     background: transparent;
     padding: .55rem .7rem;
-    border: 1px solid rgba(255, 255, 255, .24);
+    border: 1px solid var(--border-primary);
     border-radius: 12px;
     backdrop-filter: blur(24px);
 }
@@ -947,7 +948,7 @@ nav .nav-overlay .container .nav-link .text {
     text-align: center;
     padding-top: 11rem;
     padding-bottom: 9rem;
-    background-image: linear-gradient(transparent 74%, var(--background)), radial-gradient(circle, #282828, var(--background));
+    background-image: linear-gradient(transparent 74%, var(--background-primary)), radial-gradient(circle, #282828, var(--background-primary));
 }
 
 #blog .title h1 {
@@ -971,8 +972,8 @@ nav .nav-overlay .container .nav-link .text {
     width: 100%;
     height: 100%;
     padding: .75rem;
-    background-color: rgba(255, 255, 255, .12);
-    border: 1px solid rgba(255, 255, 255, .2);
+    background-color: var(--background-secondary);
+    border: 1px solid var(--border-secondary);
     border-radius: 1rem;
     text-decoration: none;
 }
@@ -986,7 +987,7 @@ nav .nav-overlay .container .nav-link .text {
 #blog .blog-table .container .image-container img {
     width: 100%;
     height: 100%;
-    border: 1px solid rgba(255, 255, 255, .24);
+    border: 1px solid var(--border-primary);
     border-radius: .75rem;
     position: absolute;
     box-shadow: 0 3px 12px 2px rgba(0, 0, 0, .4);
@@ -1007,7 +1008,7 @@ nav .nav-overlay .container .nav-link .text {
 }
 
 #blog .blog-table .container .text-info .category {
-    color: var(--gold);
+    color: var(--accent-gold);
     background-color: rgba(250, 229, 117, .24);
     font-size: .875rem;
     border-radius: .5rem;
@@ -1062,7 +1063,7 @@ nav .nav-overlay .container .nav-link .text {
 
 #blog-data .blog-head .info-container > a {
     font-size: .875rem;
-    color: rgba(255, 255, 255, .7);
+    color: var(--text-muted);
     text-decoration: none;
 }
 
@@ -1087,13 +1088,13 @@ nav .nav-overlay .container .nav-link .text {
 }
 
 #blog-data .blog-head .info-container .detail-block p, #blog-data .blog-head .info-container .detail-block a {
-    color: var(--text-secondary);
+    color: var(--text-tertiary);
     font-size: 1rem;
     text-decoration: none;
 }
 
 #blog-data .blog-head .info-container .detail-block .category {
-    color: var(--gold);
+    color: var(--accent-gold);
     background-color: rgba(250, 229, 117, .24);
     font-size: .875rem;
     border-radius: .5rem;
@@ -1124,7 +1125,7 @@ nav .nav-overlay .container .nav-link .text {
 #blog-data .blog-head .image-container .block img {
     width: 100%;
     height: 100%;
-    border: 1px solid rgba(255, 255, 255, .24);
+    border: 1px solid var(--border-primary);
     border-radius: .75rem;
     position: absolute;
     box-shadow: 0 3px 12px 2px rgba(0, 0, 0, .4);
@@ -1181,7 +1182,7 @@ footer .container .wrapper-r p {
 }
 
 footer .container .wrapper-r p a {
-    color: rgba(255, 255, 255, .7);
+    color: var(--text-muted);
     font-size: .875rem;
     transition: color .3s;
     text-decoration: none;

@@ -29,9 +29,9 @@ window.addEventListener('scroll', function () {
     });
 
     navLinks.forEach(link => {
-        link.classList.remove('active');
+        link.classList.remove('gold-text');
         if (link.getAttribute('href').substring(1) === current) {
-            link.classList.add('active');
+            link.classList.add('gold-text');
         }
     });
 });
@@ -158,7 +158,7 @@ const cardObserver = new IntersectionObserver((entries) => {
     });
 }, {
     root: null,
-    rootMargin: '-35% 0px',
+    rootMargin: '-30% 0px',
     threshold: 0
 });
 

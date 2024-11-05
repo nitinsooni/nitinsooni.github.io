@@ -371,7 +371,7 @@
     }
 
     #portfolio .table .table-l .nav-button-container .nav-button-focus {
-        border-bottom: 1.2px solid var(--gold);
+        border-bottom: 1.2px solid var(--accent-gold);
     }
 
     #portfolio .table .table-l .scroll-container .card-container {
@@ -391,10 +391,6 @@
 
     #portfolio .table .table-l .scroll-container .card-container .card.c {
         margin-right: 24vw;
-    }
-
-    #portfolio .table .table-l .scroll-container .card-container .card > img {
-        left: 15.8px;
     }
 
     #portfolio .table .table-l .scroll-container .card-container .card .content .heading {
@@ -428,10 +424,6 @@
     #contact .table .table-r .container .card {
         width: 19rem;
         height: 30rem;
-    }
-
-    #contact .table .table-r .container .card > img {
-        left: 15.8px; /*31.8 for 20rem width*/
     }
 
     #contact .table .table-r .container .card .swap-button {
@@ -566,7 +558,7 @@
     }
 
     .gradient-effect {
-        animation: back-gradient 1.2s .25s forwards;
+        animation: back-gradient 1.2s .2s forwards;
     }
 
     @keyframes back-gradient {
@@ -585,13 +577,13 @@
     /*----------------------------------------------------*/
 
     nav .nav-l ul .nav-link a:hover {
-        color: var(--gold);
+        color: var(--accent-gold);
     }
 
     /*----------------------------------------------------*/
 
     #home .contact-box .contact-bar form .text-field:hover {
-        border-color: rgba(255, 255, 255, .24);
+        border-color: var(--border-primary);
     }
 
     #home .contact-box .contact-bar form .submit:hover {
@@ -628,11 +620,11 @@
     }
 
     .gradient-effect {
-        animation: back-gradient 2.2s .25s forwards;
+        animation: back-gradient 2.2s .2s forwards;
     }
 
     @keyframes back-gradient {
-        40% {
+        30% {
             background-size: 96% 100%;
         }
         100% {
