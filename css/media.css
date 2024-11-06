@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 68.75em) {
     nav .nav-l .logo {
         margin-right: 1rem;
     }
@@ -119,19 +119,19 @@
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 50em) {
     .button {
-        font-size: 14px;
+        font-size: .875rem;
     }
 
     /*----------------------------------------------------*/
 
     @keyframes jump {
         0%, 40%, 100% {
-            transform: translateY(-10px);
+            transform: translateY(-.625rem);
         }
         20% {
-            transform: translateY(-20px);
+            transform: translateY(-1.25rem);
         }
     }
 
@@ -175,7 +175,7 @@
     }
 
     #home .title svg {
-        width: 340px;
+        width: 21.25rem;
         top: 12rem;
     }
 
@@ -358,7 +358,7 @@
     }
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 33.75em) {
     #portfolio .table .table-l .nav-button-container {
         column-gap: 2.5rem;
         margin-bottom: 1.5rem;
@@ -441,7 +441,7 @@
     }
 
     #contact .table .table-r .container .card.one .content .block-top img {
-        width: 90px;
+        width: 5.625rem;
     }
 
     #contact .table .table-r .container .card.one .content .block-top .text {
@@ -550,7 +550,7 @@
     }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 50em) {
     #home {
         background-repeat: no-repeat;
         background-position: center;
@@ -568,9 +568,9 @@
     }
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 68.75em) {
     .button:hover {
-        font-size: 16.9px;
+        font-size: 1.05rem;
         padding: .82rem 1.55rem;
     }
 
@@ -614,7 +614,7 @@
     }
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 87.5em) {
     #home {
         background-size: 120% 110%;
     }

@@ -32,10 +32,11 @@ html {
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'InterVariable', 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-feature-settings: 'cv11';
+    font-optical-sizing: none;
     background: var(--background-primary);
     color: var(--text-primary);
     cursor: url('/assets/images/pointer.png'), auto;
@@ -50,7 +51,8 @@ body {
 h1,
 h2,
 h3 {
-    font-family: 'InterDisplay', sans-serif;
+    font-family: 'InterVariable', 'InterDisplay', sans-serif;
+    font-optical-sizing: auto;
 }
 
 a:hover,
@@ -88,7 +90,7 @@ button {
     background: transparent;
     padding: .75rem 1.5rem;
     border: 1px solid var(--border-primary);
-    border-radius: 12px;
+    border-radius: .75rem;
     text-decoration: none;
     transition: font-size .4s, padding .4s, margin .4s;
     backdrop-filter: blur(24px);
@@ -141,8 +143,8 @@ button {
 
 .preloader .dot {
     background-color: var(--accent-gold);
-    height: 12px;
-    width: 12px;
+    height: .75rem;
+    width: .75rem;
     border-radius: 50%;
     display: inline-block;
     margin: 0 3px;
@@ -168,10 +170,10 @@ button {
 
 @keyframes jump {
     0%, 40%, 100% {
-        transform: translateY(-12px);
+        transform: translateY(-.75rem);
     }
     20% {
-        transform: translateY(-24px);
+        transform: translateY(-1.5rem);
     }
 }
 
@@ -226,8 +228,9 @@ nav .nav-l ul .nav-link a {
 nav .nav-l .hamburger {
     display: none;
     position: absolute;
-    top: 14px;
+    top: .875rem;
     right: 5%;
+    width: 2.8rem;
     cursor: url('/assets/images/link.png'), pointer;
     transition: transform .4s;
     z-index: 999;
@@ -255,11 +258,11 @@ nav .nav-l .hamburger:nth-child(3) {
 }
 
 nav .nav-l .hamburger.active:nth-child(1) {
-    stroke-dashoffset: -68px;
+    stroke-dashoffset: -67px;
 }
 
 nav .nav-l .hamburger.active:nth-child(3) {
-    stroke-dashoffset: -68px;
+    stroke-dashoffset: -67px;
 }
 
 nav .nav-r {
@@ -320,7 +323,7 @@ nav .nav-overlay .container .nav-link .text {
     background: transparent;
     padding: .7rem .85rem;
     border: 1px solid var(--border-primary);
-    border-radius: 12px;
+    border-radius: .75rem;
     opacity: 0;
     visibility: hidden;
     transition: all .3s;
@@ -398,7 +401,7 @@ nav .nav-overlay .container .nav-link .text {
 }
 
 #home .title svg {
-    width: 530px;
+    width: 33.125rem;
     position: absolute;
     top: 10.4rem;
     left: 0;
@@ -435,7 +438,7 @@ nav .nav-overlay .container .nav-link .text {
 #home .title p {
     font-size: 1.25rem;
     font-weight: 200;
-    margin-top: 32px;
+    margin-top: 2rem;
 }
 
 #home .contact-box {
@@ -456,11 +459,11 @@ nav .nav-overlay .container .nav-link .text {
 
 #home .contact-box .contact-bar form .text-field {
     font-family: 'Inter', sans-serif;
-    font-size: 15px;
+    font-size: .9rem;
     width: 100%;
     background-color: var(--border-tertiary);
     border: 1px solid var(--border-secondary);
-    border-radius: 12px;
+    border-radius: .75rem;
     padding: .9rem;
     padding-right: 8rem;
     margin-right: 3px;
@@ -620,6 +623,7 @@ nav .nav-overlay .container .nav-link .text {
     top: -1px;
     right: -1px;
     pointer-events: none;
+    z-index: 1;
 }
 
 #portfolio .table .table-l .scroll-container .card-container .card .content .heading{
@@ -798,6 +802,7 @@ nav .nav-overlay .container .nav-link .text {
     top: -1px;
     right: -1px;
     pointer-events: none;
+    z-index: 1;
 }
 
 #contact .table .table-r .container .card .swap-button {
@@ -809,7 +814,7 @@ nav .nav-overlay .container .nav-link .text {
     background: transparent;
     padding: .55rem .7rem;
     border: 1px solid var(--border-primary);
-    border-radius: 12px;
+    border-radius: .75rem;
     backdrop-filter: blur(24px);
 }
 
@@ -825,7 +830,7 @@ nav .nav-overlay .container .nav-link .text {
 }
 
 #contact .table .table-r .container .card.one .content .block-top img {
-    width: 100px;
+    width: 6.25rem;
     border: 2px solid #b18a52;
     border-radius: 100%;
     filter: grayscale(10%);
