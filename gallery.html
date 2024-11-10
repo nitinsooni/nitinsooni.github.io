@@ -6,8 +6,8 @@
     <meta name="color-scheme" content="dark">
     <meta name="darkreader-lock">
     <title>Nitin Soni • Gallery</title>
-    <link rel="stylesheet" href="/css/style.min.css">
-    <link rel="stylesheet" href="/css/media.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/media.css">
     <link rel="stylesheet" href="/assets/fonts/inter/inter.css">
     <link rel="stylesheet" href="/assets/fonts/fontawesome/fontawesome.min.css">
     <link rel="stylesheet" href="/assets/fonts/fontawesome/solid.min.css">
@@ -104,9 +104,10 @@
         </div>
     </footer>
     <script src="/js/main.js"></script>
+    <script src="/js/imagesloaded.pkgd.min.js"></script>
     <script src="/js/masonry.pkgd.min.js"></script>
     <script>
-        window.onload = function(){
+        window.onload = function() {
             var grid = document.querySelector('.grid');
             var masonry = new Masonry(grid, {
                 itemSelector: '.grid .container',
@@ -114,6 +115,10 @@
                 transitionDuration: 0,
                 horizontalOrder: true,
                 percentPosition: true,
+            });
+
+            imagesLoaded(grid, function() {
+                masonry.layout();
             });
         }
     </script>

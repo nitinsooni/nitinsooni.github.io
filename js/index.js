@@ -37,7 +37,7 @@ window.addEventListener('scroll', function () {
 });
 
 // 1st nav button of portfolio card container gets in focus on site load
-window.onload = function(){
+window.onload = function() {
     document.getElementById('nav-button1').classList.add('nav-button-focus');
 }
 
