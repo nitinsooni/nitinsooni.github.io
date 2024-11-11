@@ -6,8 +6,8 @@
     <meta name="color-scheme" content="dark">
     <meta name="darkreader-lock">
     <title>Nitin Soni • Gallery</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/media.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="/css/media.min.css">
     <link rel="stylesheet" href="/assets/fonts/inter/inter.css">
     <link rel="stylesheet" href="/assets/fonts/fontawesome/fontawesome.min.css">
     <link rel="stylesheet" href="/assets/fonts/fontawesome/solid.min.css">
@@ -58,7 +58,9 @@
             </div>
             <div class="grid">
                 <div class="container">
-                    <img src="/assets/media/gallery/20240819.webp" loading="lazy">
+                    <div class="media-container" style="aspect-ratio: 3/4;">
+                        <img src="/assets/media/gallery/20240819_small.webp" data-src="/assets/media/gallery/20240819.webp" class="lazyload blur-up" loading="lazy">
+                    </div>
                     <div class="info-panel">
                         <p class="date">August 19, 2024</p>
                         <p class="category">Uncategorized</p>
@@ -66,7 +68,9 @@
                     <p class="media-title">A Quick Pause to Catch the Sky</p>
                 </div>
                 <div class="container">
-                    <video src="/assets/media/gallery/20221105.webm" controls></video>
+                    <div class="media-container" style="aspect-ratio: 2/3;">
+                        <video src="/assets/media/gallery/20221105.webm" controls></video>
+                    </div>
                     <div class="info-panel">
                         <p class="date">November 05, 2022</p>
                         <p class="category">Uncategorized</p>
@@ -104,23 +108,17 @@
         </div>
     </footer>
     <script src="/js/main.js"></script>
-    <script src="/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/js/lazysizes.min.js" async></script>
     <script src="/js/masonry.pkgd.min.js"></script>
     <script>
-        window.onload = function() {
-            var grid = document.querySelector('.grid');
-            var masonry = new Masonry(grid, {
-                itemSelector: '.grid .container',
-                gutter: 32,
-                transitionDuration: 0,
-                horizontalOrder: true,
-                percentPosition: true,
-            });
-
-            imagesLoaded(grid, function() {
-                masonry.layout();
-            });
-        }
+        var grid = document.querySelector('.grid');
+        var masonry = new Masonry(grid, {
+            itemSelector: '.grid .container',
+            gutter: 32,
+            transitionDuration: 0,
+            horizontalOrder: true,
+            percentPosition: true,
+        });
     </script>
 </body>
 </html>
