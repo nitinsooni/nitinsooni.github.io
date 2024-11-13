@@ -156,7 +156,7 @@
     }
 
     #home .title svg {
-        width: 21.25rem;
+        width: min(100%, 21.25rem);
         top: 12rem;
     }
 
@@ -176,23 +176,17 @@
     }
 
     #home .contact-box .contact-bar {
-        display: flex;
         flex-direction: row;
-        justify-content: center;
+        width: 19rem;
     }
 
-    #home .contact-box .contact-bar form {
-        flex-direction: row;
-        width: 90%;
-    }
-
-    #home .contact-box .contact-bar form .text-field {
+    #home .contact-box .contact-bar .text-field {
         font-size: .9rem;
         margin-right: 0;
         padding-right: .9rem;
     }
 
-    #home .contact-box .contact-bar form .submit {
+    #home .contact-box .contact-bar .submit {
         margin-top: 1rem;
         margin-right: 0;
         position: static;
@@ -515,11 +509,11 @@
 
     /*----------------------------------------------------*/
 
-    #home .contact-box .contact-bar form .text-field:hover {
+    #home .contact-box .contact-bar .text-field:hover {
         border-color: var(--border-primary);
     }
 
-    #home .contact-box .contact-bar form .submit:hover {
+    #home .contact-box .contact-bar .submit:hover {
         padding: .97rem 1.55rem;
         margin-right: 0;
     }

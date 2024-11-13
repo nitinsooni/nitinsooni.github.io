@@ -36,6 +36,13 @@ window.addEventListener('scroll', function () {
     });
 });
 
+// Open default email client with pre-filled message of input tag
+function sendEmail() {
+    const message = document.querySelector('#home .contact-box .contact-bar .text-field').value;
+    const mailtoLink = `mailto:nitinsoooni@gmail.com?body=${encodeURIComponent(message)}`;
+    window.location.href = mailtoLink;
+}
+
 // 1st nav button of portfolio card container gets in focus on site load
 window.onload = function() {
     document.getElementById('nav-button1').classList.add('nav-button-focus');
