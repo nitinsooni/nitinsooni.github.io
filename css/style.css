@@ -995,11 +995,24 @@ nav .nav-overlay .container .nav-link .text {
 
 #gallery .grid .container .media-container .blur-up {
     filter: blur(5px);
+    mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .8) 30%, #000 50%, rgba(0, 0, 0, .8) 70%);
+    mask-size: 200%;
     transition: filter .4s;
+    animation: shine 1.6s infinite;
+}
+
+@keyframes shine {
+    from {
+        mask-position: 150%;
+    }
+    to {
+        mask-position: -50%;
+    }
 }
 
 #gallery .grid .container .media-container .blur-up.lazyloaded {
     filter: blur(0);
+    mask-image: none;
 }
 
 #gallery .grid .container .info-panel {
