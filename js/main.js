@@ -16,6 +16,22 @@ window.addEventListener('load', function() {
     }
 });
 
+// Trigger animation when user scrolled to gradient-ruler
+const gradientRuler = document.querySelectorAll('.gradient-ruler');
+const rulerObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+        }
+    });
+}, {
+    root: null,
+    rootMargin: '-15% 0px',
+    threshold: 0
+});
+
+gradientRuler.forEach((el) => rulerObserver.observe(el));
+
 // Toggle hamburger activation and nav menu display when user click hamburger
 const hamburger = document.querySelector('nav .nav-l .hamburger');
 const navMenu = document.querySelector('nav .nav-overlay');

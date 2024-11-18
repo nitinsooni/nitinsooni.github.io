@@ -105,6 +105,10 @@
         font-size: .875rem;
     }
 
+    .gradient-ruler.active {
+        animation-duration: 1s;
+    }
+
     /*----------------------------------------------------*/
 
     @keyframes jump {
