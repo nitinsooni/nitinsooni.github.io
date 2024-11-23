@@ -319,6 +319,7 @@ nav .nav-overlay .container .nav-link {
     grid-template-columns: 2rem auto;
     gap: .9rem;
     margin: 2.5rem 0;
+    -webkit-tap-highlight-color: transparent;
 }
 
 nav .nav-overlay .container .nav-link i {
