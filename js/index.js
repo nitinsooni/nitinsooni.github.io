@@ -151,24 +151,3 @@ function handleSwipe() {
         swapCards(frontCard === cardOne ? cardTwo : cardOne);
     }
 }
-
-// Trigger animation when user scrolled to contact card
-const cardObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        const cardBack = document.querySelector('#contact .table .table-r .container .card:not(.front)');
-        if (entry.isIntersecting && entry.target === cardBack && ! cardBack.classList.contains('active')) {
-            cardBack.classList.add('active');
-            setTimeout(function() {
-                cardBack.style.animation = 'none';
-            }, 2000);
-        }
-    });
-}, {
-    root: null,
-    rootMargin: '-30% 0px',
-    threshold: 0
-});
-
-document.querySelectorAll('#contact .table .table-r .container .card').forEach((card) => {
-    cardObserver.observe(card);
-});

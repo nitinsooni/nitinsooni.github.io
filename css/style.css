@@ -937,23 +937,6 @@ nav .nav-overlay .container .nav-link .text {
     opacity: .6;
     z-index: 1;
     position: absolute;
-    will-change: transform;
-}
-
-#contact .table .table-r .container .card.active {
-    animation: rotateCard 2s forwards;
-}
-
-@keyframes rotateCard {
-    0%, 20%, 50%, 80%, 100% {
-        transform: rotate(-4deg) translateX(-4px) translateY(-8px);
-    }
-    40% {
-        transform: rotate(-7deg) translateX(-4px) translateY(-8px);
-    }
-    60% {
-        transform: rotate(-5.5deg) translateX(-4px) translateY(-8px);
-    }
 }
 
 /*----------------------------------------------------*/
