@@ -1,0 +1,318 @@
+<!-- 
+    Author: Nitin Soni
+    Website: nitinsooni.github.io
+    © Nitin Soni. All rights reserved.
+    This code is proprietary and confidential. Any unauthorized use or distribution is strictly prohibited.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="I'm Nitin Soni - explore my portfolio, connect via diverse contact options, and engage on social platforms for deeper insights." />
+    <meta name="color-scheme" content="dark" />
+    <meta name="darkreader-lock" />
+    <title>Nitin Soni's Digital Space</title>
+    <link rel="stylesheet" href="/css/style.min.css" />
+    <link rel="stylesheet" href="/css/media.min.css" />
+    <link rel="stylesheet" href="/assets/fonts/Inter/inter.css" />
+    <link rel="stylesheet" href="/assets/fonts/Fontawesome/fontawesome.min.css" />
+    <link rel="stylesheet" href="/assets/fonts/Fontawesome/solid.min.css" />
+    <link rel="stylesheet" href="/assets/fonts/Fontawesome/brands.min.css" />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+</head>
+<body class="index-page no-scroll-touch">
+    <div class="preloader">
+        <div class="dot a"></div>
+        <div class="dot b"></div>
+        <div class="dot c"></div>
+        <div class="dot d"></div>
+    </div>
+    <nav>
+        <div class="nav-l">
+            <h4 class="logo"><a href="/index.html">NITIN SONI</a></h4>
+            <ul>
+                <li class="nav-link">
+                    <a href="#home" class="gold-text">Home</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#contact">Contact</a>
+                </li>
+                <li class="nav-link">
+                    <a href="/gallery.html">Gallery</a>
+                </li>
+            </ul>
+            <svg class="hamburger" viewBox="0 0 100 100" onclick="mobileMenu()">
+                <path class="line" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+                <path class="line" d="m 70,50 h -40" />
+                <path class="line" d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+            </svg>
+        </div>
+        <div class="nav-r">
+            <a class="button" href="mailto:nitinsoooni@gmail.com">E-mail me</a>
+        </div>
+        <div class="nav-overlay">
+            <div class="container">
+                <a href="#home" class="nav-link">
+                    <span class="gold-gradient-text">
+                        <i class="fa-solid fa-house"></i>
+                    </span>
+                    <span class="text">Home</span>
+                </a>
+                <a href="#portfolio" class="nav-link">
+                    <span class="gold-gradient-text">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </span>
+                    <span class="text">Portfolio</span>
+                </a>
+                <a href="#contact" class="nav-link">
+                    <span class="gold-gradient-text">
+                        <i class="fa-solid fa-address-card"></i>
+                    </span>
+                    <span class="text">Contact</span>
+                </a>
+                <a href="/gallery.html" class="nav-link">
+                    <span class="gold-gradient-text">
+                        <i class="fa-solid fa-images"></i>
+                    </span>
+                    <span class="text">Gallery</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <button onclick="topFunction()" class="scroll-to-top">
+        <i class="fa-solid fa-angle-up"></i>
+    </button>
+    <main>
+        <section id="home">
+            <div class="light-wrapper">
+                <div class="lights-holder">
+                    <div class="light left"></div>
+                    <div class="light middle"></div>
+                    <div class="light right"></div>
+                </div>
+            </div>
+            <div class="title">
+                <h1 class="title-top">Greetings</h1>
+                <svg viewBox="0 0 530 121" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.3842 62.6465C-13.5586 90.2972 1.53864 133.508 66.4018 106.456C131.264 79.4047 148.186 89.771 190.258 105.98C232.33 122.19 280.586 127.623 339.926 103.981C402.249 82.3266 422.278 99.0596 464.599 110.393C515.868 123.715 538.408 96.4687 525.376 78.2974C520.937 71.0188 508.251 72.1704 512.514 80.2658" />
+                </svg>
+                <h1 class="title-bottom">to You, Mate</h1>
+                <p>Welcome! I'm <span class="gold-text">Nitin Soni</span> - explore my portfolio,<br />
+                    connect via diverse contact options, and engage on<br />
+                    social platforms for deeper insights.
+                </p>
+            </div>
+            <div class="contact-box">
+                <div class="contact-bar">
+                    <input type="text" class="text-field" placeholder="Type your message..." />
+                    <button class="button submit" onclick="sendEmail()">E-mail me</button>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <img src="/assets/media/blur-circle.webp" class="blur-circle" />
+            <div class="title">
+                <h2>Portfolio</h2>
+            </div>
+            <div class="t-container">
+                <div class="table">
+                    <div class="table-l">
+                        <div class="nav-button-container">
+                            <button class="nav-button" id="nav-button1" onclick="scrollToCard(0)">Skills</button>
+                            <button class="nav-button" id="nav-button2" onclick="scrollToCard(1)">Work Ex.</button>
+                            <button class="nav-button" id="nav-button3" onclick="scrollToCard(2)">Education</button>
+                        </div>
+                        <div class="scroll-container">
+                            <div class="fade-overlay left-fade"></div>
+                            <div class="card-container">
+                                <div class="card a">
+                                    <img src="/assets/media/card-border.svg" />
+                                    <div class="content">
+                                        <p class="heading">Industry Skills:</p>
+                                        <p class="sub-heading">Concepts:</p>
+                                        <p class="text">&bull; Accounting</p>
+                                        <p class="text">&bull; Financial Analysis</p>
+                                        <p class="text">&bull; Data Interpretation</p>
+                                        <p class="text">&bull; English Touch Typing (55 WPM)</p>
+                                        <p class="sub-heading">Software Proficiency:</p>
+                                        <p class="text">MS Office</p>
+                                        <p class="heading">IT Skills:</p>
+                                        <p class="sub-heading">Concepts:</p>
+                                        <p class="text">&bull; Python Programming</p>
+                                        <p class="text">&bull; Web Development</p>
+                                        <p class="sub-heading">Development Tools:</p>
+                                        <p class="text">GitHub, Git</p>
+                                    </div>
+                                </div>
+                                <div class="card b">
+                                    <img src="/assets/media/card-border.svg" />
+                                    <div class="content">
+                                        <p class="heading">Industry Experience:</p>
+                                        <p class="sub-heading">N/A</p>
+                                        <p class="heading">Other Experience:</p>
+                                        <p class="sub-heading">Legal Document Assistant</p>
+                                        <p class="text">Sohna Tehsil, Gurugram</p>
+                                        <p class="text">2023 - 2024</p>
+                                        <p class="sub-heading">Personal Portfolio Website</p>
+                                        <p class="text">Self-Driven Project</p>
+                                        <p class="text">2023 - 2024</p>
+                                    </div>
+                                </div>
+                                <div class="card c">
+                                    <img src="/assets/media/card-border.svg" />
+                                    <div class="content">
+                                        <p class="heading">Academics:</p>
+                                        <p class="sub-heading">Bachelor of Commerce (Honors)</p>
+                                        <p class="text">Gurugram University</p>
+                                        <p class="text">2020 - 2023</p>
+                                        <p class="sub-heading">Senior Secondary Education</p>
+                                        <p class="text">Shiv Public Sr. Sec. School, CBSE</p>
+                                        <p class="text">2018 - 2020</p>
+                                        <p class="heading">Certification:</p>
+                                        <p class="sub-heading">Google IT Automation with Python</p>
+                                        <p class="text">Google</p>
+                                        <p class="text">2023</p>
+                                        <p class="sub-heading">Pregrad Python Core to Advanced</p>
+                                        <p class="text">Pregrad</p>
+                                        <p class="text">2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fade-overlay right-fade"></div>
+                        </div>
+                    </div>
+                    <div class="table-r paragraph">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <h3>Embark on My<br />
+                            <span class="gold-gradient-text">Professional Odyssey</span>
+                        </h3>
+                        <p>Explore my academic journey, diverse skill set, and professional experience.</p>
+                        <p>Want the full picture<span class="gold-gradient-text">?</span> Download my resume and let's explore opportunities together.</p>
+                        <div class="button-container">
+                            <a class="button" href="https://drive.google.com/file/d/1s7ycaGfGqsZ1dIJjvkzpXJ5g9o7XT69F/view" target="_blank">Get Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <img src="/assets/media/blur-circle.webp" class="blur-circle" />
+            <div class="title">
+                <h2>Contact</h2>
+            </div>
+            <div class="t-container">
+                <div class="table">
+                    <div class="table-l paragraph">
+                        <i class="fa-solid fa-address-card"></i>
+                        <h3>Explore My<br />
+                            <span class="gold-gradient-text">Online Presence</span>
+                        </h3>
+                        <p>Discover more about me and connect through my social links to stay in the loop.</p>
+                        <p>Feel free to reach out <span class="gold-gradient-text">-</span> I'm just a message away<span class="gold-gradient-text">!</span></p>
+                        <div class="button-container">
+                            <a class="button" href="mailto:nitinsoooni@gmail.com">E-mail me</a>
+                        </div>
+                    </div>
+                    <div class="table-r">
+                        <div class="container">
+                            <div class="card one front">
+                                <img src="/assets/media/card-border.svg" />
+                                <div class="content">
+                                    <div class="block-top">
+                                        <img src="/assets/media/profile.webp" loading="lazy" />
+                                        <div class="text">
+                                            <h5>Nitin Soni</h5>
+                                            <a href="https://www.google.com/maps/place/Gurugram,+Haryana" target="_blank"><i class="fa-solid fa-location-dot"></i>Gurugram, Haryana</a>
+                                        </div>
+                                    </div>
+                                    <div class="block-bottom">
+                                        <a href="mailto:nitinsoooni@gmail.com"><i class="fa-solid fa-envelope"></i>nitinsoooni@gmail.com</a>
+                                        <br />
+                                        <a href="tel:+918278184784"><i class="fa-solid fa-phone"></i><span class="gold-gradient-text">+</span>91 827-818-4784</a>
+                                        <p>Here are my social media accounts for you to explore.</p>
+                                        <div class="social-block">
+                                            <a href="https://www.linkedin.com/in/nitinsooni" target="_blank">
+                                                <i class="fa-brands fa-linkedin"></i>
+                                            </a>
+                                            <a href="https://www.instagram.com/nitinsooni" target="_blank">
+                                                <i class="fa-brands fa-instagram"></i>
+                                            </a>
+                                            <a href="https://github.com/nitinsooni" target="_blank">
+                                                <i class="fa-brands fa-github"></i>
+                                            </a>
+                                            <a href="https://open.spotify.com/user/nenowwq76dkddt356pb6k8of9" target="_blank">
+                                                <i class="fa-brands fa-spotify"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button onclick="swapButton()" class="swap-button">
+                                    <i class="fa-solid fa-repeat"></i>
+                                </button>
+                            </div>
+                            <div class="card two">
+                                <img src="/assets/media/card-border.svg" />
+                                <div class="content">
+                                    <img src="/assets/media/zero2.gif" loading="lazy" />
+                                </div>
+                                <button onclick="swapButton()" class="swap-button">
+                                    <i class="fa-solid fa-repeat"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gradient-ruler"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="wrapper-l">
+                <h4>NITIN SONI</h4>
+                <p>&copy; <span class="year"></span> Nitin Soni<br /><br />
+                    Sohna<br />
+                    Gurugram, HR 122103
+                </p>
+            </div>
+            <div class="wrapper-r">
+                <div class="column a">
+                    <h5>Donate</h5>
+                    <p>
+                        <a href="upi://pay?pa=nitinsooni@axl&pn=Nitin%20Soni">UPI</a>
+                    </p>
+                    <p>
+                        <a href="bitcoin:bc1q33wrwtc8dqxvvd7jc2d4zr8x2klzegsms8ck5y">Bitcoin</a>
+                    </p>
+                </div>
+                <div class="column b">
+                    <h5>Reach out</h5>
+                    <p>
+                        <a href="https://www.linkedin.com/in/nitinsooni" target="_blank">LinkedIn</a>
+                    </p>
+                    <p>
+                        <a href="https://www.instagram.com/nitinsooni" target="_blank">Instagram</a>
+                    </p>
+                </div>
+                <div class="column c">
+                    <h5>Other</h5>
+                    <p>
+                        <a href="/gallery.html">Gallery</a>
+                    </p>
+                    <p>
+                        <a href="/resource_hub.html">Resource Hub</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/main.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>
