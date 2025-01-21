@@ -888,7 +888,7 @@ nav .nav-overlay .container .nav-link .text {
     background: transparent;
     padding: 0.55rem 0.7rem;
     border: 1px solid var(--border-primary);
-    border-radius: 0.75rem;
+    border-radius: 0.7rem;
     backdrop-filter: blur(24px);
     -webkit-tap-highlight-color: transparent;
 }
@@ -998,11 +998,22 @@ nav .nav-overlay .container .nav-link .text {
     justify-content: center;
     overflow: hidden;
     border-radius: 25px;
+    position: relative;
 }
 
 #contact .table .table-r .container .card.two .content img {
-    height: 100%;
-    filter: grayscale(25%);
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+
+#contact .table .table-r .container .card.two .content h2 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    letter-spacing: 0.025rem;
+    color: transparent;
+    background: linear-gradient(#ffffffe0, #fff6);
+    background-clip: text;
 }
 
 #contact .table .table-r .container .card.front {
