@@ -329,7 +329,16 @@
         font-size: 1rem;
     }
 
-    #resource_hub .grid .container p {
+    #resource_hub .grid .container {
+        padding: 1rem 1.25rem;
+    }
+
+    #resource_hub .grid .container .heading {
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    #resource_hub .grid .container .text {
         font-size: 0.9rem;
     }
 
@@ -610,6 +619,12 @@
 
     #contact .table .table-r .container .card:not(.front):hover {
         cursor: url('/assets/media/link.png'), pointer;
+    }
+
+    /*----------------------------------------------------*/
+
+    #resource_hub .grid .container .text a:hover {
+        color: var(--text-primary);
     }
 
     /*----------------------------------------------------*/
