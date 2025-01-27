@@ -338,6 +338,11 @@
         padding-bottom: 1rem;
     }
 
+    #resource_hub .grid .container .heading i {
+        font-size: .9rem;
+        padding-right: .5rem;
+    }
+
     #resource_hub .grid .container .text {
         font-size: 0.9rem;
     }

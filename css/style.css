@@ -544,6 +544,7 @@ nav .nav-overlay .container .nav-link .text {
     top: 30%;
     right: 0;
     z-index: -1;
+    pointer-events: none;
 }
 
 #portfolio .title {
@@ -779,6 +780,7 @@ nav .nav-overlay .container .nav-link .text {
     top: 45%;
     left: -5%;
     z-index: -1;
+    pointer-events: none;
 }
 
 #contact .title {
@@ -1005,12 +1007,14 @@ nav .nav-overlay .container .nav-link .text {
     position: absolute;
     z-index: -1;
     width: 100%;
+    pointer-events: none;
 }
 
 #contact .table .table-r .container .card.two .content h2 {
     font-size: 3.5rem;
     font-weight: 500;
     letter-spacing: 0.025rem;
+    /*color: #a9abb0;*/
     color: transparent;
     background: linear-gradient(#ffffffe0, #fff6);
     background-clip: text;
@@ -1200,6 +1204,11 @@ nav .nav-overlay .container .nav-link .text {
 #resource_hub .grid .container .heading {
     font-size: 1.25rem;
     padding-bottom: 1.25rem;
+}
+
+#resource_hub .grid .container .heading i {
+    font-size: 1.1rem;
+    padding-right: .75rem;
 }
 
 #resource_hub .grid .container .text {
