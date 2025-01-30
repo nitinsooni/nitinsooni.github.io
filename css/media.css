@@ -105,6 +105,17 @@
 
     /*----------------------------------------------------*/
 
+    #mantras .title {
+        padding-top: 10rem;
+        padding-bottom: 7rem;
+    }
+
+    #mantras .grid {
+        padding-bottom: 3.1rem;
+    }
+
+    /*----------------------------------------------------*/
+
     footer {
         padding-top: 3rem;
         padding-bottom: 3.5rem;
@@ -349,6 +360,40 @@
 
     /*----------------------------------------------------*/
 
+    #mantras .title {
+        padding-bottom: 5rem;
+    }
+
+    #mantras .title h1 {
+        font-size: 4rem;
+    }
+
+    #mantras .grid .container .heading-block {
+        padding: 1rem 1.25rem;
+    }
+
+    #mantras .grid .container .heading-block .heading {
+        font-size: 1rem;
+    }
+
+    #mantras .grid .container .heading-block i {
+        font-size: 1.1rem;
+    }
+
+    #mantras .grid .container .content-wrapper {
+        padding: 0 1.25rem;
+    }
+
+    #mantras .grid .container .content-wrapper .text {
+        font-size: 1rem;
+    }
+
+    #mantras .grid .container .content-wrapper .text span {
+        font-size: 1.1rem;
+    }
+
+    /*----------------------------------------------------*/
+
     footer {
         padding-top: 2.5rem;
         padding-bottom: 3rem;
@@ -565,6 +610,25 @@
     #resource_hub .grid .container {
         width: calc(100% - 2rem);
         margin-bottom: 1.4rem;
+    }
+
+    /*----------------------------------------------------*/
+
+    #mantras .title h1 {
+        font-size: 3.2rem;
+    }
+
+    #mantras .grid .container {
+        margin-bottom: 1.4rem;
+    }
+
+    #mantras .grid .container .content-wrapper .text {
+        font-size: 0.95rem;
+    }
+
+    #mantras .grid .container .content-wrapper .text span {
+        font-size: 1rem;
+        padding-top: 0.5rem;
     }
 
     /*----------------------------------------------------*/
