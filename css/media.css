@@ -110,6 +110,10 @@
         padding-bottom: 7rem;
     }
 
+    #mantras .headline {
+        padding-bottom: 2.5rem;
+    }
+
     #mantras .grid {
         padding-bottom: 3.1rem;
     }
@@ -368,6 +372,14 @@
         font-size: 4rem;
     }
 
+    #mantras .headline p {
+        font-size: 1rem;
+    }
+
+    #mantras .grid h4 {
+        font-size: 1.2rem;
+    }
+
     #mantras .grid .container .heading-block {
         padding: 1rem 1.25rem;
     }
@@ -616,6 +628,14 @@
 
     #mantras .title h1 {
         font-size: 3.2rem;
+    }
+
+    #mantras .headline p br {
+        display: inline;
+    }
+
+    #mantras .grid h4 {
+        margin-bottom: 1rem;
     }
 
     #mantras .grid .container {

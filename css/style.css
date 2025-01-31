@@ -1188,7 +1188,6 @@ nav .nav-overlay .container .nav-link .text {
 }
 
 #gallery .grid .container .media-title {
-    color: var(--text-primary);
     font-size: 1.25rem;
     font-weight: 300;
     padding-top: 0.6rem;
@@ -1230,7 +1229,6 @@ nav .nav-overlay .container .nav-link .text {
 }
 
 #resource_hub .headline p {
-    color: var(--text-primary);
     font-size: 1.25rem;
     font-weight: 300;
 }
@@ -1280,6 +1278,7 @@ nav .nav-overlay .container .nav-link .text {
 
 #mantras {
     width: 100%;
+    font-family: 'InterVariable', 'Inter', 'EczarVariable', 'Eczar', sans-serif;
 }
 
 #mantras .title {
@@ -1300,10 +1299,33 @@ nav .nav-overlay .container .nav-link .text {
     line-height: 1.2;
 }
 
+#mantras .headline {
+    width: min(100%, 80rem);
+    margin: 0 auto;
+    padding: 0 1rem 3rem 1rem;
+}
+
+#mantras .headline p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#mantras .headline p br {
+    display: none;
+}
+
 #mantras .grid {
     width: min(100%, 80rem);
     margin: 0 auto;
     padding: 0 1rem 4rem 1rem;
+}
+
+#mantras .grid h4 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
 }
 
 #mantras .grid .container {

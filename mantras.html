@@ -92,7 +92,23 @@
             <div class="title">
                 <h1>Mantras</h1>
             </div>
+            <div class="headline">
+                <p class="gold-gradient-text">आकाशात् पतितं तोयं यथा गच्छति सागरम् ।<br />
+                    सर्वदेवनमस्कारः केशवं प्रतिगच्छति ॥</p>
+            </div>
             <div class="grid">
+                <h4>Shiva:</h4>
+                <div onclick="toggleContent(this)" class="container">
+                    <div class="heading-block">
+                        <p class="heading">Mahamrityunjaya Mantra (महामृत्युंजयमंत्र)</p>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="content-wrapper">
+<pre class="text">
+ॐ त्र्यम्बकं यजामहे सुगन्धिं पुष्टिवर्धनम् ।
+उर्वारुकमिव बन्धनान्मृत्योर्मुक्षीय माऽमृतात् ॥</pre>
+                    </div>
+                </div>
                 <div onclick="toggleContent(this)" class="container">
                     <div class="heading-block">
                         <p class="heading">Shiva Tandava Stotram (शिवताण्डवस्तोत्रम्)</p>
@@ -457,6 +473,7 @@
 <span>~Shri Adi Shankaracharya</span></pre>
                     </div>
                 </div>
+                <h4>Others:</h4>
                 <div onclick="toggleContent(this)" class="container">
                     <div class="heading-block">
                         <p class="heading">Hanuman Chalisa (हनुमान् चालीसा)</p>
@@ -746,10 +763,10 @@
                         <a href="/gallery.html">Gallery</a>
                     </p>
                     <p>
-                        <a href="/resource_hub.html">Resource Hub</a>
+                        <a href="/mantras.html">Mantras</a>
                     </p>
                     <p>
-                        <a href="/mantras.html">Mantras</a>
+                        <a href="/resource_hub.html">Resource Hub</a>
                     </p>
                 </div>
             </div>
@@ -758,7 +775,6 @@
     <script src="/js/main.js"></script>
     <script>
         function toggleContent(container) {
-            let headingBlock = container.querySelector('.heading-block');
             let plusIcon = container.querySelector('.heading-block i');
             let content = container.querySelector('.content-wrapper');
 
