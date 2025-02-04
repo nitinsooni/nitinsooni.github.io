@@ -120,11 +120,6 @@
 
     /*----------------------------------------------------*/
 
-    footer {
-        padding-top: 3rem;
-        padding-bottom: 3.5rem;
-    }
-
     footer .container {
         flex-direction: column;
         row-gap: 4rem;
@@ -407,8 +402,8 @@
     /*----------------------------------------------------*/
 
     footer {
-        padding-top: 2.5rem;
-        padding-bottom: 3rem;
+        padding-top: 2rem;
+        padding-bottom: 2.5rem;
     }
 
     footer .container {
