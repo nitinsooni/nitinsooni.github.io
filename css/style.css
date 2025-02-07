@@ -1335,8 +1335,6 @@ nav .nav-overlay .container .nav-link .text {
     border-radius: 0.75rem;
     margin-bottom: 2rem;
     transition: background-color 0.4s, border-color 0.4s;
-    cursor: url('/assets/media/link.png'), pointer;
-    -webkit-tap-highlight-color: transparent;
 }
 
 #mantras .grid .container .heading-block {
@@ -1345,6 +1343,8 @@ nav .nav-overlay .container .nav-link .text {
     align-items: center;
     justify-content: space-between;
     column-gap: 0.5rem;
+    cursor: url('/assets/media/link.png'), pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 #mantras .grid .container .heading-block .heading {
@@ -1379,6 +1379,11 @@ nav .nav-overlay .container .nav-link .text {
     font-size: 1.3rem;
     text-align: right;
     padding-top: 0.75rem;
+}
+
+#mantras .grid .container .content-wrapper .text span a {
+    color: var(--accent-gold);
+    text-decoration: none;
 }
 
 /*----------------------------------------------------*/
