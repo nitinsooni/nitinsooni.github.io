@@ -94,7 +94,6 @@ body {
     font-optical-sizing: none;
     background: var(--background-primary);
     color: var(--text-primary);
-    cursor: url('/assets/media/pointer.png'), auto;
     line-height: 1.375;
     accent-color: var(--accent-gold);
     -webkit-font-smoothing: antialiased;
@@ -111,15 +110,6 @@ h2,
 h3 {
     font-family: 'InterVariable', 'InterDisplay', sans-serif;
     font-optical-sizing: auto;
-}
-
-a:hover,
-a:active {
-    cursor: url('/assets/media/link.png'), pointer;
-}
-
-button {
-    cursor: url('/assets/media/link.png'), pointer;
 }
 
 ::selection {
@@ -312,7 +302,7 @@ nav .nav-l .hamburger {
     top: 0.875rem;
     right: 5%;
     width: 2.8rem;
-    cursor: url('/assets/media/link.png'), pointer;
+    cursor: pointer;
     transition: transform 0.4s;
     z-index: 999;
     -webkit-tap-highlight-color: transparent;
@@ -557,7 +547,6 @@ nav .nav-overlay .container .nav-link .text {
     margin-right: 3px;
     transition: border-color 0.2s;
     outline: none;
-    cursor: url('/assets/media/text.png'), text;
     caret-color: var(--accent-gold);
 }
 
@@ -572,7 +561,7 @@ nav .nav-overlay .container .nav-link .text {
     margin-right: 3px;
     border: none;
     position: absolute;
-    cursor: url('/assets/media/link.png'), pointer;
+    cursor: pointer;
 }
 
 /*----------------------------------------------------*/
@@ -1082,6 +1071,7 @@ nav .nav-overlay .container .nav-link .text {
     opacity: 0.6;
     z-index: 1;
     position: absolute;
+    cursor: pointer;
 }
 
 /*----------------------------------------------------*/
@@ -1343,7 +1333,7 @@ nav .nav-overlay .container .nav-link .text {
     align-items: center;
     justify-content: space-between;
     column-gap: 0.5rem;
-    cursor: url('/assets/media/link.png'), pointer;
+    cursor: pointer;
     -webkit-tap-highlight-color: transparent;
 }
 
