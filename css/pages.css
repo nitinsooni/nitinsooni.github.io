@@ -1,0 +1,301 @@
+/*
+    Author: Nitin Soni
+    Website: nitinsooni.github.io
+    © Nitin Soni. All rights reserved.
+    This code is proprietary and confidential. Any unauthorized use or distribution is strictly prohibited.
+*/
+#gallery {
+    width: 100%;
+}
+
+#gallery .title {
+    text-align: center;
+    padding-top: 11rem;
+    padding-bottom: 9rem;
+    background-image: linear-gradient(
+            transparent 74%,
+            var(--background-primary)
+        ),
+        radial-gradient(circle, #282828, var(--background-primary));
+}
+
+#gallery .title h1 {
+    font-size: 5.5rem;
+    font-weight: 500;
+    letter-spacing: 0.025rem;
+    line-height: 1.2;
+}
+
+#gallery .grid {
+    width: min(100%, 80rem);
+    margin: 0 auto;
+    padding: 0 1rem 4rem 1rem;
+}
+
+#gallery .grid .container {
+    width: calc(33.33% - 2rem);
+    padding: 0.75rem;
+    background-color: var(--background-secondary);
+    border: 1px solid var(--border-secondary);
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+#gallery .grid .container .media-container {
+    width: 100%;
+    background: transparent;
+    border: 1px solid var(--border-primary);
+    border-radius: 0.75rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 3px 12px 2px;
+    position: relative;
+}
+
+#gallery .grid .container .media-container img,
+#gallery .grid .container .media-container video {
+    width: 100%;
+    border-radius: 0.68rem;
+    position: absolute;
+    inset: 0;
+}
+
+#gallery .grid .container .media-container .blur-up {
+    filter: blur(5px);
+    mask-image: linear-gradient(
+        -75deg,
+        rgba(0, 0, 0, 0.8) 30%,
+        #000 50%,
+        rgba(0, 0, 0, 0.8) 70%
+    );
+    mask-size: 200%;
+    transition: filter 0.4s;
+    animation: shine 1.6s infinite;
+}
+
+@keyframes shine {
+    from {
+        mask-position: 150%;
+    }
+    to {
+        mask-position: -50%;
+    }
+}
+
+#gallery .grid .container .media-container .blur-up.lazyloaded {
+    filter: blur(0);
+    mask-image: none;
+}
+
+#gallery .grid .container .info-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.75rem 0 0;
+}
+
+#gallery .grid .container .info-panel .date {
+    color: rgba(231, 237, 239, 0.6);
+    font-size: 0.875rem;
+}
+
+#gallery .grid .container .info-panel .category {
+    color: var(--accent-gold);
+    background-color: rgba(250, 229, 117, 0.24);
+    font-size: 0.875rem;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.5rem;
+}
+
+#gallery .grid .container .media-title {
+    font-size: 1.25rem;
+    font-weight: 300;
+    padding-top: 0.6rem;
+}
+
+#gallery .grid .container .media-title a {
+    color: var(--accent-gold);
+    text-decoration: none;
+}
+
+#resource_hub {
+    width: 100%;
+}
+
+#resource_hub .title {
+    text-align: center;
+    padding-top: 11rem;
+    padding-bottom: 9rem;
+    background-image: linear-gradient(
+            transparent 74%,
+            var(--background-primary)
+        ),
+        radial-gradient(circle, #282828, var(--background-primary));
+}
+
+#resource_hub .title h1 {
+    font-size: 5.5rem;
+    font-weight: 500;
+    letter-spacing: 0.025rem;
+    line-height: 1.2;
+}
+
+#resource_hub .headline {
+    width: min(100%, 80rem);
+    margin: 0 auto;
+    padding: 0 1rem 3rem 1rem;
+}
+
+#resource_hub .headline p {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+#resource_hub .grid {
+    width: min(100%, 80rem);
+    margin: 0 auto;
+    padding: 0 1rem 4rem 1rem;
+}
+
+#resource_hub .grid .container {
+    width: calc(33.33% - 2rem);
+    padding: 1.25rem 1.5rem;
+    background-color: var(--background-secondary);
+    border: 1px solid var(--border-secondary);
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+#resource_hub .grid .container .heading {
+    font-size: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+#resource_hub .grid .container .heading i {
+    font-size: 1.1rem;
+    padding-right: 0.75rem;
+}
+
+#resource_hub .grid .container .text {
+    color: var(--text-muted);
+    font-size: 1rem;
+    padding-left: 0.5rem;
+}
+
+#resource_hub .grid .container .text:not(:last-child) {
+    padding-bottom: 0.25rem;
+}
+
+#resource_hub .grid .container .text a {
+    color: var(--text-muted);
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+#mantras {
+    width: 100%;
+    font-family: 'InterVariable', 'Inter', 'Eczar', sans-serif;
+}
+
+#mantras .title {
+    text-align: center;
+    padding-top: 11rem;
+    padding-bottom: 9rem;
+    background-image: linear-gradient(
+            transparent 74%,
+            var(--background-primary)
+        ),
+        radial-gradient(circle, #282828, var(--background-primary));
+}
+
+#mantras .title h1 {
+    font-size: 5.5rem;
+    font-weight: 500;
+    letter-spacing: 0.025rem;
+    line-height: 1.2;
+}
+
+#mantras .headline {
+    width: min(100%, 80rem);
+    margin: 0 auto;
+    padding: 0 1rem 3rem 1rem;
+}
+
+#mantras .headline p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#mantras .headline p br {
+    display: none;
+}
+
+#mantras .grid {
+    width: min(100%, 80rem);
+    margin: 0 auto;
+    padding: 0 1rem 4rem 1rem;
+}
+
+#mantras .grid h4 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+#mantras .grid .container {
+    width: 100%;
+    background-color: var(--background-secondary);
+    border: 1px solid var(--border-tertiary);
+    border-radius: 0.75rem;
+    margin-bottom: 2rem;
+    transition: background-color 0.4s, border-color 0.4s;
+}
+
+#mantras .grid .container .heading-block {
+    display: flex;
+    padding: 1.25rem 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 0.5rem;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#mantras .grid .container .heading-block .heading {
+    font-size: 1.25rem;
+}
+
+#mantras .grid .container .heading-block i {
+    color: var(--text-muted);
+    font-size: 1.4rem;
+    transition: transform 0.3s;
+}
+
+#mantras .grid .container .content-wrapper {
+    height: 0;
+    padding: 0 1.5rem;
+    overflow-y: hidden;
+    transition: height 0.5s ease-in-out, margin-bottom 0.5s;
+}
+
+#mantras .grid .container .content-wrapper .text {
+    color: var(--text-secondary);
+    font-family: 'Eczar', serif;
+    font-size: 1.2rem;
+    font-optical-sizing: auto;
+    line-height: 1.5;
+    white-space: pre-wrap;
+}
+
+#mantras .grid .container .content-wrapper .text span {
+    display: block;
+    width: min(100%, 30rem);
+    font-size: 1.3rem;
+    text-align: right;
+    padding-top: 0.75rem;
+}
+
+#mantras .grid .container .content-wrapper .text span a {
+    color: var(--accent-gold);
+    text-decoration: none;
+}
