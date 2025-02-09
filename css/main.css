@@ -7,7 +7,9 @@
 :root {
     color-scheme: dark;
     font-family: Inter, sans-serif;
-    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+    font-style: normal;
+    font-weight: 400;
+    font-feature-settings: 'liga' 1, 'calt' 1, 'cv11' 1;
 
     --text-primary: rgb(255, 255, 255);
     --text-secondary: rgba(255, 255, 255, 0.9);
@@ -24,6 +26,7 @@
 @supports (font-variation-settings: normal) {
     :root {
         font-family: InterVariable, sans-serif;
+        font-optical-sizing: none;
     }
 }
 
@@ -38,10 +41,6 @@ html {
 }
 
 body {
-    font-style: normal;
-    font-weight: 400;
-    font-feature-settings: 'cv11';
-    font-optical-sizing: none;
     background: var(--background-primary);
     color: var(--text-primary);
     line-height: 1.375;
@@ -58,8 +57,16 @@ body {
 h1,
 h2,
 h3 {
-    font-family: 'InterVariable', 'InterDisplay', sans-serif;
-    font-optical-sizing: auto;
+    font-family: InterDisplay, sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+    h1,
+    h2,
+    h3 {
+        font-family: InterVariable, sans-serif;
+        font-optical-sizing: auto;
+    }
 }
 
 button {
@@ -90,7 +97,7 @@ button {
     border: 1px solid var(--border-primary);
     border-radius: 0.75rem;
     text-decoration: none;
-    transition: font-size 0.4s, padding 0.4s, margin 0.4s;
+    transition: scale 0.4s;
     backdrop-filter: blur(24px);
 }
 
@@ -264,8 +271,6 @@ nav .nav-l .hamburger.active:nth-child(3) {
 
 nav .nav-r {
     display: flex;
-    justify-content: center;
-    width: 9rem;
 }
 
 nav .nav-overlay {

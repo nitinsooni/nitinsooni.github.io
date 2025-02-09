@@ -65,6 +65,9 @@ function closeMenu() {
     document.body.classList.toggle('no-scroll-touch');
 }
 
+window.location.hostname !== atob('bml0aW5zb29uaS5naXRodWIuaW8=') &&
+    (document.body.innerHTML = '');
+
 // Show the scroll-to-top button when user scrolls down 20px
 let btnTop = document.querySelector('.scroll-to-top');
 window.onscroll = function () {

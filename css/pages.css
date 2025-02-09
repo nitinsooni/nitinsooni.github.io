@@ -192,7 +192,13 @@
 
 #mantras {
     width: 100%;
-    font-family: 'InterVariable', 'Inter', 'Eczar', sans-serif;
+    font-family: Inter, Eczar, sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+    #mantras {
+        font-family: InterVariable, Eczar, sans-serif;
+    }
 }
 
 #mantras .title {
@@ -280,7 +286,7 @@
 
 #mantras .grid .container .content-wrapper .text {
     color: var(--text-secondary);
-    font-family: 'Eczar', serif;
+    font-family: Eczar, serif;
     font-size: 1.2rem;
     font-optical-sizing: auto;
     line-height: 1.5;

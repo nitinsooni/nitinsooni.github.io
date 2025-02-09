@@ -28,7 +28,7 @@
 }
 
 .paragraph.active a {
-    transition: all 0.7s 0.4s, font-size 0.4s 0s, padding 0.4s 0s;
+    transition: all 0.7s 0.4s, scale 0.4s 0s;
 }
 
 #home {
@@ -94,7 +94,7 @@
 }
 
 #home .title .title-top {
-    font-family: 'Arizonia', serif;
+    font-family: Arizonia, serif;
     font-size: 8rem;
     font-weight: 400;
 }
@@ -156,7 +156,7 @@
 }
 
 #home .contact-box .contact-bar .text-field {
-    font-family: 'InterVariable', 'Inter', sans-serif;
+    font-family: Inter, sans-serif;
     font-size: 0.938rem;
     width: 100%;
     background-color: var(--border-tertiary);
@@ -164,10 +164,15 @@
     border-radius: 0.75rem;
     padding: 0.9rem;
     padding-right: 8rem;
-    margin-right: 3px;
     transition: border-color 0.2s;
     outline: none;
     caret-color: var(--accent-gold);
+}
+
+@supports (font-variation-settings: normal) {
+    #home .contact-box .contact-bar .text-field {
+        font-family: InterVariable, sans-serif;
+    }
 }
 
 #home .contact-box .contact-bar .text-field:focus {
@@ -178,7 +183,6 @@
     color: var(--background-primary);
     background-color: var(--accent-gold);
     padding: 0.9rem 1.5rem;
-    margin-right: 3px;
     border: none;
     position: absolute;
 }
@@ -411,10 +415,7 @@
 
 #portfolio .table .table-r .button-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 12rem;
-    height: 4rem;
+    margin: 1.75rem 0 0 1.5rem;
 }
 
 #contact {
@@ -493,10 +494,7 @@
 
 #contact .table .table-l .button-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 12rem;
-    height: 4rem;
+    margin: 1.75rem 0 0 1.5rem;
 }
 
 #contact .table .table-r {
