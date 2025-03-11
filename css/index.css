@@ -595,6 +595,10 @@
     line-height: 2;
 }
 
+#contact .table .table-r .container .card.one .content .block-bottom .key {
+    margin-left: 0.4rem;
+}
+
 #contact .table .table-r .container .card.one .content .block-bottom p {
     font-size: 1rem;
     font-weight: 300;

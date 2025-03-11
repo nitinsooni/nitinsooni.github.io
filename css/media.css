@@ -531,6 +531,10 @@
         font-size: 0.8rem;
     }
 
+    #contact .table .table-r .container .card.one .content .block-bottom .key {
+        margin-left: 0.3rem;
+    }
+
     #contact .table .table-r .container .card.one .content .block-bottom p {
         font-size: 0.8rem;
         padding-top: 1.5rem;
