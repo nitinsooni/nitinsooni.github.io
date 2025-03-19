@@ -276,6 +276,7 @@
         transparent,
         var(--background-primary)
     );
+    z-index: 2;
 }
 
 #portfolio .table .table-l .scroll-container .right-fade {
@@ -319,7 +320,6 @@
     border-radius: 25px;
     box-shadow: rgb(24, 26, 27) 3px -3px 10px 0px inset;
     flex-shrink: 0;
-    z-index: -1;
     scroll-snap-align: center;
 }
 
@@ -367,6 +367,50 @@
     margin-bottom: 0.5rem;
     margin-left: 2rem;
     color: var(--text-tertiary);
+}
+
+#portfolio .table .table-l .scroll-container .card-container .card .content a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#portfolio
+    .table
+    .table-l
+    .scroll-container
+    .card-container
+    .card
+    .content
+    .ellipsis {
+    display: flex;
+    align-items: center;
+}
+
+#portfolio
+    .table
+    .table-l
+    .scroll-container
+    .card-container
+    .card
+    .content
+    .ellipsis
+    span {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#portfolio
+    .table
+    .table-l
+    .scroll-container
+    .card-container
+    .card
+    .content
+    .sub-heading
+    i {
+    font-size: 1rem;
+    margin-left: 0.3rem;
 }
 
 #portfolio

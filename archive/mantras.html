@@ -24,6 +24,34 @@
     <link rel="icon" href="/favicon.ico" sizes="48x48" />
     <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <style>
+        body, nav {
+            margin-top: 1.8rem;
+        }
+
+        .alert {
+            color: var(--background-primary);
+            background: var(--accent-gold);
+            text-align: center;
+            padding: .2rem;
+            font-weight: 500;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+        
+        @media only screen and (max-width: 50em) {
+            body, nav {
+                margin-top: 1.4rem;
+            }
+
+            .alert {
+                padding: .1rem;
+                font-size: .9rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="preloader">
@@ -32,6 +60,9 @@
         <div class="dot c"></div>
         <div class="dot d"></div>
     </div>
+    <p class="alert">
+        This page is archived and no longer updated.
+    </p>
     <nav>
         <div class="nav-l">
             <h4 class="logo"><a href="/index.html">NITIN SONI</a></h4>

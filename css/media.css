@@ -471,6 +471,18 @@
         .card-container
         .card
         .content
+        .sub-heading
+        i {
+        font-size: 0.8rem;
+    }
+
+    #portfolio
+        .table
+        .table-l
+        .scroll-container
+        .card-container
+        .card
+        .content
         .text {
         font-size: 0.8rem;
         margin-top: 0.25rem;
@@ -663,6 +675,17 @@
 
     #home .contact-box .contact-bar .submit:hover {
         scale: 1.075;
+    }
+
+    #portfolio
+        .table
+        .table-l
+        .scroll-container
+        .card-container
+        .card
+        .content
+        a:hover {
+        color: var(--text-primary);
     }
 
     #contact .table .table-r .container .card a:hover {
