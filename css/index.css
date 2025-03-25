@@ -34,10 +34,7 @@
 #home {
     width: 100%;
     text-align: center;
-    background-image: linear-gradient(
-            transparent 74%,
-            var(--background-primary)
-        ),
+    background-image: linear-gradient(transparent 74%, var(--background-primary)),
         radial-gradient(circle, #282828, var(--background-primary));
 }
 
@@ -64,11 +61,7 @@
 #home .light-wrapper .lights-holder .light {
     width: 180px;
     height: 1000px;
-    background-image: linear-gradient(
-        to bottom,
-        var(--accent-gold) 5%,
-        transparent 68%
-    );
+    background-image: linear-gradient(to bottom, var(--accent-gold) 5%, transparent 68%);
     opacity: 0.4;
     filter: blur(18px);
 }
@@ -271,21 +264,13 @@
 
 #portfolio .table .table-l .scroll-container .left-fade {
     left: 0;
-    background: linear-gradient(
-        to left,
-        transparent,
-        var(--background-primary)
-    );
+    background: linear-gradient(to left, transparent, var(--background-primary));
     z-index: 2;
 }
 
 #portfolio .table .table-l .scroll-container .right-fade {
     right: 0;
-    background: linear-gradient(
-        to right,
-        transparent,
-        var(--background-primary)
-    );
+    background: linear-gradient(to right, transparent, var(--background-primary));
 }
 
 #portfolio .table .table-l .scroll-container .card-container {
@@ -300,11 +285,7 @@
     overscroll-behavior-x: contain;
 }
 
-#portfolio
-    .table
-    .table-l
-    .scroll-container
-    .card-container::-webkit-scrollbar {
+#portfolio .table .table-l .scroll-container .card-container::-webkit-scrollbar {
     display: none;
 }
 
@@ -339,14 +320,7 @@
     z-index: 1;
 }
 
-#portfolio
-    .table
-    .table-l
-    .scroll-container
-    .card-container
-    .card
-    .content
-    .heading {
+#portfolio .table .table-l .scroll-container .card-container .card .content .heading {
     font-size: 1.2rem;
     font-weight: 500;
     letter-spacing: 0.025rem;
@@ -354,14 +328,7 @@
     color: var(--text-secondary);
 }
 
-#portfolio
-    .table
-    .table-l
-    .scroll-container
-    .card-container
-    .card
-    .content
-    .sub-heading {
+#portfolio .table .table-l .scroll-container .card-container .card .content .sub-heading {
     font-size: 1.1rem;
     margin-top: 0.9rem;
     margin-bottom: 0.5rem;
@@ -374,53 +341,23 @@
     transition: color 0.3s;
 }
 
-#portfolio
-    .table
-    .table-l
-    .scroll-container
-    .card-container
-    .card
-    .content
-    .ellipsis {
+#portfolio .table .table-l .scroll-container .card-container .card .content .ellipsis {
     display: flex;
     align-items: center;
 }
 
-#portfolio
-    .table
-    .table-l
-    .scroll-container
-    .card-container
-    .card
-    .content
-    .ellipsis
-    span {
+#portfolio .table .table-l .scroll-container .card-container .card .content .ellipsis span {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
 
-#portfolio
-    .table
-    .table-l
-    .scroll-container
-    .card-container
-    .card
-    .content
-    .sub-heading
-    i {
+#portfolio .table .table-l .scroll-container .card-container .card .content .sub-heading i {
     font-size: 1rem;
     margin-left: 0.3rem;
 }
 
-#portfolio
-    .table
-    .table-l
-    .scroll-container
-    .card-container
-    .card
-    .content
-    .text {
+#portfolio .table .table-l .scroll-container .card-container .card .content .text {
     font-size: 0.9rem;
     font-weight: 300;
     margin-top: 0.35rem;
@@ -649,14 +586,7 @@
     padding-top: 2rem;
 }
 
-#contact
-    .table
-    .table-r
-    .container
-    .card.one
-    .content
-    .block-bottom
-    .social-block {
+#contact .table .table-r .container .card.one .content .block-bottom .social-block {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -664,31 +594,14 @@
     grid-row-gap: 1.5rem;
 }
 
-#contact
-    .table
-    .table-r
-    .container
-    .card.one
-    .content
-    .block-bottom
-    .social-block
-    a {
+#contact .table .table-r .container .card.one .content .block-bottom .social-block a {
     font-size: 1.25rem;
     padding: 0.75rem;
     margin: 0 auto;
     line-height: 0;
 }
 
-#contact
-    .table
-    .table-r
-    .container
-    .card.one
-    .content
-    .block-bottom
-    .social-block
-    a
-    i {
+#contact .table .table-r .container .card.one .content .block-bottom .social-block a i {
     padding: 0;
 }
 
@@ -722,8 +635,7 @@
 #contact .table .table-r .container .card.front {
     z-index: 2;
     position: relative;
-    box-shadow: rgb(12, 12, 12) -6px -6px 20px 0px,
-        rgb(24, 26, 27) 3px -3px 10px 0px inset;
+    box-shadow: rgb(12, 12, 12) -6px -6px 20px 0px, rgb(24, 26, 27) 3px -3px 10px 0px inset;
 }
 
 #contact .table .table-r .container .card:not(.front) {

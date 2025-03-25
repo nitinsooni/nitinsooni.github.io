@@ -12,10 +12,7 @@
     text-align: center;
     padding-top: 11rem;
     padding-bottom: 9rem;
-    background-image: linear-gradient(
-            transparent 74%,
-            var(--background-primary)
-        ),
+    background-image: linear-gradient(transparent 74%, var(--background-primary)),
         radial-gradient(circle, #282828, var(--background-primary));
 }
 
@@ -60,12 +57,7 @@
 
 #gallery .grid .container .media-container .blur-up {
     filter: blur(5px);
-    mask-image: linear-gradient(
-        -75deg,
-        rgba(0, 0, 0, 0.8) 30%,
-        #000 50%,
-        rgba(0, 0, 0, 0.8) 70%
-    );
+    mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.8) 30%, #000 50%, rgba(0, 0, 0, 0.8) 70%);
     mask-size: 200%;
     transition: filter 0.4s;
     animation: shine 1.6s infinite;
@@ -124,10 +116,7 @@
     text-align: center;
     padding-top: 11rem;
     padding-bottom: 9rem;
-    background-image: linear-gradient(
-            transparent 74%,
-            var(--background-primary)
-        ),
+    background-image: linear-gradient(transparent 74%, var(--background-primary)),
         radial-gradient(circle, #282828, var(--background-primary));
 }
 
@@ -205,10 +194,7 @@
     text-align: center;
     padding-top: 11rem;
     padding-bottom: 9rem;
-    background-image: linear-gradient(
-            transparent 74%,
-            var(--background-primary)
-        ),
+    background-image: linear-gradient(transparent 74%, var(--background-primary)),
         radial-gradient(circle, #282828, var(--background-primary));
 }
 

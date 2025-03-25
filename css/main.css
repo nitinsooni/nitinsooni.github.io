@@ -104,13 +104,7 @@ button {
 .gradient-ruler {
     width: 100%;
     height: 1px;
-    background: linear-gradient(
-        270deg,
-        #ffffff12,
-        #ffffff42 31%,
-        #fae57566 68%,
-        #ffffff12
-    );
+    background: linear-gradient(270deg, #ffffff12, #ffffff42 31%, #fae57566 68%, #ffffff12);
     background-size: 0%;
     background-repeat: no-repeat;
 }

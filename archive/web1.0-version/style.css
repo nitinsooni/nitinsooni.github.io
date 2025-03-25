@@ -51,6 +51,10 @@ a {
     font-weight: 700;
     color: rgb(165, 22, 113);
     text-decoration: none;
+}
+
+a,
+button {
     cursor: url('/archive/web1.0-version/assets/pointer.cur'), pointer;
 }
 

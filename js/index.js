@@ -47,12 +47,8 @@ window.addEventListener('scroll', function () {
 
 // Open default email client with pre-filled message of input tag
 function sendEmail() {
-    const message = document.querySelector(
-        '#home .contact-box .contact-bar .text-field'
-    ).value;
-    const mailtoLink = `mailto:nitinsoooni@gmail.com?body=${encodeURIComponent(
-        message
-    )}`;
+    const message = document.querySelector('#home .contact-box .contact-bar .text-field').value;
+    const mailtoLink = `mailto:nitinsoooni@gmail.com?body=${encodeURIComponent(message)}`;
     window.location.href = mailtoLink;
 }
 
@@ -63,35 +59,20 @@ window.onload = function () {
 
 // Portfolio card button gets in focus with scroll
 document.addEventListener('DOMContentLoaded', function () {
-    const cardContainer = document.querySelector(
-        '#portfolio .table .table-l .scroll-container .card-container'
-    );
-    const buttons = document.querySelectorAll(
-        '#portfolio .table .table-l .nav-button-container .nav-button'
-    );
+    const cardContainer = document.querySelector('#portfolio .table .table-l .scroll-container .card-container');
+    const buttons = document.querySelectorAll('#portfolio .table .table-l .nav-button-container .nav-button');
 
     cardContainer.addEventListener('scroll', function () {
         const scrollLeft = cardContainer.scrollLeft;
         const cardWidth = document.querySelector(
             '#portfolio .table .table-l .scroll-container .card-container .card'
         ).offsetWidth;
-        const marginBetweenItems = parseInt(
-            getComputedStyle(cardContainer).gap
-        );
-        const currentIndex = Math.floor(
-            (scrollLeft + marginBetweenItems * 4) /
-                (cardWidth + marginBetweenItems)
-        );
+        const marginBetweenItems = parseInt(getComputedStyle(cardContainer).gap);
+        const currentIndex = Math.floor((scrollLeft + marginBetweenItems * 4) / (cardWidth + marginBetweenItems));
 
-        document
-            .getElementById('nav-button1')
-            .classList.remove('nav-button-focus');
-        document
-            .getElementById('nav-button2')
-            .classList.remove('nav-button-focus');
-        document
-            .getElementById('nav-button3')
-            .classList.remove('nav-button-focus');
+        document.getElementById('nav-button1').classList.remove('nav-button-focus');
+        document.getElementById('nav-button2').classList.remove('nav-button-focus');
+        document.getElementById('nav-button3').classList.remove('nav-button-focus');
 
         if (buttons[currentIndex]) {
             buttons[currentIndex].classList.add('nav-button-focus');
@@ -101,9 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Click nav button to scroll cards in portfolio
 function scrollToCard(index) {
-    const cardContainer = document.querySelector(
-        '#portfolio .table .table-l .scroll-container .card-container'
-    );
+    const cardContainer = document.querySelector('#portfolio .table .table-l .scroll-container .card-container');
     const cardWidth = document.querySelector(
         '#portfolio .table .table-l .scroll-container .card-container .card'
     ).offsetWidth;
@@ -113,12 +92,8 @@ function scrollToCard(index) {
 }
 
 // Swap cards when user click non-front card
-const cardOne = document.querySelector(
-    '#contact .table .table-r .container .card.one'
-);
-const cardTwo = document.querySelector(
-    '#contact .table .table-r .container .card.two'
-);
+const cardOne = document.querySelector('#contact .table .table-r .container .card.one');
+const cardTwo = document.querySelector('#contact .table .table-r .container .card.two');
 let frontCard = cardOne;
 
 cardOne.addEventListener('click', function () {

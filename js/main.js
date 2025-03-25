@@ -16,9 +16,7 @@ window.addEventListener('load', function () {
     document.body.classList.remove('no-scroll-touch');
 
     if (document.body.classList.contains('index-page')) {
-        document
-            .querySelector('#home .title svg path')
-            .classList.add('stroke-draw');
+        document.querySelector('#home .title svg path').classList.add('stroke-draw');
         document.getElementById('home').classList.add('gradient-effect');
     }
 });
@@ -53,9 +51,7 @@ function mobileMenu() {
 }
 
 // Disable hamburger and nav menu when user click nav menu's link
-const navLink = document.querySelectorAll(
-    'nav .nav-overlay .container .nav-link'
-);
+const navLink = document.querySelectorAll('nav .nav-overlay .container .nav-link');
 
 navLink.forEach((n) => n.addEventListener('click', closeMenu));
 
@@ -65,8 +61,7 @@ function closeMenu() {
     document.body.classList.toggle('no-scroll-touch');
 }
 
-window.location.hostname !== atob('bml0aW5zb29uaS5naXRodWIuaW8=') &&
-    (document.body.innerHTML = '');
+window.location.hostname !== atob('bml0aW5zb29uaS5naXRodWIuaW8=') && (document.body.innerHTML = '');
 
 // Show the scroll-to-top button when user scrolls down 20px
 let btnTop = document.querySelector('.scroll-to-top');
@@ -75,10 +70,7 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-    if (
-        document.body.scrollTop > 300 ||
-        document.documentElement.scrollTop > 300
-    ) {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
         btnTop.classList.add('scroll-to-top-show');
     } else {
         btnTop.classList.remove('scroll-to-top-show');
@@ -92,5 +84,4 @@ function topFunction() {
 }
 
 // Dynamically change year in copyright text
-document.querySelector('footer .container .wrapper-l p .year').textContent =
-    new Date().getFullYear();
+document.querySelector('footer .container .wrapper-l p .year').textContent = new Date().getFullYear();
