@@ -85,3 +85,6 @@ function topFunction() {
 
 // Dynamically change year in copyright text
 document.querySelector('footer .container .wrapper-l p .year').textContent = new Date().getFullYear();
+
+// Print text on console
+console.log('%cCrafted & Coded by Nitin Soni', 'color: white; background: black; padding: 5px 20px');

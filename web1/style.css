@@ -42,9 +42,9 @@ body {
     font-size: 16px;
     color: #fff;
     background-color: #000;
-    background-image: url('/archive/web1.0-version/assets/background.png');
+    background-image: url('./assets/background.png');
     margin: 0 10px;
-    cursor: url('/archive/web1.0-version/assets/arrow.cur'), auto;
+    cursor: url('./assets/arrow.cur'), auto;
 }
 
 a {
@@ -55,7 +55,7 @@ a {
 
 a,
 button {
-    cursor: url('/archive/web1.0-version/assets/pointer.cur'), pointer;
+    cursor: url('./assets/pointer.cur'), pointer;
 }
 
 img,

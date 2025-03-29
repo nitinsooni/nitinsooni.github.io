@@ -36,6 +36,7 @@
     text-align: center;
     background-image: linear-gradient(transparent 74%, var(--background-primary)),
         radial-gradient(circle, #282828, var(--background-primary));
+    position: relative;
 }
 
 #home .light-wrapper {

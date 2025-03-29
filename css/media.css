@@ -95,19 +95,6 @@
         width: calc(50% - 2rem);
     }
 
-    #mantras .title {
-        padding-top: 10rem;
-        padding-bottom: 7rem;
-    }
-
-    #mantras .headline {
-        padding-bottom: 2.5rem;
-    }
-
-    #mantras .grid {
-        padding-bottom: 3.1rem;
-    }
-
     footer .container {
         flex-direction: column;
         row-gap: 4rem;
@@ -339,46 +326,6 @@
         font-size: 0.9rem;
     }
 
-    #mantras .title {
-        padding-bottom: 5rem;
-    }
-
-    #mantras .title h1 {
-        font-size: 4rem;
-    }
-
-    #mantras .headline p {
-        font-size: 1rem;
-    }
-
-    #mantras .grid h4 {
-        font-size: 1.2rem;
-    }
-
-    #mantras .grid .container .heading-block {
-        padding: 1rem 1.25rem;
-    }
-
-    #mantras .grid .container .heading-block .heading {
-        font-size: 1rem;
-    }
-
-    #mantras .grid .container .heading-block i {
-        font-size: 1.1rem;
-    }
-
-    #mantras .grid .container .content-wrapper {
-        padding: 0 1.25rem;
-    }
-
-    #mantras .grid .container .content-wrapper .text {
-        font-size: 1rem;
-    }
-
-    #mantras .grid .container .content-wrapper .text span {
-        font-size: 1.1rem;
-    }
-
     footer {
         padding-top: 2rem;
         padding-bottom: 2.5rem;
@@ -561,31 +508,6 @@
     #resource_hub .grid .container {
         width: calc(100% - 2rem);
         margin-bottom: 1.4rem;
-    }
-
-    #mantras .title h1 {
-        font-size: 3.2rem;
-    }
-
-    #mantras .headline p br {
-        display: inline;
-    }
-
-    #mantras .grid h4 {
-        margin-bottom: 1rem;
-    }
-
-    #mantras .grid .container {
-        margin-bottom: 1.4rem;
-    }
-
-    #mantras .grid .container .content-wrapper .text {
-        font-size: 0.95rem;
-    }
-
-    #mantras .grid .container .content-wrapper .text span {
-        font-size: 1rem;
-        padding-top: 0.5rem;
     }
 
     footer .container {
