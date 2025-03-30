@@ -26,7 +26,7 @@
 #gallery .grid {
     width: min(100%, 80rem);
     margin: 0 auto;
-    padding: 0 1rem 4rem 1rem;
+    padding: 0 1rem 4rem;
 }
 
 #gallery .grid .container {
@@ -81,7 +81,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0.75rem 0 0;
+    margin-top: 0.75rem;
 }
 
 #gallery .grid .container .info-panel .date {
@@ -130,7 +130,7 @@
 #resource_hub .headline {
     width: min(100%, 80rem);
     margin: 0 auto;
-    padding: 0 1rem 3rem 1rem;
+    padding: 0 1rem 3rem;
 }
 
 #resource_hub .headline p {
@@ -141,7 +141,7 @@
 #resource_hub .grid {
     width: min(100%, 80rem);
     margin: 0 auto;
-    padding: 0 1rem 4rem 1rem;
+    padding: 0 1rem 4rem;
 }
 
 #resource_hub .grid .container {
