@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
         preloader.classList.add('preloader-hide');
         setTimeout(function () {
             preloader.style.display = 'none';
-        }, 250);
+        }, 400);
 
         document.body.classList.remove('no-scroll-touch');
 
