@@ -28,7 +28,7 @@
 }
 
 .paragraph.active a {
-    transition: all 0.7s 0.4s, scale 0.4s 0s;
+    transition: all 0.7s 0.4s, scale 0.38s 0s;
 }
 
 #home {
@@ -158,7 +158,7 @@
     border-radius: 0.75rem;
     padding: 0.9rem;
     padding-right: 8rem;
-    transition: border-color 0.2s;
+    transition: border-color 0.2s, box-shadow 0.25s;
     outline: none;
     caret-color: var(--accent-gold);
 }
@@ -171,6 +171,7 @@
 
 #home .contact-box .contact-bar .text-field:focus {
     border-color: var(--accent-gold) !important;
+    box-shadow: var(--accent-gold) 0px 0px 20px -16px;
 }
 
 #home .contact-box .contact-bar .submit {

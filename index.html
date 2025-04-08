@@ -29,11 +29,16 @@
             integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"
+            integrity="sha256-TryXbHoOGuTSpAGc8mP33sWvAKI+fhvU4AZZ0LPaesk="
+            crossorigin="anonymous" />
         <link rel="icon" href="/favicon.ico" sizes="48x48" />
         <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     </head>
-    <body class="index-page no-scroll-touch">
+    <body class="index-page" data-scroll-container>
         <div class="preloader">
             <div class="dot a"></div>
             <div class="dot b"></div>
@@ -45,13 +50,13 @@
                 <h4 class="logo"><a href="/index.html">NITIN SONI</a></h4>
                 <ul>
                     <li class="nav-link">
-                        <a href="#home" class="gold-text">Home</a>
+                        <a href="#home" class="gold-text" data-scroll-to>Home</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#portfolio">Portfolio</a>
+                        <a href="#portfolio" data-scroll-to>Portfolio</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#contact">Contact</a>
+                        <a href="#contact" data-scroll-to>Contact</a>
                     </li>
                     <li class="nav-link">
                         <a href="/gallery.html">Gallery</a>
@@ -68,19 +73,19 @@
             </div>
             <div class="nav-overlay">
                 <div class="container">
-                    <a href="#home" class="nav-link">
+                    <a href="#home" class="nav-link" data-scroll-to>
                         <span class="gold-gradient-text">
                             <i class="fa-solid fa-house"></i>
                         </span>
                         <span class="text">Home</span>
                     </a>
-                    <a href="#portfolio" class="nav-link">
+                    <a href="#portfolio" class="nav-link" data-scroll-to>
                         <span class="gold-gradient-text">
                             <i class="fa-solid fa-user-tie"></i>
                         </span>
                         <span class="text">Portfolio</span>
                     </a>
-                    <a href="#contact" class="nav-link">
+                    <a href="#contact" class="nav-link" data-scroll-to>
                         <span class="gold-gradient-text">
                             <i class="fa-solid fa-address-card"></i>
                         </span>
@@ -98,7 +103,7 @@
         <button onclick="topFunction()" class="scroll-to-top">
             <i class="fa-solid fa-angle-up"></i>
         </button>
-        <main>
+        <main data-scroll-section>
             <section id="home">
                 <div class="light-wrapper">
                     <div class="lights-holder">
@@ -311,7 +316,7 @@
                 <div class="gradient-ruler"></div>
             </section>
         </main>
-        <footer>
+        <footer data-scroll-section>
             <div class="container">
                 <div class="wrapper-l">
                     <h4>NITIN SONI</h4>
@@ -355,6 +360,10 @@
                 </div>
             </div>
         </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"
+            integrity="sha256-odlNpseyKe/Yr2FVkKfof6CSj8+edbarxw5hDpqCGBE="
+            crossorigin="anonymous"></script>
         <script src="/js/main.min.js"></script>
         <script src="/js/index.min.js"></script>
     </body>

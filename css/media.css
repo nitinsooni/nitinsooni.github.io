@@ -536,7 +536,7 @@
 
 @media only screen and (min-width: 68.75em) {
     .button:hover {
-        scale: 1.07;
+        scale: 1.06;
     }
 
     nav .nav-l ul .nav-link a:hover {
@@ -545,10 +545,6 @@
 
     #home .contact-box .contact-bar .text-field:hover {
         border-color: var(--border-primary);
-    }
-
-    #home .contact-box .contact-bar .submit:hover {
-        scale: 1.075;
     }
 
     #portfolio .table .table-l .scroll-container .card-container .card .content a:hover {

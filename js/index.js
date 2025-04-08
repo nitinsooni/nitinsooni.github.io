@@ -24,7 +24,7 @@ const paraObserver = new IntersectionObserver(
 paragraphs.forEach((el) => paraObserver.observe(el));
 
 // Navbar links gets in focus according to which section is in view
-window.addEventListener('scroll', function () {
+locoScroll.on('scroll', (obj) => {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('nav .nav-l ul .nav-link a');
 
@@ -32,7 +32,7 @@ window.addEventListener('scroll', function () {
     sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        if (pageYOffset >= sectionTop - sectionHeight / 3) {
+        if (obj.scroll.y >= sectionTop - sectionHeight / 3) {
             current = section.getAttribute('id');
         }
     });
@@ -164,3 +164,6 @@ function handleSwipe() {
         swapCards(frontCard === cardOne ? cardTwo : cardOne);
     }
 }
+
+// Update locomotive scroll
+locoScroll.update();

@@ -49,11 +49,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.no-scroll-touch {
-    pointer-events: none;
-    overflow: hidden;
-}
-
 h1,
 h2,
 h3 {
@@ -97,7 +92,7 @@ button {
     border: 1px solid var(--border-primary);
     border-radius: 0.75rem;
     text-decoration: none;
-    transition: scale 0.4s;
+    transition: scale 0.38s;
     backdrop-filter: blur(24px);
 }
 
@@ -119,6 +114,16 @@ button {
     }
 }
 
+.c-scrollbar {
+    width: 10px;
+    z-index: 99;
+}
+
+.c-scrollbar .c-scrollbar_thumb {
+    width: 6px;
+    background-color: var(--text-primary);
+}
+
 .preloader {
     width: 100vw;
     height: 100vh;
@@ -131,7 +136,7 @@ button {
     left: 0;
     z-index: 9999;
     opacity: 1;
-    transition: opacity 0.4s ease-out;
+    transition: opacity 0.35s ease-out;
     backdrop-filter: blur(48px);
 }
 

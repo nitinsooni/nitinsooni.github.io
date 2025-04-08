@@ -23,11 +23,16 @@
             integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"
+            integrity="sha256-TryXbHoOGuTSpAGc8mP33sWvAKI+fhvU4AZZ0LPaesk="
+            crossorigin="anonymous" />
         <link rel="icon" href="/favicon.ico" sizes="48x48" />
         <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     </head>
-    <body class="no-scroll-touch">
+    <body data-scroll-container>
         <div class="preloader">
             <div class="dot a"></div>
             <div class="dot b"></div>
@@ -92,7 +97,7 @@
         <button onclick="topFunction()" class="scroll-to-top">
             <i class="fa-solid fa-angle-up"></i>
         </button>
-        <main>
+        <main data-scroll-section>
             <section id="resource_hub">
                 <div class="title">
                     <h1>Resource Hub</h1>
@@ -188,7 +193,7 @@
                 <div class="gradient-ruler"></div>
             </section>
         </main>
-        <footer>
+        <footer data-scroll-section>
             <div class="container">
                 <div class="wrapper-l">
                     <h4>NITIN SONI</h4>
@@ -237,6 +242,10 @@
             integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"
+            integrity="sha256-odlNpseyKe/Yr2FVkKfof6CSj8+edbarxw5hDpqCGBE="
+            crossorigin="anonymous"></script>
         <script src="/js/main.min.js"></script>
         <script>
             var grid = document.querySelector('.grid');
@@ -247,6 +256,8 @@
                 horizontalOrder: true,
                 percentPosition: true,
             });
+
+            locoScroll.update();
         </script>
     </body>
 </html>
