@@ -25,6 +25,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         locoScroll.start();
 
+        const scrollTarget = new URLSearchParams(location.search).get('scrollTo');
+        if (scrollTarget) {
+            locoScroll.scrollTo(document.getElementById(scrollTarget));
+        }
+
         if (document.body.classList.contains('index-page')) {
             document.querySelector('#home .title svg path').classList.add('stroke-draw');
             document.getElementById('home').classList.add('gradient-effect');
