@@ -123,6 +123,8 @@ function swapButton() {
 // Swap cards when user horizontal swipe on front card
 let touchStartX = 0;
 let touchEndX = 0;
+let touchStartTime = 0;
+let touchEndTime = 0;
 const minSwipeDistance = 100; // minimum swipe distance in pixels
 const maxSwipeTime = 300; // maximum time for a swipe (in milliseconds)
 
