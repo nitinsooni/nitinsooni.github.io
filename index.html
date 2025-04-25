@@ -23,20 +23,14 @@
         <link rel="stylesheet" href="/css/media.min.css" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer" />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"
-            integrity="sha256-TryXbHoOGuTSpAGc8mP33sWvAKI+fhvU4AZZ0LPaesk="
-            crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css" crossorigin="anonymous" />
         <link rel="icon" href="/favicon.ico" sizes="48x48" />
         <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <script src="/assets/fontawesome/duotone.min.js" defer></script>
+        <script src="/assets/fontawesome/solid.min.js" defer></script>
+        <script src="/assets/fontawesome/brands.min.js" defer></script>
+        <script src="/assets/fontawesome/fontawesome.min.js" defer></script>
     </head>
     <body class="index-page" data-scroll-container>
         <div class="preloader">
@@ -74,33 +68,29 @@
             <div class="nav-overlay">
                 <div class="container">
                     <a href="#home" class="nav-link" data-scroll-to>
-                        <span class="gold-gradient-text">
-                            <i class="fa-solid fa-house"></i>
-                        </span>
+                        <img src="/assets/media/house.svg" />
                         <span class="text">Home</span>
                     </a>
                     <a href="#portfolio" class="nav-link" data-scroll-to>
-                        <span class="gold-gradient-text">
-                            <i class="fa-solid fa-user-tie"></i>
-                        </span>
+                        <img src="/assets/media/user-tie.svg" />
                         <span class="text">Portfolio</span>
                     </a>
                     <a href="#contact" class="nav-link" data-scroll-to>
-                        <span class="gold-gradient-text">
-                            <i class="fa-solid fa-address-card"></i>
-                        </span>
+                        <img src="/assets/media/address-card.svg" />
                         <span class="text">Contact</span>
                     </a>
                     <a href="/gallery.html" class="nav-link">
-                        <span class="gold-gradient-text">
-                            <i class="fa-solid fa-images"></i>
-                        </span>
+                        <img src="/assets/media/images.svg" />
                         <span class="text">Gallery</span>
                     </a>
                 </div>
             </div>
         </nav>
-        <button onclick="topFunction()" class="scroll-to-top">
+        <button
+            onmouseenter="if (window.innerWidth > 1100) this.querySelector('svg').classList.add('fa-bounce')"
+            onmouseleave="if (window.innerWidth > 1100) this.querySelector('svg').classList.remove('fa-bounce')"
+            onclick="topFunction()"
+            class="scroll-to-top">
             <i class="fa-solid fa-angle-up"></i>
         </button>
         <main data-scroll-section>
@@ -156,7 +146,7 @@
                                             <p class="text">&bull; Accounting</p>
                                             <p class="text">&bull; Financial Analysis</p>
                                             <p class="text">&bull; Data Interpretation</p>
-                                            <p class="text">&bull; English Touch Typing (55 WPM)</p>
+                                            <p class="text">&bull; English Touch Typing (60 WPM)</p>
                                             <p class="sub-heading">Software Proficiency:</p>
                                             <p class="text">MS Office, TallyPrime</p>
                                             <p class="heading">IT Skills:</p>
@@ -183,7 +173,7 @@
                                                 href="https://drive.google.com/file/d/1u8z5xIzprt_A8swo7XMTA1TNxfBsywdx/view"
                                                 target="_blank">
                                                 <span>Google IT Automation with Python</span>
-                                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                                <i class="fa-duotone fa-solid fa-arrow-up-right-from-square"></i>
                                             </a>
                                             <p class="text">Google</p>
                                             <p class="text">2023</p>
@@ -192,7 +182,7 @@
                                                 href="https://drive.google.com/file/d/1DBbard6MrbIFPs4ut9DGGj7VeQFFD4xd/view"
                                                 target="_blank">
                                                 <span>Pregrad Python Core to Advanced</span>
-                                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                                <i class="fa-duotone fa-solid fa-arrow-up-right-from-square"></i>
                                             </a>
                                             <p class="text">Pregrad</p>
                                             <p class="text">2023</p>
@@ -217,7 +207,7 @@
                             </div>
                         </div>
                         <div class="table-r paragraph">
-                            <i class="fa-solid fa-user-tie"></i>
+                            <img src="/assets/media/user-tie.svg" />
                             <h3>
                                 Embark on My<br />
                                 <span class="gold-gradient-text">Professional Odyssey</span>
@@ -244,7 +234,7 @@
                 <div class="t-container">
                     <div class="table">
                         <div class="table-l paragraph">
-                            <i class="fa-solid fa-address-card"></i>
+                            <img src="/assets/media/address-card.svg" />
                             <h3>
                                 Explore My<br />
                                 <span class="gold-gradient-text">Online Presence</span>
@@ -270,14 +260,18 @@
                                             <div class="text">
                                                 <h5>Nitin Soni</h5>
                                                 <a href="https://www.google.com/maps/place/Gurugram,+Haryana" target="_blank"
-                                                    ><i class="fa-solid fa-location-dot"></i>Gurugram, Haryana</a
+                                                    ><i class="fa-duotone fa-solid fa-location-dot"></i>Gurugram, Haryana</a
                                                 >
                                             </div>
                                         </div>
                                         <div class="block-bottom">
-                                            <a href="mailto:nitinsoooni@gmail.com"><i class="fa-solid fa-envelope"></i>nitinsoooni@gmail.com</a>
+                                            <a href="mailto:nitinsoooni@gmail.com"
+                                                ><i class="fa-duotone fa-solid fa-envelope"></i>nitinsoooni@gmail.com</a
+                                            >
                                             <br />
-                                            <a href="/assets/key.asc" target="_blank"><i class="fa-solid fa-key"></i>50D7 C9BA E116 A57B</a>
+                                            <a href="/assets/key.asc" target="_blank"
+                                                ><i class="fa-duotone fa-solid fa-key"></i>50D7 C9BA E116 A57B</a
+                                            >
                                             <p>Here are my social media accounts for you to explore.</p>
                                             <div class="social-block">
                                                 <a href="https://www.linkedin.com/in/nitinsooni" target="_blank">
@@ -360,10 +354,7 @@
                 </div>
             </div>
         </footer>
-        <script
-            src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"
-            integrity="sha256-odlNpseyKe/Yr2FVkKfof6CSj8+edbarxw5hDpqCGBE="
-            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js" crossorigin="anonymous"></script>
         <script src="/js/main.min.js"></script>
         <script src="/js/index.min.js"></script>
     </body>

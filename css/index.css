@@ -4,7 +4,7 @@
     © Nitin Soni. All rights reserved.
     This code is proprietary and confidential. Any unauthorized use or distribution is strictly prohibited.
 */
-.paragraph i,
+.paragraph img,
 .paragraph h3,
 .paragraph p,
 .paragraph a {
@@ -14,7 +14,7 @@
     transition: all 0.7s, font-size 0.4s, padding 0.4s;
 }
 
-.paragraph.active i,
+.paragraph.active img,
 .paragraph.active h3,
 .paragraph.active p,
 .paragraph.active a {
@@ -354,7 +354,7 @@
     text-overflow: ellipsis;
 }
 
-#portfolio .table .table-l .scroll-container .card-container .card .content .sub-heading i {
+#portfolio .table .table-l .scroll-container .card-container .card .content .sub-heading svg {
     font-size: 1rem;
     margin-left: 0.3rem;
 }
@@ -373,13 +373,11 @@
     padding-top: 1.5rem;
 }
 
-#portfolio .table .table-r i {
-    font-size: 3rem;
-    padding-bottom: 1.5rem;
-    padding-left: 0.5rem;
-    background: linear-gradient(0deg, #b18a52, #f1e8a4);
-    background-clip: text;
-    color: transparent;
+#portfolio .table .table-r img {
+    height: 3rem;
+    margin-bottom: 1.2rem;
+    margin-left: 0.5rem;
+    pointer-events: none;
 }
 
 #portfolio .table .table-r h3 {
@@ -452,13 +450,11 @@
     padding-left: 2rem;
 }
 
-#contact .table .table-l i {
-    font-size: 2.7rem;
-    padding-bottom: 1.5rem;
-    padding-left: 0.5rem;
-    background: linear-gradient(0deg, #b18a52, #f1e8a4);
-    background-clip: text;
-    color: transparent;
+#contact .table .table-l img {
+    height: 3rem;
+    margin-bottom: 1.2rem;
+    margin-left: 0.5rem;
+    pointer-events: none;
 }
 
 #contact .table .table-l h3 {
@@ -529,7 +525,7 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-#contact .table .table-r .container .card.one .content i {
+#contact .table .table-r .container .card.one .content svg {
     padding-right: 0.5rem;
 }
 
@@ -603,7 +599,7 @@
     line-height: 0;
 }
 
-#contact .table .table-r .container .card.one .content .block-bottom .social-block a i {
+#contact .table .table-r .container .card.one .content .block-bottom .social-block a svg {
     padding: 0;
 }
 

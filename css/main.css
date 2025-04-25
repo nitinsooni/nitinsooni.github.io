@@ -299,15 +299,14 @@ nav .nav-overlay .container .nav-link {
     text-decoration: none;
     display: grid;
     grid-template-columns: 2rem auto;
-    gap: 0.9rem;
+    gap: 1rem;
     margin: 2.5rem 0;
     -webkit-tap-highlight-color: transparent;
 }
 
-nav .nav-overlay .container .nav-link i {
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
+nav .nav-overlay .container .nav-link img {
+    height: 1.6rem;
+    justify-self: center;
 }
 
 nav .nav-overlay .container .nav-link .text {

@@ -223,10 +223,10 @@
         font-size: 1rem;
     }
 
-    #portfolio .table .table-r i {
-        font-size: 2.7rem;
-        padding-bottom: 1.2rem;
-        padding-left: 0.3rem;
+    #portfolio .table .table-r img {
+        height: 2.7rem;
+        margin-bottom: 1rem;
+        margin-left: 0.3rem;
     }
 
     #portfolio .table .table-r h3 {
@@ -257,10 +257,10 @@
         font-size: 3rem;
     }
 
-    #contact .table .table-l i {
-        font-size: 2.5rem;
-        padding-bottom: 1.2rem;
-        padding-left: 0.3rem;
+    #contact .table .table-l img {
+        height: 2.7rem;
+        margin-bottom: 1rem;
+        margin-left: 0.3rem;
     }
 
     #contact .table .table-l h3 {
@@ -317,7 +317,7 @@
         padding-bottom: 1rem;
     }
 
-    #resource_hub .grid .container .heading i {
+    #resource_hub .grid .container .heading svg {
         font-size: 0.9rem;
         padding-right: 0.5rem;
     }
@@ -397,7 +397,7 @@
         margin-left: 1.5rem;
     }
 
-    #portfolio .table .table-l .scroll-container .card-container .card .content .sub-heading i {
+    #portfolio .table .table-l .scroll-container .card-container .card .content .sub-heading svg {
         font-size: 0.8rem;
     }
 

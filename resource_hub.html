@@ -17,20 +17,13 @@
         <link rel="stylesheet" href="/css/pages.min.css" />
         <link rel="stylesheet" href="/css/media.min.css" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer" />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"
-            integrity="sha256-TryXbHoOGuTSpAGc8mP33sWvAKI+fhvU4AZZ0LPaesk="
-            crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css" crossorigin="anonymous" />
         <link rel="icon" href="/favicon.ico" sizes="48x48" />
         <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <script src="/assets/fontawesome/duotone.min.js" defer></script>
+        <script src="/assets/fontawesome/solid.min.js" defer></script>
+        <script src="/assets/fontawesome/fontawesome.min.js" defer></script>
     </head>
     <body data-scroll-container>
         <div class="preloader">
@@ -68,33 +61,29 @@
             <div class="nav-overlay">
                 <div class="container">
                     <a href="/index.html" class="nav-link">
-                        <span class="gold-gradient-text">
-                            <i class="fa-solid fa-house"></i>
-                        </span>
+                        <img src="/assets/media/house.svg" />
                         <span class="text">Home</span>
                     </a>
                     <a href="/index.html?scrollTo=portfolio" class="nav-link">
-                        <span class="gold-gradient-text">
-                            <i class="fa-solid fa-user-tie"></i>
-                        </span>
+                        <img src="/assets/media/user-tie.svg" />
                         <span class="text">Portfolio</span>
                     </a>
                     <a href="/index.html?scrollTo=contact" class="nav-link">
-                        <span class="gold-gradient-text">
-                            <i class="fa-solid fa-address-card"></i>
-                        </span>
+                        <img src="/assets/media/address-card.svg" />
                         <span class="text">Contact</span>
                     </a>
                     <a href="/gallery.html" class="nav-link">
-                        <span class="gold-gradient-text">
-                            <i class="fa-solid fa-images"></i>
-                        </span>
+                        <img src="/assets/media/images.svg" />
                         <span class="text">Gallery</span>
                     </a>
                 </div>
             </div>
         </nav>
-        <button onclick="topFunction()" class="scroll-to-top">
+        <button
+            onmouseenter="if (window.innerWidth > 1100) this.querySelector('svg').classList.add('fa-bounce')"
+            onmouseleave="if (window.innerWidth > 1100) this.querySelector('svg').classList.remove('fa-bounce')"
+            onclick="topFunction()"
+            class="scroll-to-top">
             <i class="fa-solid fa-angle-up"></i>
         </button>
         <main data-scroll-section>
@@ -110,7 +99,7 @@
                 </div>
                 <div class="grid">
                     <div class="container">
-                        <p class="heading"><i class="fa-solid fa-thumbtack"></i>Other Resources</p>
+                        <p class="heading"><i class="fa-duotone fa-solid fa-thumbtack"></i>Other Resources</p>
                         <p class="text">&bull;&nbsp; <a href="https://fmhy.net" target="_blank">freemediaheckyeah</a></p>
                         <p class="text">&bull;&nbsp; <a href="https://www.privacyguides.org" target="_blank">Privacy Guides</a></p>
                         <p class="text">&bull;&nbsp; <a href="https://old.reddit.com/r/Piracy/wiki/megathread" target="_blank">r/Piracy</a></p>
@@ -259,15 +248,8 @@
                 </div>
             </div>
         </footer>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"
-            integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"
-            integrity="sha256-odlNpseyKe/Yr2FVkKfof6CSj8+edbarxw5hDpqCGBE="
-            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/masonry-layout/dist/masonry.pkgd.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js" crossorigin="anonymous"></script>
         <script src="/js/main.min.js"></script>
         <script>
             var grid = document.querySelector('.grid');
