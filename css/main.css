@@ -305,13 +305,15 @@ nav .nav-overlay .container .nav-link {
 }
 
 nav .nav-overlay .container .nav-link img {
-    height: 1.6rem;
+    height: 2.4rem;
     justify-self: center;
+    align-self: center;
 }
 
 nav .nav-overlay .container .nav-link .text {
     font-size: 1.2rem;
     text-align: left;
+    align-self: center;
 }
 
 .scroll-to-top {
