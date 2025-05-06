@@ -308,6 +308,7 @@ nav .nav-overlay .container .nav-link img {
     height: 2.4rem;
     justify-self: center;
     align-self: center;
+    pointer-events: none;
 }
 
 nav .nav-overlay .container .nav-link .text {
