@@ -49,6 +49,11 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.no-scroll-touch {
+    pointer-events: none;
+    overflow: hidden;
+}
+
 h1,
 h2,
 h3 {
