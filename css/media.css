@@ -70,6 +70,10 @@
         padding-bottom: 7rem;
     }
 
+    #gallery .headline {
+        padding-bottom: 2.5rem;
+    }
+
     #gallery .grid {
         padding-bottom: 3.1rem;
     }
@@ -139,6 +143,10 @@
     nav .nav-l .logo {
         font-weight: 400;
         margin-right: 0;
+    }
+
+    nav .nav-l .logo a .s_alph {
+        width: 1rem;
     }
 
     nav .nav-l ul .nav-link {
@@ -290,6 +298,10 @@
 
     #gallery .title h1 {
         font-size: 4rem;
+    }
+
+    #gallery .headline p {
+        font-size: 1rem;
     }
 
     #gallery .grid .container .media-title {

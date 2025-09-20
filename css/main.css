@@ -214,6 +214,11 @@ nav .nav-l .logo a {
     text-decoration: none;
 }
 
+nav .nav-l .logo a .s_alph {
+    width: 1.1rem;
+    margin-right: 0.19rem;
+}
+
 nav .nav-l,
 nav .nav-l ul {
     display: flex;

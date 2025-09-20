@@ -23,6 +23,17 @@
     line-height: 1.2;
 }
 
+#gallery .headline {
+    width: min(100%, 80rem);
+    margin: 0 auto;
+    padding: 0 1rem 3rem;
+}
+
+#gallery .headline p {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
 #gallery .grid {
     width: min(100%, 80rem);
     margin: 0 auto;
