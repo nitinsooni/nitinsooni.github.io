@@ -1,0 +1,344 @@
+<!-- 
+    Author: Nitin Soni
+    Website: nitinsooni.github.io
+    © Nitin Soni. All rights reserved.
+    This code is proprietary and confidential. Any unauthorized use or distribution is strictly prohibited.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="color-scheme" content="dark" />
+        <meta name="darkreader-lock" />
+        <title>Nitin Soni • Archive</title>
+        <link rel="preconnect" href="https://rsms.me" />
+        <link rel="stylesheet" href="/css/main.min.css" />
+        <link rel="stylesheet" href="/css/pages.min.css" />
+        <link rel="stylesheet" href="/css/media.min.css" />
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css" crossorigin="anonymous" />
+        <link rel="icon" href="/favicon.ico" sizes="48x48" />
+        <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <style>
+            #archive {
+                width: 100%;
+            }
+
+            #archive .title {
+                text-align: center;
+                padding-top: 11rem;
+                padding-bottom: 9rem;
+                background-image: linear-gradient(transparent 74%, var(--background-primary)),
+                    radial-gradient(circle, #282828, var(--background-primary));
+            }
+
+            #archive .title h1 {
+                font-size: 5.5rem;
+                font-weight: 500;
+                letter-spacing: 0.025rem;
+                line-height: 1.2;
+            }
+
+            #archive .grid {
+                width: min(100%, 80rem);
+                margin: 0 auto;
+                padding: 0 1rem 4rem;
+            }
+
+            #archive .grid h4 {
+                font-size: 1.5rem;
+                font-weight: 300;
+                margin-bottom: 1.5rem;
+            }
+
+            #archive .grid .container {
+                width: 100%;
+                background-color: var(--background-secondary);
+                border: 1px solid var(--border-tertiary);
+                border-radius: 0.75rem;
+                margin-bottom: 2rem;
+                transition: background-color 0.4s, border-color 0.4s;
+            }
+
+            #archive .grid .container .heading-block {
+                display: flex;
+                padding: 1.25rem 1.5rem;
+                align-items: center;
+                justify-content: space-between;
+                column-gap: 0.5rem;
+                cursor: pointer;
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            #archive .grid .container .heading-block .heading {
+                font-size: 1.25rem;
+            }
+
+            #archive .grid .container .heading-block svg {
+                color: var(--text-muted);
+                font-size: 1.4rem;
+                transition: transform 0.3s;
+            }
+
+            #archive .grid .container .content-wrapper {
+                height: 0;
+                padding: 0 1.5rem;
+                overflow-y: hidden;
+                transition: height 0.5s ease-in-out, margin-bottom 0.5s;
+            }
+
+            #archive .grid .container .content-wrapper .text {
+                color: var(--text-secondary);
+                font-size: 1rem;
+                letter-spacing: 0.2px;
+            }
+
+            @media only screen and (max-width: 68.75em) {
+                #archive .title {
+                    padding-top: 10rem;
+                    padding-bottom: 7rem;
+                }
+
+                #archive .grid {
+                    padding-bottom: 3.1rem;
+                }
+            }
+
+            @media only screen and (max-width: 50em) {
+                #archive .title {
+                    padding-bottom: 5rem;
+                }
+
+                #archive .title h1 {
+                    font-size: 4rem;
+                }
+
+                #archive .grid h4 {
+                    font-size: 1.2rem;
+                }
+
+                #archive .grid .container .heading-block {
+                    padding: 1rem 1.25rem;
+                }
+
+                #archive .grid .container .heading-block .heading {
+                    font-size: 1rem;
+                }
+
+                #archive .grid .container .heading-block svg {
+                    font-size: 1.1rem;
+                }
+
+                #archive .grid .container .content-wrapper {
+                    padding: 0 1.25rem;
+                }
+
+                #archive .grid .container .content-wrapper .text {
+                    font-size: 0.95rem;
+                }
+            }
+
+            @media only screen and (max-width: 33.75em) {
+                #archive .title h1 {
+                    font-size: 3.2rem;
+                }
+
+                #archive .grid h4 {
+                    margin-bottom: 1rem;
+                }
+
+                #archive .grid .container {
+                    margin-bottom: 1.4rem;
+                }
+
+                #archive .grid .container .content-wrapper .text {
+                    font-size: 0.9rem;
+                }
+            }
+        </style>
+        <script src="/assets/fontawesome/solid.min.js" defer></script>
+        <script src="/assets/fontawesome/fontawesome.min.js" defer></script>
+    </head>
+    <body class="no-scroll-touch" data-scroll-container>
+        <div class="preloader">
+            <div class="dot a"></div>
+            <div class="dot b"></div>
+            <div class="dot c"></div>
+            <div class="dot d"></div>
+        </div>
+        <nav>
+            <div class="nav-l">
+                <h4 class="logo">
+                    <a href="/index.html">NITIN <img src="/assets/media/s.svg" class="s_alph" alt="S" />ONI</a>
+                </h4>
+                <ul>
+                    <li class="nav-link">
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/index.html?scrollTo=portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/index.html?scrollTo=contact">Contact</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/gallery.html">Gallery</a>
+                    </li>
+                </ul>
+                <svg class="hamburger" viewBox="0 0 100 100" onclick="mobileMenu()">
+                    <path class="line" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+                    <path class="line" d="m 70,50 h -40" />
+                    <path class="line" d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+                </svg>
+            </div>
+            <div class="nav-r">
+                <a class="button" href="mailto:nitinsoooni@gmail.com">E-mail me</a>
+            </div>
+            <div class="nav-overlay">
+                <div class="container">
+                    <a href="/index.html" class="nav-link">
+                        <img style="height: 1.8rem" src="/assets/media/home.svg" alt="Home" />
+                        <span class="text">Home</span>
+                    </a>
+                    <a href="/index.html?scrollTo=portfolio" class="nav-link">
+                        <img src="/assets/media/portfolio.svg" alt="Portfolio" />
+                        <span class="text">Portfolio</span>
+                    </a>
+                    <a href="/index.html?scrollTo=contact" class="nav-link">
+                        <img src="/assets/media/contact.svg" alt="Contact" />
+                        <span class="text">Contact</span>
+                    </a>
+                    <a href="/gallery.html" class="nav-link">
+                        <img src="/assets/media/gallery.svg" alt="Gallery" />
+                        <span class="text">Gallery</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <button
+            onmouseenter="if (window.innerWidth > 1100) this.querySelector('svg').classList.add('fa-bounce')"
+            onmouseleave="if (window.innerWidth > 1100) this.querySelector('svg').classList.remove('fa-bounce')"
+            onclick="topFunction()"
+            class="scroll-to-top">
+            <i class="fa-solid fa-angle-up"></i>
+        </button>
+        <main data-scroll-section>
+            <section id="archive">
+                <div class="title">
+                    <h1>Archive</h1>
+                </div>
+                <div class="grid">
+                    <h4>Accordion:</h4>
+                    <div class="container">
+                        <div onclick="toggleContent(this)" class="heading-block">
+                            <p class="heading">Lorem ipsum dolor sit amet.</p>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="content-wrapper">
+                            <p class="text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ullam voluptates, natus illo non dignissimos quibusdam
+                                atque totam sed, amet, et voluptate sapiente. At dignissimos, possimus aliquam ab laudantium, non assumenda
+                                voluptatibus deserunt dolorem odio enim sint nesciunt mollitia, fugiat ex hic? Excepturi iure dolorum dolorem
+                                architecto illum? Perspiciatis, laboriosam?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div onclick="toggleContent(this)" class="heading-block">
+                            <p class="heading">Lorem ipsum dolor sit amet.</p>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="content-wrapper">
+                            <p class="text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ullam voluptates, natus illo non dignissimos quibusdam
+                                atque totam sed, amet, et voluptate sapiente. At dignissimos, possimus aliquam ab laudantium, non assumenda
+                                voluptatibus deserunt dolorem odio enim sint nesciunt mollitia, fugiat ex hic? Excepturi iure dolorum dolorem
+                                architecto illum? Perspiciatis, laboriosam?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gradient-ruler"></div>
+            </section>
+        </main>
+        <footer data-scroll-section>
+            <div class="container">
+                <div class="wrapper-l">
+                    <h4>NITIN SONI</h4>
+                    <p>
+                        &copy; <span class="year"></span> Nitin Soni<br /><br />
+                        Sohna<br />
+                        Gurugram, HR 122103
+                    </p>
+                </div>
+                <div class="wrapper-r">
+                    <div class="column a">
+                        <h5>Donate</h5>
+                        <p>
+                            <a href="upi://pay?pa=nitinsooni@axl&pn=Nitin%20Soni">UPI</a>
+                        </p>
+                        <p>
+                            <a href="bitcoin:bc1q33wrwtc8dqxvvd7jc2d4zr8x2klzegsms8ck5y">Bitcoin</a>
+                        </p>
+                    </div>
+                    <div class="column b">
+                        <h5>Reach out</h5>
+                        <p>
+                            <a href="https://www.linkedin.com/in/nitinsooni" target="_blank">LinkedIn</a>
+                        </p>
+                        <p>
+                            <a href="https://www.instagram.com/nitinsooni" target="_blank">Instagram</a>
+                        </p>
+                    </div>
+                    <div class="column c">
+                        <h5>Other</h5>
+                        <p>
+                            <a href="/gallery.html">Gallery</a>
+                        </p>
+                        <p>
+                            <a href="/resource_hub.html">Resource Hub</a>
+                        </p>
+                        <p>
+                            <a href="/web1/index.html">Web 1.0 Version</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js" crossorigin="anonymous"></script>
+        <script src="/js/main.min.js"></script>
+        <script>
+            function toggleContent(headingBlock) {
+                let container = headingBlock.parentElement;
+                let plusIcon = container.querySelector('.heading-block svg');
+                let content = container.querySelector('.content-wrapper');
+
+                if (content.style.height) {
+                    container.style.backgroundColor = 'var(--background-secondary)';
+                    container.style.borderColor = 'var(--border-tertiary)';
+                    plusIcon.style.transform = 'rotate(0deg)';
+                    content.style.height = '';
+                    content.style.marginBottom = '0';
+                } else {
+                    container.style.backgroundColor = 'rgb(41, 41, 41)';
+                    container.style.borderColor = 'var(--border-primary)';
+                    plusIcon.style.transform = 'rotate(45deg)';
+                    content.style.height = content.scrollHeight + 'px';
+                    if (window.matchMedia('(max-width: 50rem)').matches) {
+                        content.style.marginBottom = '1rem';
+                    } else {
+                        content.style.marginBottom = '1.25rem';
+                    }
+                }
+
+                setTimeout(() => {
+                    locoScroll.update();
+                }, 500);
+            }
+
+            locoScroll.update();
+        </script>
+    </body>
+</html>

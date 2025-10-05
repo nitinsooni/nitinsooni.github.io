@@ -71,6 +71,13 @@ h3 {
 
 button {
     cursor: pointer;
+    font-family: InterDisplay, sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+    button {
+        font-family: InterVariable, sans-serif;
+    }
 }
 
 ::selection {
