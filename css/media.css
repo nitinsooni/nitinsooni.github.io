@@ -593,3 +593,29 @@
         }
     }
 }
+
+@media (min-width: 50rem) {
+    #home .home-container {
+        width: 100%;
+        height: max(93vh, 47.75rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #home .title {
+        position: relative;
+    }
+
+    #home .title svg {
+        top: 10.4rem;
+        left: -1.6rem;
+    }
+
+    @media (min-height: 61rem) {
+        #home .home-container {
+            height: 47.75rem;
+        }
+    }
+}
