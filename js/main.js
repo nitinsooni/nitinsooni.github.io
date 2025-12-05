@@ -15,27 +15,26 @@ locoScroll.stop();
 
 // Disable preloader screen when website fully loaded with fade-out animation and then start website animations
 document.addEventListener('DOMContentLoaded', function () {
-    document.fonts.ready.then(function () {
-        var preloader = document.querySelector('.preloader');
+// document.fonts.ready.then(function () {
+    var preloader = document.querySelector('.preloader');
 
-        preloader.classList.add('preloader-hide');
-        setTimeout(function () {
-            preloader.style.display = 'none';
-        }, 350);
+    preloader.classList.add('preloader-hide');
+    setTimeout(function () {
+        preloader.style.display = 'none';
+    }, 350);
 
-        document.body.classList.remove('no-scroll-touch');
-        locoScroll.start();
+    document.body.classList.remove('no-scroll-touch');
+    locoScroll.start();
 
-        const scrollTarget = new URLSearchParams(location.search).get('scrollTo');
-        if (scrollTarget) {
-            locoScroll.scrollTo(document.getElementById(scrollTarget));
-        }
+    const scrollTarget = new URLSearchParams(location.search).get('scrollTo');
+    if (scrollTarget) {
+        locoScroll.scrollTo(document.getElementById(scrollTarget));
+    }
 
-        if (document.body.classList.contains('index-page')) {
-            document.querySelector('#home .title svg path').classList.add('stroke-draw');
-            document.getElementById('home').classList.add('gradient-effect');
-        }
-    });
+    if (document.body.classList.contains('index-page')) {
+        document.querySelector('#home .title svg path').classList.add('stroke-draw');
+        document.getElementById('home').classList.add('gradient-effect');
+    }
 });
 
 // Trigger animation when user scrolled to gradient-ruler
