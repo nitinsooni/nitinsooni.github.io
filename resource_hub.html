@@ -17,7 +17,6 @@
         <link rel="stylesheet" href="/css/pages.min.css" />
         <link rel="stylesheet" href="/css/media.min.css" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css" crossorigin="anonymous" />
         <link rel="icon" href="/favicon.ico" sizes="48x48" />
         <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -25,7 +24,7 @@
         <script src="/assets/fontawesome/solid.min.js" defer></script>
         <script src="/assets/fontawesome/fontawesome.min.js" defer></script>
     </head>
-    <body class="no-scroll-touch" data-scroll-container>
+    <body class="no-scroll-touch">
         <div class="preloader">
             <div class="dot a"></div>
             <div class="dot b"></div>
@@ -42,10 +41,10 @@
                         <a href="/index.html">Home</a>
                     </li>
                     <li class="nav-link">
-                        <a href="/index.html?scrollTo=portfolio">Portfolio</a>
+                        <a href="/index.html#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-link">
-                        <a href="/index.html?scrollTo=contact">Contact</a>
+                        <a href="/index.html#contact">Contact</a>
                     </li>
                     <li class="nav-link">
                         <a href="/gallery.html">Gallery</a>
@@ -66,11 +65,11 @@
                         <img style="height: 1.8rem" src="/assets/media/home.svg" alt="Home" />
                         <span class="text">Home</span>
                     </a>
-                    <a href="/index.html?scrollTo=portfolio" class="nav-link">
+                    <a href="/index.html#portfolio" class="nav-link">
                         <img src="/assets/media/portfolio.svg" alt="Portfolio" />
                         <span class="text">Portfolio</span>
                     </a>
-                    <a href="/index.html?scrollTo=contact" class="nav-link">
+                    <a href="/index.html#contact" class="nav-link">
                         <img src="/assets/media/contact.svg" alt="Contact" />
                         <span class="text">Contact</span>
                     </a>
@@ -88,7 +87,7 @@
             class="scroll-to-top">
             <i class="fa-solid fa-angle-up"></i>
         </button>
-        <main data-scroll-section>
+        <main>
             <section id="resource_hub">
                 <div class="title">
                     <h1>Resource Hub</h1>
@@ -207,7 +206,7 @@
                 <div class="gradient-ruler"></div>
             </section>
         </main>
-        <footer data-scroll-section>
+        <footer>
             <div class="container">
                 <div class="wrapper-l">
                     <h4>NITIN SONI</h4>
@@ -252,8 +251,7 @@
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/masonry-layout/dist/masonry.pkgd.min.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js" crossorigin="anonymous"></script>
-        <script src="/js/main.min.js"></script>
+        <script src="/js/main.min.js" defer></script>
         <script>
             var grid = document.querySelector('.grid');
             var masonry = new Masonry(grid, {
@@ -263,8 +261,6 @@
                 horizontalOrder: true,
                 percentPosition: true,
             });
-
-            locoScroll.update();
         </script>
     </body>
 </html>

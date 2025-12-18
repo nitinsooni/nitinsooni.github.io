@@ -126,16 +126,6 @@ button {
     }
 }
 
-.c-scrollbar {
-    width: 10px;
-    z-index: 99;
-}
-
-.c-scrollbar .c-scrollbar_thumb {
-    width: 6px;
-    background-color: var(--text-primary);
-}
-
 .preloader {
     width: 100vw;
     height: 100vh;

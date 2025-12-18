@@ -4,18 +4,10 @@
     © Nitin Soni. All rights reserved.
     This code is proprietary and confidential. Any unauthorized use or distribution is strictly prohibited.
 */
-// Locomotive scroll init
-const locoScroll = new LocomotiveScroll({
-    el: document.querySelector('[data-scroll-container]'),
-    smooth: true,
-    multiplier: 0.4,
-});
-
-locoScroll.stop();
 
 // Disable preloader screen when website fully loaded with fade-out animation and then start website animations
-document.addEventListener('DOMContentLoaded', function () {
 // document.fonts.ready.then(function () {
+document.addEventListener('DOMContentLoaded', function () {
     var preloader = document.querySelector('.preloader');
 
     preloader.classList.add('preloader-hide');
@@ -24,12 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 350);
 
     document.body.classList.remove('no-scroll-touch');
-    locoScroll.start();
-
-    const scrollTarget = new URLSearchParams(location.search).get('scrollTo');
-    if (scrollTarget) {
-        locoScroll.scrollTo(document.getElementById(scrollTarget));
-    }
 
     if (document.body.classList.contains('index-page')) {
         document.querySelector('#home .title svg path').classList.add('stroke-draw');
@@ -82,19 +68,18 @@ window.location.hostname !== atob('bml0aW5zb29uaS5naXRodWIuaW8=') && (document.b
 // Show the scroll-to-top button when user scrolls down 300px
 let btnTop = document.querySelector('.scroll-to-top');
 
-locoScroll.on('scroll', (obj) => {
-    const scrollY = obj.scroll.y;
-
-    if (scrollY > 300) {
+window.onscroll = function () {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
         btnTop.classList.add('scroll-to-top-show');
     } else {
         btnTop.classList.remove('scroll-to-top-show');
     }
-});
+};
 
 // Scroll to the top of document when the user clicks scroll-to-top button
 function topFunction() {
-    locoScroll.scrollTo(0, 0);
+    document.body.scrollTop = 0; // for safari
+    document.documentElement.scrollTop = 0; // for chrome, firefox, ie and opera
 }
 
 // Dynamically change year in copyright text

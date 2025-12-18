@@ -23,7 +23,6 @@
         <link rel="stylesheet" href="/css/media.min.css" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css" crossorigin="anonymous" />
         <link rel="icon" href="/favicon.ico" sizes="48x48" />
         <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -32,7 +31,7 @@
         <script src="/assets/fontawesome/brands.min.js" defer></script>
         <script src="/assets/fontawesome/fontawesome.min.js" defer></script>
     </head>
-    <body class="index-page no-scroll-touch" data-scroll-container>
+    <body class="index-page no-scroll-touch">
         <div class="preloader">
             <div class="dot a"></div>
             <div class="dot b"></div>
@@ -46,13 +45,13 @@
                 </h4>
                 <ul>
                     <li class="nav-link">
-                        <a href="#home" class="gold-text" data-scroll-to>Home</a>
+                        <a href="#home" class="gold-text">Home</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#portfolio" data-scroll-to>Portfolio</a>
+                        <a href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#contact" data-scroll-to>Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                     <li class="nav-link">
                         <a href="/gallery.html">Gallery</a>
@@ -69,15 +68,15 @@
             </div>
             <div class="nav-overlay">
                 <div class="container">
-                    <a href="#home" class="nav-link" data-scroll-to>
+                    <a href="#home" class="nav-link">
                         <img style="height: 1.8rem" src="/assets/media/home.svg" alt="Home" />
                         <span class="text">Home</span>
                     </a>
-                    <a href="#portfolio" class="nav-link" data-scroll-to>
+                    <a href="#portfolio" class="nav-link">
                         <img src="/assets/media/portfolio.svg" alt="Portfolio" />
                         <span class="text">Portfolio</span>
                     </a>
-                    <a href="#contact" class="nav-link" data-scroll-to>
+                    <a href="#contact" class="nav-link">
                         <img src="/assets/media/contact.svg" alt="Contact" />
                         <span class="text">Contact</span>
                     </a>
@@ -95,7 +94,7 @@
             class="scroll-to-top">
             <i class="fa-solid fa-angle-up"></i>
         </button>
-        <main data-scroll-section>
+        <main>
             <section id="home">
                 <div class="light-wrapper">
                     <div class="lights-holder">
@@ -304,7 +303,7 @@
                 <div class="gradient-ruler"></div>
             </section>
         </main>
-        <footer data-scroll-section>
+        <footer>
             <div class="container">
                 <div class="wrapper-l">
                     <h4>NITIN SONI</h4>
@@ -348,8 +347,7 @@
                 </div>
             </div>
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js" crossorigin="anonymous"></script>
-        <script src="/js/main.min.js"></script>
-        <script src="/js/index.min.js"></script>
+        <script src="/js/main.min.js" defer></script>
+        <script src="/js/index.min.js" defer></script>
     </body>
 </html>
