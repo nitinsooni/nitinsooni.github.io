@@ -294,8 +294,7 @@
 #portfolio .table .table-l .scroll-container .card-container .card {
     width: 24rem;
     height: 32rem;
-    padding-left: 2rem;
-    padding-right: 1rem;
+    padding: 0.8rem 1rem 0.8rem 2rem;
     text-align: left;
     position: relative;
     background: var(--background-secondary);
@@ -323,48 +322,20 @@
 }
 
 #portfolio .table .table-l .scroll-container .card-container .card .content .heading {
-    font-size: 1.2rem;
-    font-weight: 500;
-    letter-spacing: 0.025rem;
-    margin-top: 2rem;
-    color: var(--text-secondary);
-}
-
-#portfolio .table .table-l .scroll-container .card-container .card .content .sub-heading {
     font-size: 1.1rem;
     margin-top: 0.9rem;
     margin-bottom: 0.5rem;
-    margin-left: 2rem;
-    color: var(--text-tertiary);
-}
-
-#portfolio .table .table-l .scroll-container .card-container .card .content a {
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-#portfolio .table .table-l .scroll-container .card-container .card .content .ellipsis {
-    display: flex;
-    align-items: center;
-}
-
-#portfolio .table .table-l .scroll-container .card-container .card .content .ellipsis span {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-#portfolio .table .table-l .scroll-container .card-container .card .content .sub-heading svg {
-    font-size: 1rem;
-    margin-left: 0.3rem;
+    color: var(--text-primary);
 }
 
 #portfolio .table .table-l .scroll-container .card-container .card .content .text {
     font-size: 0.9rem;
     font-weight: 300;
     margin-top: 0.35rem;
-    margin-left: 3.5rem;
-    color: var(--text-tertiary);
+    margin-left: 2rem;
+    color: var(--text-secondary);
+    padding-left: 0.8rem;
+    text-indent: -0.8rem;
 }
 
 #portfolio .table .table-r {
