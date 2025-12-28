@@ -77,7 +77,7 @@
                 font-size: 1.25rem;
             }
 
-            #archive .grid .container .heading-block svg {
+            #archive .grid .container .heading-block i {
                 color: var(--text-muted);
                 font-size: 1.4rem;
                 transition: transform 0.3s;
@@ -128,7 +128,7 @@
                     font-size: 1rem;
                 }
 
-                #archive .grid .container .heading-block svg {
+                #archive .grid .container .heading-block i {
                     font-size: 1.1rem;
                 }
 
@@ -217,8 +217,8 @@
             </div>
         </nav>
         <button
-            onmouseenter="if (window.innerWidth > 1100) this.querySelector('svg').classList.add('fa-bounce')"
-            onmouseleave="if (window.innerWidth > 1100) this.querySelector('svg').classList.remove('fa-bounce')"
+            onmouseenter="if (window.innerWidth > 1100) this.querySelector('i').classList.add('fa-bounce')"
+            onmouseleave="if (window.innerWidth > 1100) this.querySelector('i').classList.remove('fa-bounce')"
             onclick="topFunction()"
             class="scroll-to-top">
             <i class="fa-solid fa-angle-up"></i>
@@ -285,7 +285,7 @@
                     <div class="column b">
                         <h5>Reach out</h5>
                         <p>
-                            <a href="https://www.linkedin.com/in/nitinsagarsoni" target="_blank">LinkedIn</a>
+                            <a href="https://www.linkedin.com/in/nitinsagaronline" target="_blank">LinkedIn</a>
                         </p>
                         <p>
                             <a href="https://www.instagram.com/nitinsooni" target="_blank">Instagram</a>
@@ -310,7 +310,7 @@
         <script>
             function toggleContent(headingBlock) {
                 let container = headingBlock.parentElement;
-                let plusIcon = container.querySelector('.heading-block svg');
+                let plusIcon = container.querySelector('.heading-block i');
                 let content = container.querySelector('.content-wrapper');
 
                 if (content.style.height) {
