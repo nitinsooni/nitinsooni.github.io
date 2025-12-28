@@ -145,10 +145,6 @@
         margin-right: 0;
     }
 
-    nav .nav-l .logo a .s_alph {
-        width: 1rem;
-    }
-
     nav .nav-l ul .nav-link {
         display: none;
     }
@@ -328,7 +324,7 @@
         padding-bottom: 1rem;
     }
 
-    #resource_hub .grid .container .heading svg {
+    #resource_hub .grid .container .heading i {
         font-size: 0.9rem;
         padding-right: 0.5rem;
     }

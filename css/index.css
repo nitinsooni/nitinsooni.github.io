@@ -496,7 +496,7 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-#contact .table .table-r .container .card.one .content svg {
+#contact .table .table-r .container .card.one .content i {
     padding-right: 0.5rem;
 }
 
@@ -570,7 +570,7 @@
     line-height: 0;
 }
 
-#contact .table .table-r .container .card.one .content .block-bottom .social-block a svg {
+#contact .table .table-r .container .card.one .content .block-bottom .social-block a i {
     padding: 0;
 }
 

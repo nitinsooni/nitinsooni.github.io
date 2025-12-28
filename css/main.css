@@ -4,6 +4,22 @@
     © Nitin Soni. All rights reserved.
     This code is proprietary and confidential. Any unauthorized use or distribution is strictly prohibited.
 */
+@font-face {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/assets/futura/FuturaStd-Book.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('/assets/futura/FuturaStd-Medium.woff2') format('woff2');
+}
+
 :root {
     color-scheme: dark;
     font-family: Inter, sans-serif;
@@ -200,20 +216,16 @@ nav {
 }
 
 nav .nav-l .logo {
+    font-family: Futura;
     font-size: 1.5rem;
     font-weight: 500;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     margin-right: 2rem;
 }
 
 nav .nav-l .logo a {
     color: var(--text-primary);
     text-decoration: none;
-}
-
-nav .nav-l .logo a .s_alph {
-    width: 1.1rem;
-    margin-right: 0.19rem;
 }
 
 nav .nav-l,
@@ -237,7 +249,7 @@ nav .nav-l ul .nav-link a {
 nav .nav-l .hamburger {
     display: none;
     position: absolute;
-    top: 0.875rem;
+    top: 0.75rem;
     right: 5%;
     width: 2.8rem;
     transition: transform 0.4s;
@@ -365,9 +377,10 @@ footer .container .wrapper-l {
 }
 
 footer .container .wrapper-l h4 {
+    font-family: Futura;
     font-size: 1.5rem;
     font-weight: 500;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     padding-bottom: 1.5rem;
 }
 
