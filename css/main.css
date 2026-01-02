@@ -4,6 +4,14 @@
     © Nitin Soni. All rights reserved.
     This code is proprietary and confidential. Any unauthorized use or distribution is strictly prohibited.
 */
+@font-face {
+    font-family: Brisa Pro;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/assets/BrisaPro-Regular.woff2') format('woff2');
+}
+
 :root {
     color-scheme: dark;
     font-family: Inter, sans-serif;
