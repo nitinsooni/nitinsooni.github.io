@@ -5,6 +5,118 @@
     This code is proprietary and confidential. Any unauthorized use or distribution is strictly prohibited.
 */
 @font-face {
+    font-family: Haffer XH;
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url('/assets/Haffer\ XH/HafferXH-Thin.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Haffer XH;
+    font-style: italic;
+    font-weight: 200;
+    font-display: swap;
+    src: url('/assets/Haffer\ XH/HafferXH-ThinItalic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Haffer XH;
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('/assets/Haffer\ XH/HafferXH-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Haffer XH;
+    font-style: italic;
+    font-weight: 300;
+    font-display: swap;
+    src: url('/assets/Haffer\ XH/HafferXH-LightItalic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Haffer XH;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/assets/Haffer\ XH/HafferXH-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Haffer XH;
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/assets/Haffer\ XH/HafferXH-RegularItalic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Haffer XH;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('/assets/Haffer\ XH/HafferXH-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Haffer XH;
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url('/assets/Haffer\ XH/HafferXH-MediumItalic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Haffer XH;
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('/assets/Haffer\ XH/HafferXH-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Haffer XH;
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url('/assets/Haffer\ XH/HafferXH-SemiBoldItalic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Haffer XH;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/assets/Haffer\ XH/HafferXH-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Haffer XH;
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/assets/Haffer\ XH/HafferXH-BoldItalic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Haffer XH;
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('/assets/Haffer\ XH/HafferXH-Heavy.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Haffer XH;
+    font-style: italic;
+    font-weight: 800;
+    font-display: swap;
+    src: url('/assets/Haffer\ XH/HafferXH-HeavyItalic.woff2') format('woff2');
+}
+
+@font-face {
     font-family: Brisa Pro;
     font-style: normal;
     font-weight: 400;
@@ -64,27 +176,31 @@ body {
 
 h1,
 h2,
-h3 {
-    font-family: InterDisplay, sans-serif;
+h3,
+h4 {
+    font-family: Haffer XH, InterDisplay, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1, 'ss01' 1, 'ss03' 1, 'ss05' 1;
 }
 
 @supports (font-variation-settings: normal) {
     h1,
     h2,
-    h3 {
-        font-family: InterVariable, sans-serif;
+    h3,
+    h4 {
+        font-family: Haffer XH, InterVariable, sans-serif;
         font-optical-sizing: auto;
     }
 }
 
 button {
     cursor: pointer;
-    font-family: InterDisplay, sans-serif;
+    font-family: Haffer XH, InterDisplay, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1, 'ss01' 1, 'ss03' 1, 'ss05' 1;
 }
 
 @supports (font-variation-settings: normal) {
     button {
-        font-family: InterVariable, sans-serif;
+        font-family: Haffer XH, InterVariable, sans-serif;
     }
 }
 
@@ -210,7 +326,7 @@ nav {
 nav .nav-l .logo {
     font-size: 1.5rem;
     font-weight: 500;
-    letter-spacing: 2.5px;
+    letter-spacing: 3px;
     text-transform: uppercase;
     margin-right: 2rem;
 }
@@ -371,7 +487,7 @@ footer .container .wrapper-l {
 footer .container .wrapper-l h4 {
     font-size: 1.5rem;
     font-weight: 500;
-    letter-spacing: 2.5px;
+    letter-spacing: 3px;
     text-transform: uppercase;
     padding-bottom: 1.5rem;
 }

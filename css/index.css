@@ -7,7 +7,8 @@
 .paragraph img,
 .paragraph h3,
 .paragraph p,
-.paragraph a {
+.paragraph a,
+.paragraph .scribble-container {
     opacity: 0;
     filter: blur(3px);
     transform: translateX(-1rem);
@@ -17,7 +18,8 @@
 .paragraph.active img,
 .paragraph.active h3,
 .paragraph.active p,
-.paragraph.active a {
+.paragraph.active a,
+.paragraph.active .scribble-container {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
@@ -29,6 +31,10 @@
 
 .paragraph.active a {
     transition: all 0.7s 0.4s, scale 0.38s 0s;
+}
+
+.paragraph.active .scribble-container {
+    transition-delay: 0.55s;
 }
 
 #home {
@@ -111,7 +117,7 @@
 }
 
 .stroke-draw {
-    animation: draw 1.5s 0.2s forwards;
+    animation: draw 1.5s 0.22s forwards;
 }
 
 @keyframes draw {
@@ -177,7 +183,7 @@
 #home .contact-box .contact-bar .submit {
     color: var(--background-primary);
     background-color: var(--accent-gold);
-    padding: 0.9rem 1.5rem;
+    padding: 1rem 1.5rem;
     border: none;
     position: absolute;
 }

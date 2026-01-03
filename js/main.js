@@ -6,21 +6,22 @@
 */
 
 // Disable preloader screen when website fully loaded with fade-out animation and then start website animations
-// document.fonts.ready.then(function () {
 document.addEventListener('DOMContentLoaded', function () {
     var preloader = document.querySelector('.preloader');
 
-    preloader.classList.add('preloader-hide');
-    setTimeout(function () {
-        preloader.style.display = 'none';
-    }, 350);
+    document.fonts.ready.then(function () {
+        preloader.classList.add('preloader-hide');
+        setTimeout(function () {
+            preloader.style.display = 'none';
+        }, 350);
 
-    document.body.classList.remove('no-scroll-touch');
+        document.body.classList.remove('no-scroll-touch');
 
-    if (document.body.classList.contains('index-page')) {
-        document.querySelector('#home .title svg path').classList.add('stroke-draw');
-        document.getElementById('home').classList.add('gradient-effect');
-    }
+        if (document.body.classList.contains('index-page')) {
+            document.querySelector('#home .title svg path').classList.add('stroke-draw');
+            document.getElementById('home').classList.add('gradient-effect');
+        }
+    });
 });
 
 // Trigger animation when user scrolled to gradient-ruler
