@@ -376,7 +376,6 @@
 
     #portfolio .table .table-l .scroll-container .card-container {
         gap: 2rem;
-        line-height: 1.55;
     }
 
     #portfolio .table .table-l .scroll-container .card-container .card {
@@ -401,7 +400,7 @@
 
     #portfolio .table .table-l .scroll-container .card-container .card .content .text {
         font-size: 0.8rem;
-        margin-top: 0.25rem;
+        margin-top: 0.35rem;
         margin-left: 1.5rem;
         padding-left: 0.675rem;
         text-indent: -0.675rem;

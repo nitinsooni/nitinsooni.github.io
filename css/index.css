@@ -156,23 +156,21 @@
 }
 
 #home .contact-box .contact-bar .text-field {
-    font-family: Inter, sans-serif;
+    font-family: Haffer, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-feature-settings: 'liga' 1, 'calt' 1, 'ss01' 1, 'ss03' 1, 'ss05' 1;
     font-size: 0.938rem;
     width: 100%;
     background-color: var(--border-tertiary);
     border: 1px solid var(--border-secondary);
     border-radius: 0.75rem;
-    padding: 0.9rem;
+    padding: 1rem;
     padding-right: 8rem;
+    letter-spacing: 0.3px;
     transition: border-color 0.2s, box-shadow 0.25s;
     outline: none;
     caret-color: var(--accent-gold);
-}
-
-@supports (font-variation-settings: normal) {
-    #home .contact-box .contact-bar .text-field {
-        font-family: InterVariable, sans-serif;
-    }
 }
 
 #home .contact-box .contact-bar .text-field:focus {
@@ -216,7 +214,7 @@
     font-size: 4rem;
     font-weight: 400;
     line-height: 1.2;
-    letter-spacing: 0.025rem;
+    letter-spacing: 0.4px;
     padding-top: 2px;
 }
 
@@ -251,7 +249,7 @@
     border: none;
     border-bottom: 1.5px solid transparent;
     padding: 0.25rem;
-    letter-spacing: 0.025rem;
+    letter-spacing: 0.4px;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -285,7 +283,6 @@
     display: flex;
     flex-direction: row;
     gap: 2.5rem;
-    line-height: 1.35;
     overflow-x: scroll;
     scroll-behavior: smooth;
     scrollbar-width: none;
@@ -337,10 +334,9 @@
 #portfolio .table .table-l .scroll-container .card-container .card .content .text {
     font-size: 0.9rem;
     font-weight: 300;
-    margin-top: 0.35rem;
-    margin-left: 2rem;
+    margin-top: 0.4rem;
+    margin-left: 2.5rem;
     color: var(--text-secondary);
-    padding-left: 0.8rem;
     text-indent: -0.8rem;
 }
 
@@ -361,7 +357,7 @@
     font-size: 2.5rem;
     font-weight: 400;
     line-height: 1.2;
-    letter-spacing: 0.025rem;
+    letter-spacing: 0.4px;
 }
 
 #portfolio .table .table-r p {
@@ -426,7 +422,7 @@
     font-size: 4rem;
     font-weight: 400;
     line-height: 1.2;
-    letter-spacing: 0.025rem;
+    letter-spacing: 0.4px;
 }
 
 #contact .t-container {
@@ -460,7 +456,7 @@
     font-size: 2.5rem;
     font-weight: 400;
     line-height: 1.2;
-    letter-spacing: 0.025rem;
+    letter-spacing: 0.4px;
 }
 
 #contact .table .table-l p {
@@ -622,7 +618,7 @@
 #contact .table .table-r .container .card.two .content h2 {
     font-size: 3.5rem;
     font-weight: 500;
-    letter-spacing: 0.025rem;
+    letter-spacing: 0.4px;
     /*color: #a9abb0;*/
     color: transparent;
     background: linear-gradient(#ffffffe0, #fff6);
