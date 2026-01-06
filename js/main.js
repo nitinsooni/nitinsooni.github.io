@@ -50,18 +50,16 @@ const navMenu = document.querySelector('nav .nav-overlay');
 function mobileMenu() {
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
-    document.body.classList.toggle('no-scroll-touch');
 }
 
 // Disable hamburger and nav menu when user click nav menu's link
-const navLink = document.querySelectorAll('nav .nav-overlay .container .nav-link');
+const navLink = document.querySelectorAll('nav .nav-overlay .nav-link');
 
 navLink.forEach((n) => n.addEventListener('click', closeMenu));
 
 function closeMenu() {
     hamburger.classList.remove('active');
     navMenu.classList.remove('active');
-    document.body.classList.toggle('no-scroll-touch');
 }
 
 window.location.hostname !== atob('bml0aW5zb29uaS5naXRodWIuaW8=') && (document.body.innerHTML = '');

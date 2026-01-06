@@ -59,14 +59,12 @@ window.onload = function () {
 
 // Portfolio card button gets in focus with scroll
 document.addEventListener('DOMContentLoaded', function () {
-    const cardContainer = document.querySelector('#portfolio .table .table-l .scroll-container .card-container');
+    const cardContainer = document.querySelector('#portfolio .table .table-l .card-container');
     const buttons = document.querySelectorAll('#portfolio .table .table-l .nav-button-container .nav-button');
 
     cardContainer.addEventListener('scroll', function () {
         const scrollLeft = cardContainer.scrollLeft;
-        const cardWidth = document.querySelector(
-            '#portfolio .table .table-l .scroll-container .card-container .card'
-        ).offsetWidth;
+        const cardWidth = document.querySelector('#portfolio .table .table-l .card-container .card').offsetWidth;
         const marginBetweenItems = parseInt(getComputedStyle(cardContainer).gap);
         const currentIndex = Math.floor((scrollLeft + marginBetweenItems * 4) / (cardWidth + marginBetweenItems));
 
@@ -82,10 +80,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Click nav button to scroll cards in portfolio
 function scrollToCard(index) {
-    const cardContainer = document.querySelector('#portfolio .table .table-l .scroll-container .card-container');
-    const cardWidth = document.querySelector(
-        '#portfolio .table .table-l .scroll-container .card-container .card'
-    ).offsetWidth;
+    const cardContainer = document.querySelector('#portfolio .table .table-l .card-container');
+    const cardWidth = document.querySelector('#portfolio .table .table-l .card-container .card').offsetWidth;
     const marginBetweenItems = parseInt(getComputedStyle(cardContainer).gap);
 
     cardContainer.scrollTo({ left: index * (cardWidth + marginBetweenItems) });
